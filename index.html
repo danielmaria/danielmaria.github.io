@@ -7,9 +7,9 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <link rel="icon" type="image/png" href="images/favicon.png">
         <title>Daniel Maria da Silva</title>
-        <meta name="description" content="">
+        <meta name="description" content="Site pessoal do autor.">
         <meta name="keywords" content="">
-        <meta name="author" content="">
+        <meta name="author" content="Daniel Maria">
         <!-- Mobile Specific Metas
         ================================================== -->
         <meta name="format-detection" content="telephone=no">
@@ -21,13 +21,8 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <!-- Ionicons Fonts Css -->
         <link rel="stylesheet" href="css/ionicons.min.css">
-        <!-- animate css -->
-        <link rel="stylesheet" href="css/animate.css">
         <!-- Hero area slider css-->
         <link rel="stylesheet" href="css/slider.css">
-        <!-- owl craousel css -->
-        <link rel="stylesheet" href="css/owl.carousel.css">
-        <link rel="stylesheet" href="css/owl.theme.css">
         <link rel="stylesheet" href="css/jquery.fancybox.css">
         <!-- template main css file -->
         <link rel="stylesheet" href="css/main.css">
@@ -51,64 +46,59 @@
         <script src="js/main.js"></script>
         
     </head>
+     <script>
+          window.onload = function(){
+               var dataInicio = new Date('2016/05/16');
+               var timeDiff = Math.abs(new Date().getTime() - dataInicio.getTime());
+               var diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24));
+               var months = Math.trunc(diffDays/30);
+               var dayAndMoths = diffDays/30;
+               var days = Math.trunc((dayAndMoths % 1) * 30);
+               document.getElementById("months").innerHTML = months + (months != 1 ? ' months' : ' month');
+               document.getElementById("meses").innerHTML = months + (months != 1 ? ' mesês' : ' mês');
+               document.getElementById("days").innerHTML = days + (days != 1 ? ' days' : ' day');
+               document.getElementById("dias").innerHTML = days + (days != 1 ? ' dias' : ' dia');
+               
+          }
+     </script>
     <body>
-        <!--
-        ==================================================
-        Header Section Start
-        ================================================== -->
         <header id="top-bar" class="navbar-fixed-top animated-header">
             <div class="container">
                 <div class="navbar-header">
-                    <!-- responsive nav button -->
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     </button>
-                    <!-- /responsive nav button -->
-
-                    <!-- logo -->
                     <div class="navbar-brand">
                         <a href="index.html" >
                             <img src="images/logo-min.png" alt="">
                         </a>
                     </div>
-                    <!-- /logo -->
                 </div>
-        
-                <!-- /main nav -->
             </div>
         </header>
-
-        <!--
-        ==================================================
-        Slider Section Start
-        ================================================== -->
-
         <section id="hero-area" >
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 text-center">
                         <div class="block wow fadeInUp" data-wow-delay=".3s">
-
-                            <!-- Slider -->
                             <section class="cd-intro">
                                 <h1 class="wow fadeInUp animated cd-headline slide" data-wow-delay=".4s" >
                                 <span id="introPresentation"></span><br>
                                 <span class="cd-words-wrapper">
-                                    <b class="is-visible" id="introIAmOne">SOFTWARE DEVELOPER</b>
-                                    <b id="introIAmTwo">CURIOUS</b>
-                                    <b id="introIAmThree">STUDENT</b>
+                                    <b class="is-visible" id="introIAmOne"></b>
+                                    <b id="introIAmTwo"></b>
+                                    <b id="introIAmThree"></b>
                                 </span>
                                 </h1>
-                                </section> <!-- cd-intro -->
-                                <!-- /.slider -->
+                                </section> 
                                 <h2 class="wow fadeInUp animated enlanguage" data-wow-delay=".6s" >
-                                    With a year of experience, developing, studying and improving a way to <br> way to <b>develop solutions</b>.
+                                     <spam type="months" id="months"></spam> and <spam type="days" id="days"></spam> of experience, developing softwares, studying and improving <br> a way to <b>create solutions</b>.
                                 </h2>
                                 <h2 class="wow fadeInUp animated ptlanguage" data-wow-delay=".6s">
-                                    Com um ano de experiência, desenvolvendo, estudando e aprimorando a <br> forma de <b>desenvolver soluções</b>.
+                                    <spam type="meses" id="meses"></spam> e <spam type="dias" id="dias"></spam> de experiência, desenvolvendo, estudando e aprimorando a <br> forma de <b>criar soluções</b>.
                                 </h2>
                                 <h4 style="color: black; " class="enlanguage">What do you preffer? Make me help you :)</h4>
                                 <h4 style="color: black;" class="ptlanguage">Como você prefere? Ajude-me a te ajudar :)</h4>
@@ -119,24 +109,21 @@
                     </div>
                 </div>
 
-            </section><!--/#main-slider-->
-            <!--
-            ==================================================
-            Slider Section Start
-            ================================================== -->
+            </section>
             <section class="about">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6 col-sm-6">
                             <div class="block wow fadeInLeft" data-wow-delay=".3s" data-wow-duration="500ms">
-                                <h2 class="enlanguage">THE ROAD SO FAR</h2>
-                                <h2 class="ptlanguage">A ESTRADA ATÉ AQUI</h2>
-                                <p class="enlanguage">
-                                    Hello, I’m a UI/UX Designer & Front End Developer from Victoria, Australia. I hold a master degree of Web Design from the World University.And scrambled it to make a type specimen book. It has survived not only five centuries
-                                </p>
-                                <p class="ptlanguage">
-                                    Pouco antes de me formar bacharel educação física, em 2015 pela PUCRS, tive a certeza de que esta, apesar de ser uma área incrível, não seria minha área de satisfação pessoal. Em paralelo a faculdade busquei cursos voltado à programação, com isso acabei descorbindo que, além de gostar de desenvolver softwares era completamente apaixonado por tecnologia. Iniciei em 2016 o curso de Sistemas de Informação e, após 3 meses fui contratado como desenvolvedor.
-                                </p>
+                              <div  class="enlanguage">
+                              <h2>THE ROAD SO FAR</h2>
+                                   <p> In 2015 I undergraduated Bachelor in Physical Education at PUCRS. I was sure that this area was incredible, despite I still interested about it, I wanted to do something different. 
+                                   While I studied about squat and biochemistry, I made some courses on programming. So, in 2016 I started Information Of Systems course at University (it's kind of mixed of administration and thecnology in Brazil). Three moths later, I was hired to work with programming.</p>
+                              </div>
+                              <div class="ptlanguage">
+                                   <h2>A ESTRADA ATÉ AQUI</h2>
+                                   <p>Em 2015 me formei bacharel em educação física pela PUCRS. Tive a certeza de que esta, apesar de ser uma área incrível, não era minha paixão. Enquanto estudava sobre agachamento e bioquímica, realizava cursos de programação. Iniciei em 2016 o curso de Sistemas de Informação e, após 3 meses fui contratado como desenvolvedor.</p>
+                              </div>
                             </div>
 
                         </div>
@@ -154,20 +141,17 @@
                         </div>
                         <div class="col-md-6 col-sm-6">
                             <div class="block wow fadeInRight" data-wow-delay=".3s" data-wow-duration="500ms">
-                                <h2 class="enlanguage">ABOUT ME</h2>
-                                <h2 class="ptlanguage">SOBRE MIM</h2>
-                                <p class="enlanguage">
-                                    Hello, I’m a UI/UX Designer & Front End Developer from Victoria, Australia. I hold a master degree of Web Design from the World University.And scrambled it to make a type specimen book. It has survived not only five centuries
-                                </p>
-                                <p class="enlanguage">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, adipisci voluptatum repudiandae, natus impedit repellat aut officia illum at assumenda iusto reiciendis placeat. Temporibus, vero.
-                                </p>
+                                <div class="enlanguage">
+                                     <h2>ABOUT ME</h2>
+                                    <p> 
+                                        I am a backend in my profession and a frontend by hobby. I am completly addicted in software development. Daily in my job, I use Java (JSF, RichFaces, JSP, Servlets, Hibernate, Spring) and Oracle for database.
+                                        Despite this, I like a lot of others technologies. For fun, I like to learn NodeJS, Vanilla JavaScript and JQuery, MongoDB, etc.</p>
+                                </div>
+                                
                                 <div class="ptlanguage">
-                                    <p> Eu sou um backend por profissão e um frontend por hobby, mas completamente apaixonado pelo desenvolvimento de
-                                      software. Profissionalmente desenvolvo em Java - JSF, RichFaces, JSP, Servlets, Hibernate, Spring -,
-                                      com Oracle como banco de dados, enquanto o servidor de aplicação é ou JBoss, ou Tomcat. </p>
-                                    <p> Como diversão gosto de, além de Java, tecnologias como NodeJS e até mesmo o bom e velho Vanilla JavaScript.
-                                      Referente às minhas competências, por favor, acesse a página de trabalhos.</p>
+                                     <h2>SOBRE MIM</h2>
+                                    <p> Eu sou um backend por profissão e um frontend por hobby. Sou completamente viciado em desenvolvimento de software. Em meu dia a dia, profissionalmente utilizo Java (JSF, RichFaces, JSP, Servlets, Hibernate, Spring) e Oracle como banco de dados. <br>
+                                    Apesar disto, muitas outras tecnologias me agradam. Como diversão gosto de aprender sobre outras tecnologias, como NodeJS, Vanilla JavaScript e JQuery, MongoDB, etc.</p>
                                 </div>
                             </div>
 
@@ -176,12 +160,6 @@
                     </div>
                 </div>
             </section>
-			<!-- /#about -->
-
-            <!--
-            ==================================================
-            Footer Section Start
-            ================================================== -->
             <footer id="footer">
                 <div class="container">
                     <div class="col-md-8">

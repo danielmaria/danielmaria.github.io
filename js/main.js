@@ -1,3 +1,17 @@
+var introHelloEN = "HI, MY NAME IS DANIEL & I AM A";
+var introIAmOneEN = "SOFTWARE DEVELOPER";
+var introIAmTwoEN = "CURIOUS PERSON";
+var introIAmThreeEN = "STUDENT";
+var btnPTEN = "Portuguese";
+var btnENEN = "English";
+
+var introHelloPT = "OI, MEU NOME É DANIEL & EU SOU";
+var introIAmOnePT = "DESENVOLVEDOR DE SOFTWARE";
+var introIAmTwoPT = "CURIOSO";
+var introIAmThreePT = "ESTUDANTE";
+var btnPTPT = "Portugês";
+var btnENPT = "Inglês";
+
 (function($){
     $.fn.scrollingTo = function( opts ) {
         var defaults = {
@@ -56,11 +70,7 @@ jQuery(document).ready(function(){
 
 
 $(document).ready(function(){
-
-
-
-
-    $(window).scroll(function () {
+     $(window).scroll(function () {
         if ($(window).scrollTop() > 50) {
             $(".navbar-brand a").css("color","#fff");
             $("#top-bar").removeClass("animated-header");
@@ -68,17 +78,16 @@ $(document).ready(function(){
             $(".navbar-brand a").css("color","inherit");
             $("#top-bar").addClass("animated-header");
         }
-    });
+     });
 
-    $("#clients-logo").owlCarousel({
- 
+     $("#clients-logo").owlCarousel({
+
         itemsCustom : false,
         pagination : false,
         items : 5,
         autoplay: true,
 
-    })
-
+     })
 });
 
 
@@ -105,52 +114,40 @@ $(".fancybox").fancybox({
         }
     }
 });
-var introHelloEN = "HI, MY NAME IS DANIEL & I AM A";
-            var introIAmOneEN = "SOFTWARE DEVELOPER";
-            var introIAmTwoEN = "CURIOUS";
-            var introIAmThreeEN = "STUDENT";
-            var btnPTEN = "Portuguese";
-            var btnENEN = "English";
 
-            var introHelloPT = "OI, MEU NOME É DANIEL & EU SOU";
-            var introIAmOnePT = "DESENVOLVEDOR DE SOFTWARE";
-            var introIAmTwoPT = "CURIOSO";
-            var introIAmThreePT = "ESTUDANTE";
-            var btnPTPT = "Portugês";
-            var btnENPT = "Inglês";
 
-            $(document).ready(function(){
-                $(".ptlanguage").hide();
-                $("#introPresentation").text(introHelloEN);
-                $("#introIAmOne").text(introIAmOneEN);
-                $("#introIAmTwo").text(introIAmTwoEN);
-                $("#introIAmThree").text(introIAmThreeEN);
-                $("#emailtext").hide();
-            });
+$(document).ready(function(){
+     $(".ptlanguage").hide();
+     $("#introPresentation").text(introHelloEN);
+     $("#introIAmOne").text(introIAmOneEN);
+     $("#introIAmTwo").text(introIAmTwoEN);
+     $("#introIAmThree").text(introIAmThreeEN);
+     $("#emailtext").hide();
+});
 
-           function changeLanguageBR(){
-                $("#introPresentation").text(introHelloPT);
-                $("#introIAmOne").text(introIAmOnePT);
-                $("#introIAmTwo").text(introIAmTwoPT);
-                $("#introIAmThree").text(introIAmThreePT);
-                $("#btnEN").text(btnENPT);
-                $("#btnPT").text(btnPTPT);
+function changeLanguageBR(){
+     $("#introPresentation").text(introHelloPT);
+     $("#introIAmOne").text(introIAmOnePT);
+     $("#introIAmTwo").text(introIAmTwoPT);
+     $("#introIAmThree").text(introIAmThreePT);
+     $("#btnEN").text(btnENPT);
+     $("#btnPT").text(btnPTPT);
 
-                $(".enlanguage").hide("slow");
-                $(".ptlanguage").fadeIn(1000);
-            }
+     $(".enlanguage").hide("slow");
+     $(".ptlanguage").fadeIn(1000);
+}
 
-            function changeLanguageEN(){
-                $("#introPresentation").text(introHelloEN);
-                $("#introIAmOne").text(introIAmOneEN);
-                $("#introIAmTwo").text(introIAmTwoEN);
-                $("#introIAmThree").text(introIAmThreeEN);
-                $("#btnEN").text(btnENEN);
-                $("#btnPT").text(btnPTEN);
+function changeLanguageEN(){
+     $("#introPresentation").text(introHelloEN);
+     $("#introIAmOne").text(introIAmOneEN);
+     $("#introIAmTwo").text(introIAmTwoEN);
+     $("#introIAmThree").text(introIAmThreeEN);
+     $("#btnEN").text(btnENEN);
+     $("#btnPT").text(btnPTEN);
 
-                $(".ptlanguage").hide("slow");
-                $(".enlanguage").fadeIn(1000);
-            }
-            function showOrHideEmail(){
-                $("#emailtext").toggle("slow");
-            }
+     $(".ptlanguage").hide("slow");
+     $(".enlanguage").fadeIn(1000);
+}
+function showOrHideEmail(){
+     $("#emailtext").toggle("slow");
+}
