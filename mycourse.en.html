@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="icon" type="image/png" href="images/logo-min.gif">
+    <title>Daniel Maria da Silva</title>
+    <meta name="description" content="Site pessoal do autor.">
+    <meta name="author" content="Daniel Maria">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <script src="js/jquery-3.2.0.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/jquery.fancybox.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/menu_redirect.js"></script>
+
+</head>
+<body>
+    <header id="top-bar" class="navbar-fixed-top animated-header">
+        <div class="container">
+            <div class="navbar-header">
+                <div class="navbar-brand">
+                    <a href="index.html" >
+                        <img src="images/logo-min.png" alt="">
+                    </a>
+                </div>
+            </div>
+
+          <nav class="collapse navbar-collapse navbar-right" role="navigation">
+                <div class="main-menu">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="sobremim.en.html">About me</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Works<span class="caret"></span></a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a href="#" onclick="redirectLinkedin()">Articles</a></li>
+                                    <li><a href="mycourse.html">My Course</a></li>
+                                    <li><a href="#" onclick="redirectGithub()">My GitHub</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+        <section class="about">
+          <div class="row">
+            <div class="alert alert-warning" id="redirect">
+              <strong>Attention!</strong> You will be redirected to <spam id="socialmedia"></spam>. Do you want to continue?
+              <a href="#" onclick="redirectNow()">Yes</a> | <a href="#" onclick="redirectClose()">No</a>
+            </div>
+          </div>
+
+          <div class="container text-course" style="margin-top: 100px; margin-bottom: -100px;">
+                  <div class="col-md-6">
+                      <div class="block">
+                          <h2 class="subtitle">Starting as a developer with Java</h2>
+                          <p class="subtitle-des">The course is in construction process. It is a project made by myself, aiming to multiply knowledge for new programmers.
+                            The student will be able to start their studies without any previously knowledge in programming, since the basic knologie, from the basic knowledge of arithmetic operators to unit tests and object orientation.</p>
+                          <p class="subtitle-des">In order to reward the thousands creators of content in the internet, the course will always be free.</p>
+                      </div>
+                  </div>
+                  <div class="col-md-6">
+                      <div class="block">
+                          <img class="img-responsive" src="images/tools.jpg" alt="">
+                      </div>
+                  </div>
+          </div>
+        </section>
+
+      <footer id="footer">
+          <div class="container">
+              <div class="col-md-8"></div>
+              <div class="col-md-4">
+                  <ul class="social">
+                      <li>
+                          <a href="https://www.facebook.com/danielmariadasilva" class="Facebook">
+                              <i class="ion-social-facebook"></i>
+                          </a>
+                      </li>
+                      <li>
+                          <a href="https://www.linkedin.com/in/daniel-maria-da-silva-079403b6/" class="Linkedin">
+                              <i class="ion-social-linkedin"></i>
+                          </a>
+                      </li>
+                      <li>
+                          <a href="https://github.com/danielmaria" class="GitHub">
+                              <i class="ion-social-github"></i>
+                          </a>
+                      </li>
+                      <li>
+                          <a class="GMail" href="javascript:void(0)" onclick="showOrHideEmail();">
+                              <i class="ion-email"></i>
+                          </a>
+                      </li>
+                      <li style="color: #02bdd5; overflow: auto; font-family: 'Roboto', sans-serif; font-size: 13px;" id="emailtext">danielmariadasilva@gmail.com</li>
+                  </ul>
+              </div>
+          </div>
+      </footer>
+  </body>
+</html>

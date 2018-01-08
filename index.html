@@ -1,84 +1,30 @@
 <!DOCTYPE html>
 <html class="no-js">
     <head>
-        <!-- Basic Page Needs
-        ================================================== -->
         <meta charset="utf-8">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <link rel="icon" type="image/png" href="images/favicon.png">
+        <link rel="icon" type="image/png" href="images/logo-min.gif">
         <title>Daniel Maria da Silva</title>
         <meta name="description" content="Site pessoal do autor.">
-        <meta name="keywords" content="">
         <meta name="author" content="Daniel Maria">
-        <!-- Mobile Specific Metas
-        ================================================== -->
         <meta name="format-detection" content="telephone=no">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- Template CSS Files
-        ================================================== -->
-        <!-- Twitter Bootstrs CSS -->
         <link rel="stylesheet" href="css/bootstrap.min.css">
-        <!-- Ionicons Fonts Css -->
         <link rel="stylesheet" href="css/ionicons.min.css">
-        <!-- Hero area slider css-->
         <link rel="stylesheet" href="css/slider.css">
         <link rel="stylesheet" href="css/jquery.fancybox.css">
-        <!-- template main css file -->
         <link rel="stylesheet" href="css/main.css">
-        <!-- responsive css -->
         <link rel="stylesheet" href="css/responsive.css">
 
-        <!-- Template Javascript Files
-        ================================================== -->
-        <!-- modernizr js -->
-         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-        <!-- jquery -->
+
         <script src="js/jquery-3.2.0.min.js"></script>
-        <!-- owl carouserl js -->
         <script src="js/owl.carousel.min.js"></script>
-        <!-- wow js -->
-          <script src="js/wow.min.js"></script>
-        <!-- slider js -->
         <script src="js/slider.js"></script>
         <script src="js/jquery.fancybox.js"></script>
-        <!-- template main js -->
         <script src="js/main.js"></script>
-        
     </head>
-     <script>
-          window.onload = function(){
-               var dataInicio = new Date('2016/05/16');
-               var timeDiff = Math.abs(new Date().getTime() - dataInicio.getTime());
-               var diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24));
-               var months = Math.trunc(diffDays/30);
-               var dayAndMoths = diffDays/30;
-               var days = Math.trunc((dayAndMoths % 1) * 30);
-               document.getElementById("months").innerHTML = months + (months != 1 ? ' months' : ' month');
-               document.getElementById("meses").innerHTML = months + (months != 1 ? ' mesês' : ' mês');
-               document.getElementById("days").innerHTML = days + (days != 1 ? ' days' : ' day');
-               document.getElementById("dias").innerHTML = days + (days != 1 ? ' dias' : ' dia');
-               
-          }
-     </script>
-    <body>
-        <header id="top-bar" class="navbar-fixed-top animated-header">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    </button>
-                    <div class="navbar-brand">
-                        <a href="index.html" >
-                            <img src="images/logo-min.png" alt="">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </header>
+    <body style="overflow-y: hidden;">
         <section id="hero-area" >
             <div class="container">
                 <div class="row">
@@ -93,7 +39,7 @@
                                     <b id="introIAmThree"></b>
                                 </span>
                                 </h1>
-                                </section> 
+                                </section>
                                 <h2 class="wow fadeInUp animated enlanguage" data-wow-delay=".6s" >
                                      <spam type="months" id="months"></spam> and <spam type="days" id="days"></spam> of experience, developing softwares, studying and improving <br> a way to <b>create solutions</b>.
                                 </h2>
@@ -108,92 +54,6 @@
                         </div>
                     </div>
                 </div>
-
             </section>
-            <section class="about">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 col-sm-6">
-                            <div class="block wow fadeInLeft" data-wow-delay=".3s" data-wow-duration="500ms">
-                              <div  class="enlanguage">
-                              <h2>THE ROAD SO FAR</h2>
-                                   <p> In 2015 I undergraduated Bachelor in Physical Education at PUCRS. I was sure that this area was incredible, despite I still interested about it, I wanted to do something different. 
-                                   While I studied about squat and biochemistry, I made some courses on programming. So, in 2016 I started Information Of Systems course at University (it's kind of mixed of administration and thecnology in Brazil). Three moths later, I was hired to work with programming.</p>
-                              </div>
-                              <div class="ptlanguage">
-                                   <h2>A ESTRADA ATÉ AQUI</h2>
-                                   <p>Em 2015 me formei bacharel em educação física pela PUCRS. Tive a certeza de que esta, apesar de ser uma área incrível, não era minha paixão. Enquanto estudava sobre agachamento e bioquímica, realizava cursos de programação. Iniciei em 2016 o curso de Sistemas de Informação e, após 3 meses fui contratado como desenvolvedor.</p>
-                              </div>
-                            </div>
-
-                        </div>
-                        <div class="col-md-6 col-sm-6">
-                            <div class="block wow fadeInRight" data-wow-delay=".3s" data-wow-duration="500ms">
-                                <img src="images/about/about2.jpg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-						<div class="col-md-6 col-sm-6">
-                            <div class="block wow fadeInLeft" data-wow-delay=".3s" data-wow-duration="500ms">
-                                <img src="images/about/about.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-sm-6">
-                            <div class="block wow fadeInRight" data-wow-delay=".3s" data-wow-duration="500ms">
-                                <div class="enlanguage">
-                                     <h2>ABOUT ME</h2>
-                                    <p> 
-                                        I am a backend in my profession and a frontend by hobby. I am completly addicted in software development. Daily in my job, I use Java (JSF, RichFaces, JSP, Servlets, Hibernate, Spring) and Oracle for database.
-                                        Despite this, I like a lot of others technologies. For fun, I like to learn NodeJS, Vanilla JavaScript and JQuery, MongoDB, etc.</p>
-                                </div>
-                                
-                                <div class="ptlanguage">
-                                     <h2>SOBRE MIM</h2>
-                                    <p> Eu sou um backend por profissão e um frontend por hobby. Sou completamente viciado em desenvolvimento de software. Em meu dia a dia, profissionalmente utilizo Java (JSF, RichFaces, JSP, Servlets, Hibernate, Spring) e Oracle como banco de dados. <br>
-                                    Apesar disto, muitas outras tecnologias me agradam. Como diversão gosto de aprender sobre outras tecnologias, como NodeJS, Vanilla JavaScript e JQuery, MongoDB, etc.</p>
-                                </div>
-                            </div>
-
-
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <footer id="footer">
-                <div class="container">
-                    <div class="col-md-8">
-                        <p class="copyright">Copyright: <span>2015</span> . Design and Developed by <a href="http://www.Themefisher.com">Themefisher</a></p>
-                    </div>
-                    <div class="col-md-4">
-                        <!-- Social Media -->
-                        <ul class="social">
-
-                            <li>
-                                <a href="https://www.facebook.com/danielmariadasilva" class="Facebook">
-                                    <i class="ion-social-facebook"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.linkedin.com/in/daniel-maria-da-silva-079403b6/" class="Linkedin">
-                                    <i class="ion-social-linkedin"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://github.com/danielmaria" class="GitHub">
-                                    <i class="ion-social-github"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="GMail" href="javascript:void(0)" onclick="showOrHideEmail();">
-                                    <i class="ion-email"></i>
-                                </a>
-                            </li>
-                            <li style="color: #02bdd5; overflow: auto; font-family: 'Roboto', sans-serif; font-size: 13px;" id="emailtext">danielmariadasilva@gmail.com</li>
-                        </ul>
-                    </div>
-                </div>
-            </footer>
-
         </body>
     </html>

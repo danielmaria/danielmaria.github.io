@@ -3,6 +3,7 @@
 @import url(http://fonts.googleapis.com/css?family=Glegoo);
 body {
   font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
 }
 h1,
 h2,
@@ -26,6 +27,11 @@ ul li {
 }
 h2 {
   font-size: 26px;
+}
+#redirect {
+  text-align: right;
+  margin-top: -20px;
+  padding-right: 30px;
 }
 a:hover {
   text-decoration: none;
