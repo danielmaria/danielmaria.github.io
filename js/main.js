@@ -28,7 +28,7 @@ function changeLanguageBR(){
      $("#introIAmThree").text(introIAmThreePT);
      $("#btnEN").text(btnENPT);
      if(btnPTPT == 'Ok, vamos lá!'){
-       $(window.document.location).attr('href','sobremim.pt.html');
+       $(window.document.location).attr('href','pages/sobremim.pt.html');
        btnPTPT = "Portugês";
      } else {
        btnPTPT = 'Ok, vamos lá!';
@@ -45,7 +45,7 @@ function changeLanguageEN(){
      $("#introIAmThree").text(introIAmThreeEN);
      $("#btnPT").text(btnPTEN);
      if(btnENEN == "Ok, let's go!"){
-       $(window.document.location).attr('href','sobremim.en.html');
+       $(window.document.location).attr('href','pages/sobremim.en.html');
        btnENEN = "English";
      } else {
        btnENEN = "Ok, let's go!";
