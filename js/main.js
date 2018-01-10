@@ -27,11 +27,11 @@ function changeLanguageBR(){
      $("#introIAmTwo").text(introIAmTwoPT);
      $("#introIAmThree").text(introIAmThreePT);
      $("#btnEN").text(btnENPT);
-     if(btnPTPT == 'Ok, vamos lá!'){
+     if(btnPTPT == 'Ok, clique aqui e vamos para o site!'){
        $(window.document.location).attr('href','pages/sobremim.pt.html');
        btnPTPT = "Portugês";
      } else {
-       btnPTPT = 'Ok, vamos lá!';
+       btnPTPT = 'Ok, clique aqui e vamos para o site!';
        $("#btnPT").text(btnPTPT);
        $(".enlanguage").hide("slow");
        $(".ptlanguage").fadeIn(1000);
@@ -44,11 +44,11 @@ function changeLanguageEN(){
      $("#introIAmTwo").text(introIAmTwoEN);
      $("#introIAmThree").text(introIAmThreeEN);
      $("#btnPT").text(btnPTEN);
-     if(btnENEN == "Ok, let's go!"){
+     if(btnENEN == "Ok, click here and let's go to website!"){
        $(window.document.location).attr('href','pages/sobremim.en.html');
        btnENEN = "English";
      } else {
-       btnENEN = "Ok, let's go!";
+       btnENEN = "Ok, click here and let's go to website!";
        $("#btnEN").text(btnENEN);
        $(".ptlanguage").hide("slow");
        $(".enlanguage").fadeIn(1000);
