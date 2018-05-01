@@ -1,59 +1,125 @@
 <!DOCTYPE html>
-<html class="no-js">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <link rel="icon" type="image/png" href="images/logo-min.gif">
-        <title>Daniel Maria da Silva</title>
-        <meta name="description" content="Site pessoal do autor.">
-        <meta name="author" content="Daniel Maria">
-        <meta name="format-detection" content="telephone=no">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Daniel Maria da Silva</title>
 
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/ionicons.min.css">
-        <link rel="stylesheet" href="css/slider.css">
-        <link rel="stylesheet" href="css/jquery.fancybox.css">
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/responsive.css">
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#" onclick="changeEN()">🇺🇸</a><li>
+        <li><a href="#" onclick="changePT()">🇧🇷</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center teal-text text-lighten-2"><span id="apresentation"></span></h1>
+        <div class="row center">
+          <h5 class="header col s12 light"><spam type="time" id="time"></spam> <span id="timeText"/>*</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="background1.jpg" alt="Unsplashed background img 1"></div>
+  </div>
 
 
-        <script src="js/jquery-3.2.0.min.js"></script>
-        <script src="js/owl.carousel.min.js"></script>
-        <script src="js/slider.js"></script>
-        <script src="js/jquery.fancybox.js"></script>
-        <script src="js/main.js"></script>
-    </head>
-    <body style="overflow-y: hidden;">
-        <section id="hero-area" >
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <div class="block wow fadeInUp" data-wow-delay=".3s">
-                            <section class="cd-intro">
-                                <h1 class="wow fadeInUp animated cd-headline slide" data-wow-delay=".4s" >
-                                <span id="introPresentation"></span><br>
-                                <span class="cd-words-wrapper">
-                                    <b class="is-visible" id="introIAmOne"></b>
-                                    <b id="introIAmTwo"></b>
-                                    <b id="introIAmThree"></b>
-                                </span>
-                                </h1>
-                                </section>
-                                <h2 class="wow fadeInUp animated enlanguage" data-wow-delay=".6s" >
-                                     <spam type="months" id="months"></spam> and <spam type="days" id="days"></spam> of experience, developing softwares, studying and improving <br> a way to <b>create solutions</b>.
-                                </h2>
-                                <h2 class="wow fadeInUp animated ptlanguage" data-wow-delay=".6s">
-                                    <spam type="meses" id="meses"></spam> e <spam type="dias" id="dias"></spam> de experiência, desenvolvendo, estudando e aprimorando a <br> forma de <b>criar soluções</b>.
-                                </h2>
-                                <h4 style="color: black; " class="enlanguage">What do you preffer? Make me help you :)</h4>
-                                <h4 style="color: black;" class="ptlanguage">Como você prefere? Ajude-me a te ajudar :)</h4>
-                                <a class="btn-lines dark light wow fadeInUp animated smooth-scroll btn btn-default btn-green" data-wow-delay=".9s" href="#about" id="btnEN" onclick="changeLanguageEN()">English</a>
-                                <a class="btn-lines dark light wow fadeInUp animated smooth-scroll btn btn-default btn-green" data-wow-delay=".9s" href="#about" id="btnPT" onclick="changeLanguageBR()">Portuguese</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </body>
-    </html>
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m6">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
+            <h5 class="center"><spam id="theRoadSoFarTitle"></spam></h5>
+            <p class="light"><spam id="theRoadSoFar"></spam></p>
+          </div>
+        </div>
+
+        <div class="col s12 m6">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">group</i></h2>
+            <h5 class="center"><spam id="aboutMeTitle"></h5>
+
+            <p class="light"><spam id="aboutMe"></spam></p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="background2.jpg" alt="Unsplashed background img 2"></div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+
+
+        <!--   Icon Section   -->
+        <div class="row">
+          <div class="col s12 m8">
+            <div class="icon-block">
+              <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
+              <h5 class="center"><spam id="myCourseTitle"></spam></h5>
+              <p class="light"><spam id="myCourse"></spam></p>
+            </div>
+          </div>
+  
+          <div class="col s12 m4">
+            <div class="icon-block">
+              <h2 class="center brown-text"><i class="material-icons">group</i></h2>
+              <h5 class="center">Download</h5>
+              <p class="light"><spam id="downloadText"></spam></p>
+              <div class="col-md-12 text-center">
+                <a class="btn btn-default" id="btnResume" onclick="generateResume()">Resume</a>
+                <a class="btn btn-default" id="btnCurriculum" onclick="generateCV()">Curriculum Vitae</a>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+
+    </div>
+  </div>
+
+
+  <footer class="page-footer teal">
+      <div class="container">
+      Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>
