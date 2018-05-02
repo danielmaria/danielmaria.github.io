@@ -1,5 +1,5 @@
 // Textos em português
-apresentationPT = "OI, MEU NOME É DANIEL & EU SOU";
+apresentationPT = "OI, ME CHAMO DANIEL & SOU";
 timePT = " de experiência, desenvolvendo, estudando e aprimorando a forma de criar soluções.";
 theRoadSoFarTitlePT = "A estrada até aqui";
 theRoadSoFarPT = "Em 2015 me formei bacharel em educação física pela PUCRS. Tive a certeza de que esta, apesar de ser uma área incrível, não era minha paixão. Enquanto estudava sobre agachamento e bioquímica, realizava cursos de programação. Iniciei em 2016 o curso de Sistemas de Informação e, após 3 meses fui contratado como desenvolvedor.";
@@ -9,6 +9,7 @@ myCourseTitlePT = "Iniciando como programador com JAVA";
 myCoursePT = "O curso está em processo de criação. É um projeto feito por mim com o intuito de disseminar conhecimento para novos programadores, onde o aluno poderá iniciar seus estudos sem nenhum conhecimento prévio e ter uma noção do que é programação, passando desde os conhecimentos básicos de operadores aritiméticos até testes unitários e orientação a objeto. Em forma de retribuição aos milhares de criadores de conteúdo na internet o curso será sempre gratuito.";
 downloadTextPT = "Se você quiser, você pode fazer o download do meu curriculum vitae ou resume:";
 
+// Textos em inglês
 apresentationEN = "HI, MY NAME IS DANIEL & I AM A";
 timeEN = "of experience, developing softwares, studying and impriving a way to create solutions.";
 theRoadSoFarTitleEN = "The Road So Far";
