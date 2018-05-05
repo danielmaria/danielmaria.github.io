@@ -2,12 +2,17 @@ var lang = "PT";
 
 (function($){
   $(function(){
+    $("#emailtext").hide(); 
     putTextInLabels();
     contTimeExperience();
     $('.sidenav').sidenav();
     $('.parallax').parallax();
   }); 
 })(jQuery); 
+
+$("#emailBtn").click(function(){
+  showOrHideEmail();
+});
 
 function putTextInLabels(){
   let apresentation, time, theRoadSoFarTitle, theRoadSoFar, aboutMeTitle, aboutMe, myCourseTitle, myCourse, downloadText;
@@ -315,4 +320,8 @@ function generateCV(){
   today.setHours(0, 0, 0, 0); 
   doc.text(today.toLocaleDateString(), 175, h+=5); 
   doc.save('CV_DanielMariaDaSilva.pdf'); 
-} 
+}
+
+function showOrHideEmail(){ 
+  $("#emailtext").toggle("slow"); 
+}
