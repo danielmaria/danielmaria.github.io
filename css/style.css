@@ -76,3 +76,11 @@ footer.page-footer {
 .background {
 	filter: blur(3px);
 }
+
+#apresentation{
+	font-size: 4.5vw;
+}
+
+.typewrite{
+	font-size: 3vw;
+}
