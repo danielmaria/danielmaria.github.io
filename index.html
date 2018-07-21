@@ -4,7 +4,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Daniel Maria da Silva</title>
-
+  <link rel="shortcut icon" href="logo-min.gif" />
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
@@ -33,7 +33,10 @@
       <div class="container">
         <div class="row center">
           <h1 class="header center" style="margin-top: auto; margin-bottom: .5em;"><span id="apresentation"></span></h1>
-          <a href="" class="typewrite" data-period="2000" data-type='[ "Student.", "Creative.", "Code Lover."]'>
+          <a href="" class="typewrite" data-period="2000" data-type='[ "Student.", "Creative.", "Code Lover."]' id="loopWordsEnglish">
+            <span class="wrap"></span>
+          </a>
+          <a href="" class="typewrite" data-period="2000" data-type='[ "Estudante.", "Criativo.", "Apaixonado por códigos."]' id="loopWordsPortuguese">
             <span class="wrap"></span>
           </a>
         </div>
@@ -110,10 +113,18 @@
 
   <footer class="page-footer color-def">
       <div class="container center">
-          <i class="ion-social-facebook"></i>
-          <i class="ion-social-instagram"></i>
-          <i class="ion-social-github"></i>
-          <i class="ion-social-twitter"></i>
+          <button data-target="modal1" id="btnModal" class="btn modal-trigger" style="display: none;">
+          </button>
+
+          <label for="btnModal" class="btnFooter"> 
+            <i class="ion-social-linkedin" onclick="saveRoute('linkedin')"> </i>
+          </label>
+          <label for="btnModal" class="btnFooter"> 
+            <i class="ion-social-instagram" onclick="saveRoute('instagram')"></i>
+          </label>
+          <label for="btnModal" class="btnFooter"> 
+            <i class="ion-social-github" onclick="saveRoute('github')"></i>
+          </label>
           <i class="ion-ios-email" id="emailBtn"></i> <span id="emailtext">danielmariadasilva@gmail.com</span>
       </div>
   </footer>
@@ -123,6 +134,18 @@
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.5/jspdf.debug.js"></script>
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4><spam id="redirectHeader"></spam></h4>
+      <p><spam id="redirectText"></spam></p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat"><spam id="stayHere"></spam></a>
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat" onclick="redirectTo(route)"><spam id="redirectUser"></spam> </a>
+    </div>
+  </div>
 
   </body>
 </html>

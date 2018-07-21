@@ -84,3 +84,11 @@ footer.page-footer {
 .typewrite{
 	font-size: 3vw;
 }
+
+.container i {
+  font-size: 20px;
+  padding: 0 5px;
+}
+.btnFooter{
+  color: white;
+}
