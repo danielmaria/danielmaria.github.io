@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+        <title>Gerador de calendário CSV</title>
+
+        <!-- CSS  -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <link href="css/calendario.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    </head>
+    <body>
+        <h1>Gerador de calendário Google</h1>
+        <ul class="collapsible">
+            <li>
+                <div class="collapsible-header"><i class="material-icons">filter_drama</i>Usar o gerador</div>
+                <div class="collapsible-body">
+                    <ul>
+                        <li>É obrigatório inserir uma descrição e uma data válida</li>
+                        <li>Insira a data e tire o cursos do campo para o inserir uma nova linha</li>
+                        <li>Não se preocupe com o formato da data ('dd/MM/yyyy'). Ele ferá automaticamente</li>
+                        <li>Caso você insira apenas "1010" no campo data, será inserido a data 10 de outubro do ano atual.</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="collapsible-header"><i class="material-icons">place</i>Importar na agenda do Google</div>
+                <div class="collapsible-body">
+                    <ul>
+                        <li>Insira quantas datas você quiser</li>
+                        <li>Clique sobre o botão Gerar CSV</li>
+                        <li>Salve o arquivo em algum lugar de fácil acesso</li>
+                        <li>Abra o Google Agenda em um computador.</li>
+                        <li>No canto superior direito, clique em Configurações Configurações depois Configurações.</li>
+                        <li>Clique em Importar e exportar.</li>
+                        <li>Clique em Selecionar arquivo no seu computador e selecione o arquivo que você gerou.</li>
+                        <li>Escolha a agenda para adicionar os eventos importados. Por padrão, os eventos são importados para a agenda principal.</li>
+                        <li>Clique em Importar.</li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+
+        <form class="col s12" id="conteudo-0">
+            <div class="row">
+                <div class="input-field col s4">
+                    <input id="titulo-evento-0" type="text" class="validate">
+                    <label for="titulo-evento[0]">Título</label>
+                </div>
+
+                <div class="input-field col s4">
+                    <input id="descricao-evento-0" type="text" class="validate">
+                    <label for="descricao-evento[0]">Descrição</label>
+                </div>
+
+                <div class="input-field col s2">
+                    <input id="data-evento-0" type="text" class="validate" onblur="adicionaCampoAutomaticamente(this.id)">
+                    <label for="data-evento[0]">Data</label>
+                </div>
+
+                <div class="input-field col s2">
+                    <label>
+                        <input type="checkbox" id="dia-todo-0"/>
+                        <span>Dia todo</span>
+                    </label>
+                </div>
+            </div>
+        </form>
+        <a class="waves-effect waves-light btn" style="float: right; margin-left: 5px" onclick="downloadCSV()">Gerar CSV</a>
+        <a class="waves-effect waves-light btn" style="float: right" onclick="adicionarEvento()">Adicionar evento</a>
+        <!--  Scripts-->
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="js/materialize.js"></script>
+        <script src="js/calendario.js"></script>
+
+    </body>
+</html>
