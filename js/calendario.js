@@ -1,4 +1,4 @@
-var contadorEventos = 1;
+﻿var contadorEventos = 1;
 
 (function($){
   $(function(){
@@ -40,36 +40,35 @@ function adicionarEvento(){
 	html = "";
 }
 function addTituloEvento(contadorEventos){
-	let html =
-		html +=' 	<div class="input-field col s4">'
-		html +=' 		<input id="titulo-evento-' + contadorEventos + '" type="text" class="validate">'
-		html +=' 		<label for="titulo-evento-' + contadorEventos + '">Título</label>'
-		html +=' 	</div>'
+	let html =' 	<div class="input-field col s12 m4 l3">';
+	html +=' 		<input id="titulo-evento-' + contadorEventos + '" type="text" class="validate">';
+	html +=' 		<label for="titulo-evento-' + contadorEventos + '">Título</label>';
+	html +=' 	</div>';
 	return html;
 }
 function addDescricaoEvento(contadorEventos){
-	let html = ' 	<div class="input-field col s4">'
-		html +=' 		<input id="descricao-evento-' + contadorEventos + '" type="text" class="validate">'
-		html +=' 		<label for="descricao-evento-' + contadorEventos + '">Descrição</label>'
-		html +=' 	</div>'
+	let html = ' 	<div class="input-field col s12 m4 l3">';
+		html +=' 		<input id="descricao-evento-' + contadorEventos + '" type="text" class="validate">';
+		html +=' 		<label for="descricao-evento-' + contadorEventos + '">Descrição</label>';
+		html +=' 	</div>';
 	return html;
 }
 
 function addDataEvento(contadorEventos){
-	let html = ' 	<div class="input-field col s2">'
-		html +=' 		<input id="data-evento-' + contadorEventos + '" type="text" class="validate" onblur="adicionaCampoAutomaticamente(this.id)">'
-		html +=' 		<label for="data-evento-' + contadorEventos + ']">Data</label>'
-		html +=' 	</div>'
+	let html = ' 	<div class="input-field col s7 m4 l3">';
+		html +=' 		<input id="data-evento-' + contadorEventos + '" type="text" class="validate" onblur="adicionaCampoAutomaticamente(this.id)">';
+		html +=' 		<label for="data-evento-' + contadorEventos + ']">Data</label>';
+		html +=' 	</div>';
 	return html;
 }
 
 function addCheckTodoDia(contadorEventos){
-	let html =' <div class="input-field col s2">'
-		html +=' 		<label>'
-		html +=' 			<input type="checkbox" id="dia-todo-' + contadorEventos + ']"/>'
-		html +=' 			<span>Dia todo</span>'
-		html +=' 		</label>'
-		html +=' 	</div>'
+	let html =' <div class="input-field col s5 m4 l3">';
+		html +=' 		<label>';
+		html +=' 			<input type="checkbox" id="dia-todo-' + contadorEventos + ']"/>';
+		html +=' 			<span>Dia todo</span>';
+		html +=' 		</label>';
+		html +=' 	</div>';
 	return html;
 }
 function validaCampoTexto(campo){
