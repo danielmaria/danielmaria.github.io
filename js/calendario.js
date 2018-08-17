@@ -122,9 +122,9 @@ function adicionaCampoAutomaticamente(campo){
 		colocaMascaraData(numeroCampo);
 	} else if (!campoDescricaoOK){
 		M.toast({html: 'O campo descrição é obrigatório!'});
+		$('#conteudo-' + numeroCampo + ' input')[0].focus();
 	} else if(!campoDataOK) {
 		M.toast({html: 'O formato da data está inválido!'});
-		//$('#conteudo-' + numeroCampo + ' input')[2].value = "";
 		$('#conteudo-' + numeroCampo + ' input')[2].focus();
 	}
 }
