@@ -19,3 +19,8 @@ input {
 body {
 	margin: 20px 100px;
 }
+
+
+.item  {
+    list-style-type: circle !important;
+}
