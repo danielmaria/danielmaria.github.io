@@ -37,18 +37,18 @@ function adicionarEvento(){
 	html +=' 	</div>'
     html +=' </form>'
 	contadorEventos++;
-	$(".row").last().append(html);
+	$(".formulario").last().append(html);
 	html = "";
 }
 function addTituloEvento(contadorEventos){
-	let html =' 	<div class="input-field col s12 m4 l3">';
+	let html =' 	<div class="input-field col s12 m4 l4">';
 	html +=' 		<input id="titulo-evento-' + contadorEventos + '" type="text" class="validate">';
 	html +=' 		<label for="titulo-evento-' + contadorEventos + '">Título</label>';
 	html +=' 	</div>';
 	return html;
 }
 function addDescricaoEvento(contadorEventos){
-	let html = ' 	<div class="input-field col s12 m4 l3">';
+	let html = ' 	<div class="input-field col s12 m4 l4">';
 		html +=' 		<input id="descricao-evento-' + contadorEventos + '" type="text" class="validate">';
 		html +=' 		<label for="descricao-evento-' + contadorEventos + '">Descrição</label>';
 		html +=' 	</div>';
@@ -56,7 +56,7 @@ function addDescricaoEvento(contadorEventos){
 }
 
 function addDataEvento(contadorEventos){
-	let html = ' 	<div class="input-field col s7 m2 l3">';
+	let html = ' 	<div class="input-field col s7 m2 l2">';
 		html +=' 		<input id="data-evento-' + contadorEventos + '" type="text" class="validate" onblur="adicionaCampoAutomaticamente(this.id)">';
 		html +=' 		<label for="data-evento-' + contadorEventos + ']">Data</label>';
 		html +=' 	</div>';
@@ -64,7 +64,7 @@ function addDataEvento(contadorEventos){
 }
 
 function addCheckTodoDia(contadorEventos){
-	let html =' <div class="input-field col s5 m2 l3">';
+	let html =' <div class="input-field col s5 m2 l2">';
 		html +=' 		<label>';
 		html +=' 			<input type="checkbox" id="dia-todo-' + contadorEventos + ']"/>';
 		html +=' 			<span>Dia todo</span>';
@@ -120,6 +120,12 @@ function adicionaCampoAutomaticamente(campo){
 	if(campoDescricaoOK && campoDataOK) {
 		adicionarEvento();
 		colocaMascaraData(numeroCampo);
+	} else if (!campoDescricaoOK){
+		M.toast({html: 'O campo descrição é obrigatório!'});
+	} else if(!campoDataOK) {
+		M.toast({html: 'O formato da data está inválido!'});
+		//$('#conteudo-' + numeroCampo + ' input')[2].value = "";
+		$('#conteudo-' + numeroCampo + ' input')[2].focus();
 	}
 }
 
