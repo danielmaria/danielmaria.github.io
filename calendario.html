@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
@@ -32,7 +32,7 @@
                         <li class="item">Clique sobre o botão Gerar CSV</li>
                         <li class="item">Salve o arquivo em algum lugar de fácil acesso</li>
                         <li class="item">Abra o Google Agenda em um computador.</li>
-                        <li class="item">No canto superior direito, clique em Configurações Configurações depois Configurações.</li>
+                        <li class="item">No canto superior direito, clique em Configurações depois Configurações.</li>
                         <li class="item">Clique em Importar e exportar.</li>
                         <li class="item">Clique em Selecionar arquivo no seu computador e selecione o arquivo que você gerou.</li>
                         <li class="item">Escolha a agenda para adicionar os eventos importados. Por padrão, os eventos são importados para a agenda principal.</li>
@@ -44,22 +44,22 @@
 
         <form class="" id="conteudo-0">
             <div class="row">
-                <div class="input-field col s12 m4 l3">
+                <div class="input-field col s12 m4 l4">
                     <input id="titulo-evento-0" type="text" class="validate">
                     <label for="titulo-evento[0]">Título</label>
                 </div>
 
-                <div class="input-field col s12 m4 l3">
+                <div class="input-field col s12 m4 l4">
                     <input id="descricao-evento-0" type="text" class="validate">
                     <label for="descricao-evento[0]">Descrição</label>
                 </div>
 
-                <div class="input-field col s7 m4 l3">
+                <div class="input-field col s7 m2 l2">
                     <input id="data-evento-0" type="text" class="validate" onblur="adicionaCampoAutomaticamente(this.id)">
                     <label for="data-evento[0]">Data</label>
                 </div>
 
-                <div class="input-field col s5 m4 l3">
+                <div class="input-field col s5 m2 l2">
                     <label>
                         <input type="checkbox" id="dia-todo-0"/>
                         <span>Dia todo</span>
@@ -67,8 +67,19 @@
                 </div>
             </div>
         </form>
-        <a class="waves-effect waves-light btn" style="float: right; margin-left: 5px" onclick="downloadCSV()">Gerar CSV</a>
-        <a class="waves-effect waves-light btn" style="float: right" onclick="adicionarEvento()">Adicionar evento</a>
+        <div class="row">
+            <div class="input-field col s12 m12 l8">
+                <input id="nome-arquivo" type="text" class="validate">
+                <label for="nome-arquivo">Nome do arquivo a ser salvo</label>
+            </div>
+            <div class="input-field col s6 m6 l2">
+                <a class="waves-effect waves-light btn" style="float: right; margin-left: 5px" onclick="downloadCSV()">Gerar CSV</a>
+            </div>
+            <div class="input-field col s6 m6 l2">
+                <a class="waves-effect waves-light btn" onclick="reload()">Limpar</a>
+            </div>
+        </div>
+        
         <!--  Scripts-->
         <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
         <script src="js/materialize.js"></script>

@@ -13,13 +13,14 @@ $(document).ready(() => {
 
 function downloadCSV(){
 	let csv = "data:text/csv;charset=utf-8,";
+	let nomeArquivo = $('#nome-arquivo').val() || "meu_calendario";
 	csv += "Subject,Description,Start Date, All Day Event\r\n";
 	csv += percorreInputs();
 	
 	var encodedUri = encodeURI(csv);
 	var link = document.createElement("a");
 	link.setAttribute("href", encodedUri);
-	link.setAttribute("download", "meu_calendario.csv");
+	link.setAttribute("download", nomeArquivo + ".csv");
 	document.body.appendChild(link); 
 
 	link.click();
@@ -55,7 +56,7 @@ function addDescricaoEvento(contadorEventos){
 }
 
 function addDataEvento(contadorEventos){
-	let html = ' 	<div class="input-field col s7 m4 l3">';
+	let html = ' 	<div class="input-field col s7 m2 l3">';
 		html +=' 		<input id="data-evento-' + contadorEventos + '" type="text" class="validate" onblur="adicionaCampoAutomaticamente(this.id)">';
 		html +=' 		<label for="data-evento-' + contadorEventos + ']">Data</label>';
 		html +=' 	</div>';
@@ -63,7 +64,7 @@ function addDataEvento(contadorEventos){
 }
 
 function addCheckTodoDia(contadorEventos){
-	let html =' <div class="input-field col s5 m4 l3">';
+	let html =' <div class="input-field col s5 m2 l3">';
 		html +=' 		<label>';
 		html +=' 			<input type="checkbox" id="dia-todo-' + contadorEventos + ']"/>';
 		html +=' 			<span>Dia todo</span>';
@@ -139,3 +140,6 @@ function colocaMascaraData(numeroCampo){
 	campo.value = dataCampo.substring(0,2) + '/' + dataCampo.substring(2, dataCampo.length);
 }
 
+function reload(){
+	location.reload();
+}
