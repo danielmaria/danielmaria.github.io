@@ -1,4 +1,4 @@
-var contadorEventos = 1;
+﻿var contadorEventos = 1;
 
 (function($){
   $(function(){
@@ -13,13 +13,14 @@ $(document).ready(() => {
 
 function downloadCSV(){
 	let csv = "data:text/csv;charset=utf-8,";
+	let nomeArquivo = $('#nome-arquivo').val() || "meu_calendario";
 	csv += "Subject,Description,Start Date, All Day Event\r\n";
 	csv += percorreInputs();
 	
 	var encodedUri = encodeURI(csv);
 	var link = document.createElement("a");
 	link.setAttribute("href", encodedUri);
-	link.setAttribute("download", "meu_calendario.csv");
+	link.setAttribute("download", nomeArquivo + ".csv");
 	document.body.appendChild(link); 
 
 	link.click();
@@ -36,40 +37,39 @@ function adicionarEvento(){
 	html +=' 	</div>'
     html +=' </form>'
 	contadorEventos++;
-	$(".row").last().append(html);
+	$(".formulario").last().append(html);
 	html = "";
 }
 function addTituloEvento(contadorEventos){
-	let html =
-		html +=' 	<div class="input-field col s4">'
-		html +=' 		<input id="titulo-evento-' + contadorEventos + '" type="text" class="validate">'
-		html +=' 		<label for="titulo-evento-' + contadorEventos + '">Título</label>'
-		html +=' 	</div>'
+	let html =' 	<div class="input-field col s12 m4 l4">';
+	html +=' 		<input id="titulo-evento-' + contadorEventos + '" type="text" class="validate">';
+	html +=' 		<label for="titulo-evento-' + contadorEventos + '">Título</label>';
+	html +=' 	</div>';
 	return html;
 }
 function addDescricaoEvento(contadorEventos){
-	let html = ' 	<div class="input-field col s4">'
-		html +=' 		<input id="descricao-evento-' + contadorEventos + '" type="text" class="validate">'
-		html +=' 		<label for="descricao-evento-' + contadorEventos + '">Descrição</label>'
-		html +=' 	</div>'
+	let html = ' 	<div class="input-field col s12 m4 l4">';
+		html +=' 		<input id="descricao-evento-' + contadorEventos + '" type="text" class="validate">';
+		html +=' 		<label for="descricao-evento-' + contadorEventos + '">Descrição</label>';
+		html +=' 	</div>';
 	return html;
 }
 
 function addDataEvento(contadorEventos){
-	let html = ' 	<div class="input-field col s2">'
-		html +=' 		<input id="data-evento-' + contadorEventos + '" type="text" class="validate" onblur="adicionaCampoAutomaticamente(this.id)">'
-		html +=' 		<label for="data-evento-' + contadorEventos + ']">Data</label>'
-		html +=' 	</div>'
+	let html = ' 	<div class="input-field col s7 m2 l2">';
+		html +=' 		<input id="data-evento-' + contadorEventos + '" type="text" class="validate" onblur="adicionaCampoAutomaticamente(this.id)">';
+		html +=' 		<label for="data-evento-' + contadorEventos + ']">Data</label>';
+		html +=' 	</div>';
 	return html;
 }
 
 function addCheckTodoDia(contadorEventos){
-	let html =' <div class="input-field col s2">'
-		html +=' 		<label>'
-		html +=' 			<input type="checkbox" id="dia-todo-' + contadorEventos + ']"/>'
-		html +=' 			<span>Dia todo</span>'
-		html +=' 		</label>'
-		html +=' 	</div>'
+	let html =' <div class="input-field col s5 m2 l2">';
+		html +=' 		<label>';
+		html +=' 			<input type="checkbox" id="dia-todo-' + contadorEventos + ']"/>';
+		html +=' 			<span>Dia todo</span>';
+		html +=' 		</label>';
+		html +=' 	</div>';
 	return html;
 }
 function validaCampoTexto(campo){
@@ -120,6 +120,12 @@ function adicionaCampoAutomaticamente(campo){
 	if(campoDescricaoOK && campoDataOK) {
 		adicionarEvento();
 		colocaMascaraData(numeroCampo);
+	} else if (!campoDescricaoOK){
+		M.toast({html: 'O campo descrição é obrigatório!'});
+		$('#conteudo-' + numeroCampo + ' input')[0].focus();
+	} else if(!campoDataOK) {
+		M.toast({html: 'O formato da data está inválido!'});
+		$('#conteudo-' + numeroCampo + ' input')[2].focus();
 	}
 }
 
@@ -140,3 +146,6 @@ function colocaMascaraData(numeroCampo){
 	campo.value = dataCampo.substring(0,2) + '/' + dataCampo.substring(2, dataCampo.length);
 }
 
+function reload(){
+	location.reload();
+}
