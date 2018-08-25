@@ -25,7 +25,7 @@ var noticias =
 
 
 function loadPagination(lang){
-	for(let i = (Math.round(noticias.length / 4)); i >= 1; i--){
+	for(let i = (Math.ceil(noticias.length / 4)); i >= 1; i--){
 		$('#paginationFirst').after('<li class="waves-effect"><a href="#!" onclick="getNewsByPage('+ i + ',\'' + lang + '\')">' + i + '</a></li>');
 	}
 }
