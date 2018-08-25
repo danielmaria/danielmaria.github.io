@@ -32,76 +32,16 @@
   <div class="container">
     <div class="section">
 
-        <div class="row">
-			<div class="col s12 m6">
-			  <div class="card" id="cardOne">
-				<div class="card-image">
-				  <img src="https://cdn.iset.io/assets/02561/produtos/150/produto-teste.jpg" >
-				  <span class="card-title" id="titleCardOne"></span>
-				</div>
-				<div class="card-content">
-				  <span id="bodyCardOne"></span>
-				</div>
-				<div class="card-action">
-				  <a class="modal-trigger" href="#modalNews">Continuar lendo</a>
-				</div>
-			  </div>
-			</div>
-			
-			<div class="col s12 m6">
-			  <div class="card" id="cardTwo">
-				<div class="card-image">
-				  <img src="https://cdn.iset.io/assets/02561/produtos/150/produto-teste.jpg" >
-				  <span class="card-title" id="titleCardTwo"></span>
-				</div>
-				<div class="card-content">
-				  <span id="bodyCardTwo"></span>
-				</div>
-				<div class="card-action">
-				  <a class="modal-trigger" href="#modalNews">Continuar lendo</a>
-				</div>
-			  </div>
-			</div>
-		</div>
+    <div class="row" id="news"></div>
 		
-		<div class="row">
-			<div class="col s12 m6">
-			  <div class="card" id="cardThree">
-				<div class="card-image">
-				  <img src="https://cdn.iset.io/assets/02561/produtos/150/produto-teste.jpg" >
-				  <span class="card-title" id="titleCardThree"></span>
-				</div>
-				<div class="card-content">
-				  <span id="bodyCardThree"></span>
-				</div>
-				<div class="card-action">
-				  <a class="modal-trigger" href="#modalNews">Continuar lendo</a>
-				</div>
-			  </div>
-			</div>
-			
-			<div class="col s12 m6">
-			  <div class="card" id="cardFour">
-				<div class="card-image">
-				  <img src="https://cdn.iset.io/assets/02561/produtos/150/produto-teste.jpg" >
-				  <span class="card-title" id="titleCardFour"></span>
-				</div>
-				<div class="card-content">
-				  <span id="bodyCardFour"></span>
-				</div>
-				<div class="card-action">
-				  <a class="modal-trigger" href="#modalNews">Continuar lendo</a>
-				</div>
-			  </div>
-			</div>
-		</div>
-		
-		<div class="row" style="padding: 10px; text-align: center;">
+		<div class="row" id="divPagination">
 		  <ul class="pagination">
-			<li class="disabled" id="paginationFirst"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
-			<!-- <li class="active"><a href="#!">1</a></li> -->
-			<!-- <li class="waves-effect"><a href="#!">2</a></li>-->
-			<li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+			<li class="disabled" id="paginationFirst">
+					<a href="#!"><i class="material-icons">chevron_left</i></a>
+			</li>
+			<li class="waves-effect"><a href="#!">
+				<i class="material-icons">chevron_right</i></a>
+			</li>
 		  </ul>
 		</div>
     </div>
@@ -147,8 +87,8 @@
   </div>
 	<div id="modalNews" class="modal">
 		<div class="modal-content">
-		  <h4>Modal Header</h4>
-		  <p>A bunch of text</p>
+		  <h4 id="titleNewsModal"></h4>
+		  <p id="bodyNewsModal"></p>
 		</div>
 		<div class="modal-footer">
 		  <a href="#!" class="modal-close waves-effect waves-green btn-flat">Fechar</a>
