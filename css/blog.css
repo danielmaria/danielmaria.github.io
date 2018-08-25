@@ -1,9 +1,21 @@
 .card-title {
 	color: black !important;
+	padding: 2px 4px !important;
+	background-color: white;
+}
+
+.dataNews {
+	font-size: 80%;
+	text-align: right;
 }
 
 #divPagination {
 	padding: 10px; text-align: center;
+}
+
+.justifyText {
+	text-align: justify;
+	line-height: 1.2;
 }
 
 pre {
