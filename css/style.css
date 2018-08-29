@@ -93,3 +93,37 @@ footer.page-footer {
 .btnFooter{
   color: white;
 }
+
+.linkedin {
+	background: url('../img/linkedin-logo.svg') no-repeat top left;
+}
+.github {
+	background: url('../img/github-sign.svg') no-repeat top left;
+}
+.instagram {
+	background: url('../img/instagram-symbol.svg') no-repeat top left;
+}
+.email {
+	background: url('../img/envelope.svg') no-repeat top left;
+}
+.footer-button {
+    background-size: contain;
+    display: inline-block;
+    height: 12px;
+	width: 12px;
+}
+.page-footer-name {
+	font-size: 80%;
+}
+.br-flag {
+	background: url('../img/brazil.svg') no-repeat top left;
+}
+.usa-flag {
+	background: url('../img/united-states.svg') no-repeat top left;
+}
+.flag-button {
+    background-size: contain;
+    display: inline-block;
+    height: 22px;
+	width: 22px;
+}

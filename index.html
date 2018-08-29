@@ -13,16 +13,16 @@
   
 </head>
 <body>
-  <nav class="white" role="navigation">
+    <nav class="white" role="navigation">
     <div class="nav-wrapper container">
       <ul class="right hide-on-med-and-down">
-        <li><a href="#" onclick="changeEN()">🇺🇸</a><li>
-        <li><a href="#" onclick="changePT()">🇧🇷</a></li>
+        <li><a href="#" onclick="changeEN()"><i class="flag-button usa-flag"></i></a><li>
+        <li><a href="#" onclick="changePT()"><i class="flag-button br-flag"></i></a></li>
       </ul>
 
       <ul id="nav-mobile" class="sidenav">
-        <li><a href="#" onclick="changeEN()">🇺🇸</a><li>
-        <li><a href="#" onclick="changePT()">🇧🇷</a></li>
+        <li><a href="#" onclick="changeEN()"><i class="flag-button usa-flag"></i></a><li>
+        <li><a href="#" onclick="changePT()"><i class="flag-button br-flag"></i></a></li>
       </ul>
       <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
@@ -112,20 +112,12 @@
   </div>
 
   <footer class="page-footer color-def">
-      <div class="container center">
-          <button data-target="modal1" id="btnModal" class="btn modal-trigger" style="display: none;">
-          </button>
-
-          <label for="btnModal" class="btnFooter"> 
-            <i class="ion-social-linkedin" onclick="saveRoute('linkedin')"> </i>
-          </label>
-          <label for="btnModal" class="btnFooter"> 
-            <i class="ion-social-instagram" onclick="saveRoute('instagram')"></i>
-          </label>
-          <label for="btnModal" class="btnFooter"> 
-            <i class="ion-social-github" onclick="saveRoute('github')"></i>
-          </label>
-          <i class="ion-ios-email" id="emailBtn"></i> <span id="emailtext">danielmariadasilva@gmail.com</span>
+      <div class="container" id="footerDiv">
+		<span class="page-footer-name">Daniel Maria da Silva |</span>
+		<i class="footer-button linkedin"></i>
+		<i class="footer-button github"></i>
+		<i class="footer-button instagram"></i>
+		<i class="footer-button email" id="emailBtn"></i> <span id="emailtext" class="page-footer-name">danielmariadasilva@gmail.com</span>
       </div>
   </footer>
 
