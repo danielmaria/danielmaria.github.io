@@ -2945,10 +2945,11 @@ ul.staggered-list li {
 
 .page-footer {
   padding-top: 20px;
-  padding-bottom: 10px;
+  /* padding-bottom: 10px; */
   margin: 10px 0;
   color: #fff;
   background-color: #ee6e73;
+  text-align: right;
 }
 
 .page-footer .footer-copyright {
@@ -4478,7 +4479,7 @@ nav .input-field label.active i {
     min-height: 64px;
   }
   nav, nav .nav-wrapper i, nav a.sidenav-trigger, nav a.sidenav-trigger i {
-    height: 64px;
+    /* height: 64px; */
     line-height: 64px;
   }
   .navbar-fixed {
