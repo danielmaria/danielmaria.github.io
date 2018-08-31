@@ -1,4 +1,6 @@
 const NEWS_PAGE = 4;
+var lang = "PT";
+var pageSelected = 1;
 
 var noticias = 
 [
@@ -26,11 +28,12 @@ var noticias =
 
 function loadPagination(lang){
 	for(let i = (Math.ceil(noticias.length / 4)); i >= 1; i--){
-		$('#paginationFirst').after('<li class="waves-effect"><a href="#!" onclick="getNewsByPage('+ i + ',\'' + lang + '\')">' + i + '</a></li>');
+		$('#paginationFirst').after('<li class="waves-effect number-pagination"><a href="#!" onclick="getNewsByPage('+ i + ',\'' + lang + '\')">' + i + '</a></li>');
 	}
 }
 
 function getNewsByPage(page, lang){
+	pageSelected = page;
 	$('.divCards').remove();
 	let numberMaxNews = NEWS_PAGE * page;
 	let numberMinNews = numberMaxNews - NEWS_PAGE;
@@ -48,7 +51,7 @@ function getNewsByPage(page, lang){
 		cardNews += '				<br/> <span style="font-size: 11px;"> Tags: ' + element.tags + '</span>';
 		cardNews += '			</div>';
 		cardNews += '			<div class="card-action">';
-		cardNews += '				<a class="modal-trigger" href="#modalNews" onclick="changeTextNewsPopup(' + (element.id) + ')">Continuar lendo</a>';
+		cardNews += '				<a class="modal-trigger" href="#modalNews" onclick="changeTextNewsPopup(' + (element.id) + ')">' + (lang == 'PT' ? "Continuar lendo" : "Read more") + ' </a>';
 		cardNews += '			</div>';
 		cardNews += '		</div>';
 		cardNews += '	</div>';
@@ -57,11 +60,31 @@ function getNewsByPage(page, lang){
 }
 
 function changeTextNewsPopup(index){
-	document.getElementById('titleNewsModal').innerHTML = noticias[index].titlePt;
-	document.getElementById('bodyNewsModal').innerHTML = noticias[index].bodyPt;
+	if(lang == 'PT'){
+		document.getElementById('titleNewsModal').innerHTML = noticias[index].titlePt;
+		document.getElementById('bodyNewsModal').innerHTML = noticias[index].bodyPt;
+	} else {
+		document.getElementById('titleNewsModal').innerHTML = noticias[index].titleEn;
+		document.getElementById('bodyNewsModal').innerHTML = noticias[index].bodyEn;
+	}
 }
 
 String.prototype.trunc = 
 	function(n){
 		return this.substr(0,n-1)+(this.length>n?'&hellip;':'');
 };
+
+
+function changeEN(){
+	lang = "EN";
+	$(".number-pagination").remove();
+	getNewsByPage(pageSelected, lang);
+	loadPagination(lang);
+  }
+  
+  function changePT(){
+	lang = "PT";
+	$(".number-pagination").remove();
+	getNewsByPage(pageSelected, lang);
+	loadPagination(lang);
+  }
