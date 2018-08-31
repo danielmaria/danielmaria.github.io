@@ -16,7 +16,7 @@ $("#emailBtn").click(function(){
 });
 
 function putTextInLabels(){
-  let apresentation, time, theRoadSoFarTitle, theRoadSoFar, aboutMeTitle, aboutMe, myCourseTitle, myCourse, downloadText, redirectHeader, stayHere;
+  let apresentation, time, theRoadSoFarTitle, theRoadSoFar, aboutMeTitle, aboutMe, myCourseTitle, myCourse, downloadText;
   if(lang === "PT"){
     apresentation = "OI, ME CHAMO DANIEL & SOU";
     time = " de experiência, desenvolvendo, estudando e aprimorando a forma de criar soluções.";
@@ -27,8 +27,6 @@ function putTextInLabels(){
     myCourseTitle = "Iniciando como programador com JAVA";
     myCourse = "O curso está em processo de criação. É um projeto feito por mim com o intuito de disseminar conhecimento para novos programadores, onde o aluno poderá iniciar seus estudos sem nenhum conhecimento prévio e ter uma noção do que é programação, passando desde os conhecimentos básicos de operadores aritiméticos até testes unitários e orientação a objeto. Em forma de retribuição aos milhares de criadores de conteúdo na internet o curso será sempre gratuito.";
     downloadText = "Se você quiser, você pode fazer o download do meu curriculum vitae ou resume:";
-    redirectHeader = "Você será redirecionado";
-    stayHere = "Permanecer na página";
     $('#loopWordsEnglish').hide();
     $('#loopWordsPortuguese').show();
   } else {
@@ -41,8 +39,6 @@ function putTextInLabels(){
     myCourseTitle = "Starting as a developer with JAVA";
     myCourse = "The course is in construction process. It is a project made by myself, aiming to multiply knowledge for new programmers. The student will be able to start their studies without any previously knowledge in programming, since the basic knologie, from the basic knowledge of arithmetic operators to unit tests and object orientation. In order to reward the thousands creators of content in the internet, the course will always be free.";
     downloadText = "It is only in Portuguese, but if you want, you can make a download of my curriculum vitae or resume:";
-    stayHere = "Stay in this page";
-    redirectHeader = "You will be redirected";
     $('#loopWordsEnglish').show();
     $('#loopWordsPortuguese').hide();
   }
@@ -55,9 +51,6 @@ function putTextInLabels(){
   document.getElementById("myCourseTitle").innerHTML = myCourseTitle;
   document.getElementById("myCourse").innerHTML = myCourse;
   document.getElementById("downloadText").innerHTML = downloadText;
-  document.getElementById("redirectHeader").innerHTML = redirectHeader;
-  document.getElementById("stayHere").innerHTML = stayHere;
-  
 }
 
 function contTimeExperience(){
