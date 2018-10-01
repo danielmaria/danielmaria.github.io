@@ -8,6 +8,7 @@ var lang = "PT";
     $('#loopWordsEnglish').hide();
     $('.sidenav').sidenav();
     $('.parallax').parallax();
+    $('.tooltipped').tooltip();
   }); 
 })(jQuery); 
 
@@ -27,8 +28,8 @@ function putTextInLabels(){
     myCourseTitle = "Iniciando como programador com JAVA";
     myCourse = "O curso está em processo de criação. É um projeto feito por mim com o intuito de disseminar conhecimento para novos programadores, onde o aluno poderá iniciar seus estudos sem nenhum conhecimento prévio e ter uma noção do que é programação, passando desde os conhecimentos básicos de operadores aritiméticos até testes unitários e orientação a objeto. Em forma de retribuição aos milhares de criadores de conteúdo na internet o curso será sempre gratuito.";
     downloadText = "Se você quiser, você pode fazer o download do meu curriculum vitae ou resume:";
-    $('#loopWordsEnglish').hide();
-    $('#loopWordsPortuguese').show();
+    $('.loopWordsEnglish').hide();
+    $('.loopWordsPortuguese').show();
   } else {
     apresentation = "HI, MY NAME IS DANIEL & I AM A";
     time = "of experience, developing softwares, studying and impriving a way to create solutions.";
@@ -39,8 +40,8 @@ function putTextInLabels(){
     myCourseTitle = "Starting as a developer with JAVA";
     myCourse = "The course is in construction process. It is a project made by myself, aiming to multiply knowledge for new programmers. The student will be able to start their studies without any previously knowledge in programming, since the basic knologie, from the basic knowledge of arithmetic operators to unit tests and object orientation. In order to reward the thousands creators of content in the internet, the course will always be free.";
     downloadText = "It is only in Portuguese, but if you want, you can make a download of my curriculum vitae or resume:";
-    $('#loopWordsEnglish').show();
-    $('#loopWordsPortuguese').hide();
+    $('.loopWordsEnglish').show();
+    $('.loopWordsPortuguese').hide();
   }
   document.getElementById("apresentation").innerHTML = apresentation;
   document.getElementById("timeText").innerHTML = time;
@@ -178,16 +179,16 @@ function generateResume(){
   doc.text("06/16 - 02/18 – Gerência da Tecnologia da Informação e Telecomunicação - PUCRS", 25, h+=5); 
   doc.text("Cargo: Programador", 25, h+=5); 
   doc.setFontSize(10); 
-  doc.text("Principais atividades: Realizar manutenção e evolução dos sistemas já existentes, elaboração e criação" ,25, h+=5); 
-  doc.text("de novos. Utilizando, principalmente Java como linguagem de programação back-end e utilizando os ", 25, h+=5); 
-  doc.text("frameworks JSP, Servlet, Spring MVC, Hibernate. Como padrão utilizamos o banco de dados Oracle.", 25, h+=5); 
+  doc.text("Principais atividades: Realizar manutenção e evolução dos sistemas já existentes, além de elaboração e " ,25, h+=5); 
+  doc.text("criação de novos. Utilizando principalmente Java como linguagem de programação back-end e os  " ,25, h+=5); 
+  doc.text("frameworks JSP, Servlet, Spring MVC, Hibernate. Como padrão era utilizado o banco de dados Oracle.",25, h+=5); 
 
   doc.text("02/18 - atual – DBC Company", 25, h+=10); 
   doc.text("Cargo: Programador", 25, h+=5); 
   doc.setFontSize(10); 
-  doc.text("Principais atividades: Realizar a construção de sistemas utilizando Java como linguagem programação" ,25, h+=5); 
-  doc.text("back-end e frameworks Primefaces e Hibernate, auxiliando na customização do front-end, utilizando ", 25, h+=5); 
-  doc.text("Bootstrap, JavaScript e JQuery para isso.", 25, h+=5); 
+  doc.text("Principais atividades: Realizar a construção de sistemas utilizando Java como linguagem de programação" ,25, h+=5); 
+  doc.text("back-end e frameworks Primefaces e Hibernate, além de realizar as customizações necessárias utilizando " ,25, h+=5); 
+  doc.text("Bootstrap, JavaScript e JQuery.",25, h+=5); 
   
  
   doc.setFontSize(13); 
@@ -200,7 +201,7 @@ function generateResume(){
  // doc.text("- Java II: Orientação a Objetos (Alura.com, 2015);", 25, h+=5); 
  // doc.text("- Java III: Principais APIs e bibliotecas (Alura.com, 2015);", 25, h+=5); 
   doc.text("- Java 8: Tire proveito dos novos recursos da linguagem (Alura.com, 2015);", 25, h+=5); 
-  doc.text("- Java: Dominando as Collections (Alura.com, 2016);", 25, h+=5); 
+  //doc.text("- Java: Dominando as Collections (Alura.com, 2016);", 25, h+=5); 
   // doc.text("- Java e JDBC: Trabalhando com um banco de dados (Alura.com, 2015);", 25, h+=5); 
   // doc.text("- Eclipse: Produtividade Extrema na IDE com Java (Alura.com, 2015);", 25, h+=5); 
   doc.text("- Design Patterns Java I: Boas práticas de programação (Alura.com, 2015);", 25, h+=5); 
@@ -230,6 +231,9 @@ function generateResume(){
   doc.text("- Desenvolvedor NodeJS e MongoDB. (Udemy, 2017);", 25, h+=5); 
   doc.text("- Git Completo: Do Básico ao Avançado. (Udemy, 2017);", 25, h+=5); 
   doc.text("- Introdução à Business Intelligence e Data Warehouse (BI do Brasil, 2018).", 25, h+=5); 
+  doc.text("- Treinamento Scrum Developer (DBCCompany, 2018);", 25, h+=5); 
+  doc.text("- Certificado CLF® (Certified Lean Inception Facilitator) – Lean Inception (Caroli.org, 2018);", 25, h+=5); 
+  doc.text("- Criar aplicativos com Ionic 3, Spring, OAuth2, REST e MongoDB (Udemy.com, 2018);", 25, h+=5); 
   var today = new Date(); 
   // doc.addPage(); 
   // h = 30; 
@@ -258,15 +262,7 @@ function generateCV(){
   doc.text("RESUMO", 23, h+=10); 
   doc.rect(23, h, 165, 0.1, 'F'); 
   doc.setFontSize(10); 
-  var resumo = doc.splitTextToSize("Desde 2016 com experiência profissional em desenvolvimento de software utilizando principalmente " + 
-                                   "tecnologias Java, Spring MVC, JPA, Hibernate, Oracle, HTML, JavaScript, sem esquecer de estudar " + 
-                                   "tecnologias que tem sido destaque no mercado de trabalho, como NodeJS, MongoDB, etc. "+ 
-                                   "Procurando o aperfeiçoamento de meus conhecimentos, visando otimizar meu trabalho com boas práticas em "+ 
-                                   "programação, lembrando sempre que, nem só de código vive o programador, tento obter o máximo de "+ 
-                                   "conhecimento possível em frameworks de métodos ágeis e Design Thinking, áreas de muito interesse pessoal. "+ 
-                                   "Busco trabalhar em equipe, ajudando da melhor maneira possível. Considero-me comunicativo, proativo e " + 
-                                   "adaptativo à novas experiências e rotinas, procurando o maior aprendizado destas novas práticas." 
-  , 165); 
+  var resumo = doc.splitTextToSize("Trabalho profissionalmente com programação de software desde 2016, utilizando diariamente tecnologias Java, Spring, PrimeFaces, JPA, JSF, Hibernate, Oracle. Além disso, busco aprimorar meus conhecimentos em cursos relacionados a banco de dados NoSql e de tecnologias que fazem uso de JavaScript, como NodeJS, Ionic, etc. Procuro me aperfeiçoar em programação e em desenvolvimento de software, buscando o desenvolvimento de minhas habilidades como um todo. Assim, preocupo-me desde o aspecto visual do programa quanto aos aspectos mais técnicos, visando escrever o código da forma mais simples e clara.", 165); 
   doc.text(resumo, 25, h+=5); 
  
   doc.setFontSize(13); 
@@ -283,16 +279,16 @@ function generateCV(){
   doc.text("06/16 - 02/18 – Gerência da Tecnologia da Informação e Telecomunicação - PUCRS", 25, h+=5); 
   doc.text("Cargo: Programador", 25, h+=5); 
   doc.setFontSize(10); 
-  doc.text("Principais atividades: Realizar manutenção e evolução dos sistemas já existentes, elaboração e criação" ,25, h+=5); 
-  doc.text("de novos. Utilizando, principalmente Java como linguagem de programação back-end e utilizando os ", 25, h+=5); 
-  doc.text("frameworks JSP, Servlet, Spring MVC, Hibernate. Como padrão utilizamos o banco de dados Oracle.", 25, h+=5); 
+  doc.text("Principais atividades: Realizar manutenção e evolução dos sistemas já existentes, além de elaboração e " ,25, h+=5); 
+  doc.text("criação de novos. Utilizando principalmente Java como linguagem de programação back-end e os  " ,25, h+=5); 
+  doc.text("frameworks JSP, Servlet, Spring MVC, Hibernate. Como padrão era utilizado o banco de dados Oracle.",25, h+=5); 
 
   doc.text("02/18 - atual – DBC Company", 25, h+=10); 
   doc.text("Cargo: Programador", 25, h+=5); 
   doc.setFontSize(10); 
-  doc.text("Principais atividades: Realizar a construção de sistemas utilizando Java como linguagem programação" ,25, h+=5); 
-  doc.text("back-end e frameworks Primefaces e Hibernate, auxiliando na customização do front-end, utilizando ", 25, h+=5); 
-  doc.text("Bootstrap, JavaScript e JQuery para isso.", 25, h+=5); 
+  doc.text("Principais atividades: Realizar a construção de sistemas utilizando Java como linguagem de programação" ,25, h+=5); 
+  doc.text("back-end e frameworks Primefaces e Hibernate, além de realizar as customizações necessárias utilizando " ,25, h+=5); 
+  doc.text("Bootstrap, JavaScript e JQuery.",25, h+=5); 
  
   doc.setFontSize(13); 
   doc.text("QUALIFICAÇÕES E ATIVIDADES PROFISSIONAIS", 23, h+=10); 
@@ -336,7 +332,10 @@ function generateCV(){
   doc.text("- Desenvolvedor NodeJS e MongoDB. (Udemy, 2017);", 25, h+=5); 
   doc.text("- Git Completo: Do Básico ao Avançado. (Udemy, 2017);", 25, h+=5); 
   doc.text("- Introdução à Business Intelligence e Data Warehouse (BI do Brasil, 2018).", 25, h+=5); 
- 
+  doc.text("- Treinamento Scrum Developer (DBCCompany, 2018);", 25, h+=5); 
+  doc.text("- Certificado CLF® (Certified Lean Inception Facilitator) – Lean Inception (Caroli.org, 2018);", 25, h+=5); 
+  doc.text("- Criar aplicativos com Ionic 3, Spring, OAuth2, REST e MongoDB (Udemy.com, 2018);", 25, h+=5); 
+
   var today = new Date(); 
   today.setHours(0, 0, 0, 0); 
   doc.text(today.toLocaleDateString(), 175, h+=5); 
