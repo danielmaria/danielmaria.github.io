@@ -193,5 +193,6 @@ function generateResume(){
     {title:"Testes unitários em JAVA: Domine JUnit, Mockito e TDD", date: new Date("04/17/2019"), duracao:480, showCV: true, showResume: false,  company: "Udemy.com"},
     {title:"Treinamento Scrum Developer", date: new Date("01/01/2018"), duracao:480, showCV: true, showResume: false,  company: "DBCCompany"}, //
     {title:"Certificado CLF (Certified Lean Inception Facilitator", date: new Date("08/01/2018"), duracao:480, showCV: true, showResume: false, company: "Caroli.org"},
-    {title:"Introdução à Business Intelligence e Data Warehouse", date: new Date("02/14/2018"), duracao:300, showCV: true, showResume: false, company: "BI do Brasil"}
+    {title:"Introdução à Business Intelligence e Data Warehouse", date: new Date("02/14/2018"), duracao:300, showCV: false, showResume: false, company: "BI do Brasil"},
+    {title:"Docker: Ferramenta essencial para Desenvolvedores", date: new Date("05/02/2019"), duracao:330, showCV: true, showResume: false, company: "Udemy.com"}
   ]
