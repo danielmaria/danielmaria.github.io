@@ -42,7 +42,8 @@ var cursosList = [
     {title:"Certificado CLF (Certified Lean Inception Facilitator", date: new Date("08/01/2018"), duracao:480, showCV: true, showResume: false, company: "Caroli.org"},
     {title:"Introdução à Business Intelligence e Data Warehouse", date: new Date("02/14/2018"), duracao:300, showCV: false, showResume: false, company: "BI do Brasil"},
     {title:"Angular 7 e  integração de APIs", date: new Date("04/21/2019"), duracao:150, showCV: true, showResume: false, company: "Udemy.com"},
-    {title:"Docker: Ferramenta essencial para Desenvolvedores", date: new Date("05/02/2019"), duracao:330, showCV: true, showResume: false, company: "Udemy.com"}
+    {title:"Docker: Ferramenta essencial para Desenvolvedores", date: new Date("05/02/2019"), duracao:330, showCV: true, showResume: false, company: "Udemy.com"},
+    {title:"Terminal Linux", date: new Date("23/03/2020"), duracao:60, showCV: true, showResume: false, company: "Udemy.com"}
 ];
 
 Array.prototype.sumIgnoring = function (prop, ignore) {
