@@ -98,7 +98,8 @@ footer.page-footer {
     background-size: contain;
     display: inline-block;
     height: 12px;
-	  width: 12px;
+    width: 12px;
+    cursor: pointer;
 }
 
 .page-footer-name {
@@ -114,5 +115,5 @@ footer.page-footer {
     background-size: contain;
     display: inline-block;
     height: 22px;
-	  width: 22px;
+    width: 22px;
 }
