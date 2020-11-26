@@ -80,12 +80,7 @@
     top: 360px;
   }
   
-  section h1 {
-    font-size: 1.8em;
-    line-height: 1em;
-    margin-bottom: .6em;
-  }
-  
+ 
   /* Same font-size and line-height as p element */
   section ul li, section ol li {
     font-size: 0.9em;

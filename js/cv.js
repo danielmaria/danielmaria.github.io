@@ -21,7 +21,7 @@ var cursosList = [
     {title:"HTML5 e CSS3 II: Turbinando as suas páginas", titleTransaled: "HTML5 and CSS3 II: Turbocharging your pages", date: new Date("10/15/2015"), duracao:2400, showCV: true, company: "Alura.com",  certification: "alura_htmlcss2"},
     {title:"Métodos Ágeis: Introdução", titleTransaled: "Agile Methods: Introduction", date: new Date("11/13/2015"), duracao:720, showCV: false, company: "Alura.com",  certification: "alura_metodosageis"},
     {title:"UML Introdução: Modelagem de soluçõe", titleTransaled: "UML Introduction: Solution modeling", date: new Date("08/24/2015"), duracao: 480, showCV: false, company: "Alura.com",  certification: "alura_uml"},
-    {title:"Scrum: Agilidade em seu projeto", titleTransaled: "", date: new Date("01/14/2016"), duracao:600, showCV: false, company: "Alura.com",  certification: "alura_scrum"},
+    {title:"Scrum: Agilidade em seu projeto", titleTransaled: "Scrum: Agility in your project", date: new Date("01/14/2016"), duracao:600, showCV: false, company: "Alura.com",  certification: "alura_scrum"},
     {title:"Lean Startup: Primeiros passos da sua startup enxuta", titleTransaled: "Lean Startup: Getting started", date: new Date("10/26/2015"), duracao:60, showCV: true, company: "Alura.com",  certification: "alura_lean"},
     {title:"MySQL II: Consultas poderosas", titleTransaled: "MySQL II: Powerful queries", date: new Date("11/18/2015"), duracao:960, showCV: false, company: "Alura.com",  certification: "alura_mysql1"},
     {title:"MySQL I: Iniciando suas consultas", titleTransaled: "MySQL I: Starting your queries", date: new Date("09/12/2015"), duracao:480, showCV: false, company: "Alura.com",  certification: "alura_mysql2"},
@@ -31,7 +31,7 @@ var cursosList = [
     {title:"SQLServer I: desvendando o banco de dados", titleTransaled: "SQLServer I: unraveling the database", date: new Date("12/01/2015"), duracao:540, showCV: false, company: "Alura.com",  certification: "alura_sqlserver1"},
     {title:"SQLServer II: Consultas poderosas", titleTransaled: "SQLServer II: Powerful queries", date: new Date("12/04/2015"), duracao:600, showCV: false, company: "Alura.com",  certification: "alura_sqlserver2"},
     {title:"Oracle II: Consultas Complexas", titleTransaled: "Oracle II: Complex Queries", date: new Date("02/05/2016"), duracao:480, showCV: true, company: "Alura.com",  certification: "alura_oracle2"},
-    {title:"SQL Completo", titleTransaled: "Full SQL", date: new Date("08/05/2015"), duracao:1200, showCV: false, company: "Softblue",  certification: ""},
+    {title:"SQL Completo", titleTransaled: "Full SQL", date: new Date("08/05/2015"), duracao:1200, showCV: false, company: "Softblue",  certification: "softblue_sql"},
     {title:"Desenvolvedor NodeJS e MongoDB", titleTransaled: "NodeJS and MongoDB Developer", date: new Date("07/27/2017"), duracao:930, showCV: true,  company: "Udemy.com",  certification: "nodejs"},
     {title:"Git Completo: Do Básico ao Avançado", titleTransaled: "Full Git: From Basic to Advanced", date: new Date("07/27/2017"), duracao:120, showCV: true,  company: "Udemy.com",  certification: "git"},
     {title:"Criar aplicativos com Ionic 3, Spring, OAuth2, REST e MongoDB", titleTransaled: "Create applications with Ionic 3, Spring, OAuth2, REST and MongoDB", date: new Date("12/12/2018"), duracao:300, showCV: true,  company: "Udemy.com",  certification: "ionic"},
@@ -44,8 +44,8 @@ var cursosList = [
     {title:"Angular 7 e  integração de APIs", titleTransaled: "Angular 7 and API integration", date: new Date("04/21/2019"), duracao:150, showCV: true, company: "Udemy.com",  certification: "angular"},
     {title:"Docker: Ferramenta essencial para Desenvolvedores", titleTransaled: "Docker: Essential Tool for Developers", date: new Date("05/02/2019"), duracao:330, showCV: true, company: "Udemy.com",  certification: "docker"},
     {title:"Terminal Linux", titleTransaled: "Linux terminal", date: new Date("03/23/2020"), duracao:60, showCV: true, company: "Udemy.com",  certification: "terminal_linux"},
-    {title:"Apache Kafka and Spring Boot (Consumer, Producer)", titleTransaled: "", date: new Date("05/20/2020"), duracao:60, showCV: true, company: "Udemy.com",  certification: ""},
-    {title:"Reactive Programming with Spring Framework 5", titleTransaled: "", date: new Date("10/04/2020"), duracao:240, showCV: true, company: "Udemy.com",  certification: "webflux"},
+    {title:"Apache Kafka and Spring Boot (Consumer, Producer)", titleTransaled: "Apache Kafka and Spring Boot (Consumer, Producer)", date: new Date("05/20/2020"), duracao:60, showCV: true, company: "Udemy.com",  certification: ""},
+    {title:"Reactive Programming with Spring Framework 5", titleTransaled: "Reactive Programming with Spring Framework 5", date: new Date("10/04/2020"), duracao:240, showCV: true, company: "Udemy.com",  certification: "webflux"},
     {title:"Quarkus com Panache, GraalVM, GitlabCI e AWS", titleTransaled: "Quarkus with Panache, GraalVM, GitlabCI and AWS", date: new Date("07/08/2020"), duracao:90, showCV: true, company: "Udemy.com",  certification: "quarkus"}
 ];
 
@@ -71,8 +71,8 @@ function printClasses(ignoreVar){
     var htmlCursos = "<ul>";
     getSortedCursos().forEach(element => {
         if(ignoreVar || element.showCV){
-            htmlCursos += "<li>";
-            htmlCursos += element.title + '  - ' + Math.round(element.duracao/60) + 'h (' + element.company + ', ' + element.date.getFullYear() + '); ' + buildExternalLink(element) + ' ' + transale(element) ;
+            htmlCursos += '<li style="cursor: help;" title="" class="tooltip"><span class="tooltiptext">'  + element.titleTransaled + '</span>';
+            htmlCursos += element.title + '  - ' + Math.round(element.duracao/60) + 'h (' + element.company + ', ' + element.date.getFullYear() + '); ' + buildExternalLink(element);
             htmlCursos += "</li>";
         }
     });
@@ -92,14 +92,6 @@ function printClasses(ignoreVar){
 function buildExternalLink(element) {
     if(element.certification != ""){
         return "<img src='./img/externo.svg' class='footer-button' onclick='showPDF(\"" + element.certification + "\")'>";        
-    }
-    return "";
-}
-
-
-function transale(element) {
-    if(element.titleTransaled != "") {
-        return '<img src=\"./img/reino-unido.svg\"/ class="footer-button" style="cursor: help;" title="' + element.titleTransaled + '"> ';
     }
     return "";
 }
