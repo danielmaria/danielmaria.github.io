@@ -71,9 +71,9 @@ function printClasses(ignoreVar){
     var htmlCursos = "<ul>";
     getSortedCursos().forEach(element => {
         if(ignoreVar || element.showCV){
-            htmlCursos += '<li style="cursor: help;" title="'  + element.titleTransaled + '" data-toggle="tooltip" data-placement="bottom">';
+            htmlCursos += '<li><span style="cursor: help;" title="'  + element.titleTransaled + '" data-toggle="tooltip" data-placement="bottom">';
             htmlCursos += element.title + '  - ' + Math.round(element.duracao/60) + 'h (' + element.company + ', ' + element.date.getFullYear() + '); ' + buildExternalLink(element);
-            htmlCursos += "</li>";
+            htmlCursos += "</span></li>";
         }
     });
     htmlCursos += "</ul>";

@@ -19,7 +19,7 @@ function putTextInLabels(){
       experience_one_about = experience_one_about_EN
       experience_two_info = "<h2>Pontifical Catholic University of Rio Grande do Sul (PUCRS)</h2> <p>Jun 2016 - Feb 2018</p> <p>Software Developer</p>";
       experience_two_about = experience_two_about_EN
-      qualifications_title = "<h1>QUALIFICATIONS AND PROFESSIONAL ACTIVITIES</h1><h3>Mouse over to read the title in English.</h3>"
+      qualifications_title = "<h1>QUALIFICATIONS AND PROFESSIONAL ACTIVITIES</h1><div class='d-none d-sm-block d-sm-none d-md-block'><h3>Mouse over to read the title in English.</div></h3>"
     }
     document.getElementById("apresentation").innerHTML = apresentation;
     document.getElementById("education").innerHTML = education;
