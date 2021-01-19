@@ -77,24 +77,24 @@ function printClasses(ignoreVar){
         }
     });
     htmlCursos += "</ul>";
-    document.getElementById("cursos-qualificacoes").innerHTML = htmlCursos;
+    document.getElementById("courses-qualifications").innerHTML = htmlCursos;
     if(!ignoreVar){
         let tempoCurso = cursosList.sumIgnoring('duracao', 'showCV');
         let qtdCursos = cursosList.filter( curso => !curso.showCV).length
         if(document.getElementById("lang").innerHTML === "PT"){
-            document.getElementById("cursos-qualificacoes").innerHTML += "<p style='text-align: right;'> E mais " + qtdCursos + " outros cursos. (" + Math.round(tempoCurso/60) + " horas)</p>";
-            document.getElementById("cursos-qualificacoes").innerHTML +=  '<a href="#yearNow" onclick="showAllClasses()" id="btnShowAllClasses" style="text-align: right;">Mostrar tudo</a>';
+            document.getElementById("courses-qualifications").innerHTML += "<p style='text-align: right;'> E mais " + qtdCursos + " outros cursos. (" + Math.round(tempoCurso/60) + " horas)</p>";
+            document.getElementById("courses-qualifications").innerHTML +=  '<a href="#yearNow" onclick="showAllClasses()" id="btnShowAllClasses" style="text-align: right;">Mostrar tudo</a>';
         } else {
-            document.getElementById("cursos-qualificacoes").innerHTML += "<p style='text-align: right;'> More " + qtdCursos + " other courses. (" + Math.round(tempoCurso/60) + " hours)</p>";
-            document.getElementById("cursos-qualificacoes").innerHTML +=  '<a href="#yearNow" onclick="showAllClasses()" id="btnShowAllClasses" style="text-align: right;">Show all courses</a>';
+            document.getElementById("courses-qualifications").innerHTML += "<p style='text-align: right;'> More " + qtdCursos + " other courses. (" + Math.round(tempoCurso/60) + " hours)</p>";
+            document.getElementById("courses-qualifications").innerHTML +=  '<a href="#yearNow" onclick="showAllClasses()" id="btnShowAllClasses" style="text-align: right;">Show all courses</a>';
         }
     } else {
         let tempoCurso = cursosList.sumIgnoring('duracao', '');
         let qtdCursos = cursosList.length
         if(document.getElementById("lang").innerHTML === "PT"){
-            document.getElementById("cursos-qualificacoes").innerHTML += "<p style='text-align: right;'> Total de " + qtdCursos + " cursos. (" + Math.round(tempoCurso/60) +" horas) .</p>";
+            document.getElementById("courses-qualifications").innerHTML += "<p style='text-align: right;'> Total de " + qtdCursos + " cursos. (" + Math.round(tempoCurso/60) +" horas) .</p>";
         } else {
-            document.getElementById("cursos-qualificacoes").innerHTML += "<p style='text-align: right;'> Total of " + qtdCursos + " courses. (" + Math.round(tempoCurso/60) +" hours) .</p>";
+            document.getElementById("courses-qualifications").innerHTML += "<p style='text-align: right;'> Total of " + qtdCursos + " courses. (" + Math.round(tempoCurso/60) +" hours) .</p>";
         }
     }
 }
