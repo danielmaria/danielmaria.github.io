@@ -1,113 +1,109 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Daniel Maria da Silva</title>
-  <link rel="shortcut icon" href="logo-min.gif" />
-  <!-- CSS  -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/logos.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Bootstrap CSS -->
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,700' rel='stylesheet' type='text/css'>
+	<link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+	<link rel="stylesheet" href="css/curriculum.css" type="text/css" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+	<title>Daniel Maria da Silva</title>
 </head>
+
 <body>
-    <nav class="white" role="navigation">
-      <div class="nav-wrapper container">
-        <ul class="right hide-on-med-and-down">
-          <li><a href="blog.html">Blog</a><li>
-          <li><a href="curriculum.html">Curriculum</a><li>
-          <li><a href="#" onclick="changeEN()"><i class="flag-button usa-flag"></i></a><li>
-          <li><a href="#" onclick="changePT()"><i class="flag-button br-flag"></i></a></li>
-        </ul>
-  
-        <ul id="nav-mobile" class="sidenav">
-          <li><a href="blog.html">Blog</a><li>
-          <li><a href="curriculum.html">Curriculum</a><li>
-          <li><a href="#" onclick="changeEN()"><i class="flag-button usa-flag"></i></a><li>
-          <li><a href="#" onclick="changePT()"><i class="flag-button br-flag"></i></a></li>
-        </ul>
-        <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-      </div>
-    </nav>
+	<span id="lang" style="display: none;">EN</span>
+	<div class="container-fluid">
+		
+		<div class="row align-items-center py-3" style="background-color: #444;">
+			<div class="row">
+				<div class="nav justify-content-end">
+					<i class="flag-button usa-flag" onclick="changeEN()"></i>
+					<i class="flag-button br-flag" onclick="changePT()"></i>
+				</div>
+			</div>
+			<div class="col col-lg-3 col-3 center">
+				<img class="rounded-circle" src="img/perfil.jpg">
+			</div>
+			<div class="col col-lg-9 col-9" style="color: whitesmoke;">
+				<h1>Daniel Maria da Silva</h1>
+				<span id="education"></span>
+			</div>
+			<div class="row">
+				<div class="col col-lg-12">
+					<div class="nav justify-content-end">
+						<a href="https://www.linkedin.com/in/danielmariadasilva/"><i
+								class="footer-button linkedin"></i></a>
+						<a href="https://github.com/danielmaria"><i class="footer-button github"></i></a>
+						<a href="https://www.instagram.com/dan_maria/"><i class="footer-button instagram"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
 
-  <div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row center">
-          <h1 class="header center" style="margin-top: auto; margin-bottom: .5em;"><span id="apresentation"></span></h1>
-          <a href="" class="typewrite loopWordsEnglish" data-period="2000" data-type='[ "Student.", "Creative.", "Code Lover."]'>
-            <span class="wrap"></span>
-          </a>
-          <a href="" class="typewrite loopWordsPortuguese" data-period="2000" data-type='[ "Estudante.", "Criativo.", "Apaixonado por programação."]'>
-            <span class="wrap"></span>
-          </a>
-        </div>
-      </div>
-    </div>
-    <div class="parallax"><img src="background1.jpg" alt="Unsplashed background img 1"  class="background"></div>
-  </div>
-  
-  <div class="container">
-    <div class="section">
-      <div class="row">
-        <div class="col s12 m6">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">motorcycle</i></h2>
-            <h5 class="center"><span id="theRoadSoFarTitle"></span></h5>
-            <p class="light" style="text-align: justify;"><span id="theRoadSoFar"></span></p>
-          </div>
-        </div>
+		<div class="row">
+			<div class="col col-lg-12 center py-5">
+				<h3><span id="apresentation"></span></h3>
+			</div>
+		</div>
 
-        <div class="col s12 m6">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
-            <h5 class="center"><span id="aboutMeTitle"></h5>
-            <p class="light" style="text-align: justify;"><span id="aboutMe"></span></p>
-          </div>
-        </div>
-      </div>
+		<section class="experience">
+			<div class="row justify-content-md-center my-2" style="line-height: 0em;">
+				<div class="col col-lg-3 col-sm-4 col-12">
+					<span id="experience_one_info"></span>
+				</div>
+				<div class="col col-lg-9 col-sm-8 col-12">
+					<div class="row justify-content-md-cente">
+						<p class="justify">
+							<span id="experience_one_about"></span>
+						</p>
+					</div>
+				</div>
+			</div>
 
-    </div>
-  </div>
+			<div class="row justify-content-md-center my-2" style="line-height: 0em;">
+				<div class="col col-lg-3 col-sm-4 col-12">
+					<span id="experience_two_info"></span>
+				</div>
+				<div class="col col-lg-9  col-sm-8 col-12">
+					<div class="row justify-content-md-cente">
+						<p class="justify">
+							<span id="experience_two_about"></span>
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
 
+		<hr>
 
-  <div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row center">
-            <h5 class="header col s12 light">
-              <span type="time" id="time"></span> 
-              <span id="timeText"></span>
-              <a class="tooltipped loopWordsPortuguese" data-position="right" data-tooltip="Levando em consideração minha primeira experiência profissional" style="color: red;">*</a>
-              <a class="tooltipped loopWordsEnglish" data-position="right" data-tooltip="Taking into account my first professional experience" style="color: red;">*</a>
-            </h5>
-          </a>
-        </div>
-      </div>
-    </div>
-    <div class="parallax"><img src="background2.jpg" alt="Unsplashed background img 2"  class="background"></div>
-  </div>
+		<section>
+			<div class="row">
+				<div class="col col-lg-12">
+					<h1><span id="qualifications_title"></span></h1>
+					<div id="courses-qualifications"></div>
+				</div>
+			</div>
+		</section>
 
- 
+		<footer class="center">
+			<hr>
+			<span>&copy; Daniel Maria da Silva <span id=yearNow></span></span>
+		</footer>
+		</div>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+		crossorigin="anonymous"></script>
 
-  <footer class="page-footer color-def">
-      <div class="container" id="footerDiv">
-				<span class="page-footer-name">Daniel Maria da Silva |</span>
-				<a href="https://www.linkedin.com/in/danielmariadasilva/"><i class="footer-button linkedin"></i></a>
-				<a href="https://github.com/danielmaria"><i class="footer-button github"></i></a>
-				<a href="https://www.instagram.com/dan_maria/"><i class="footer-button instagram"></i></a>
-				<i class="footer-button email" id="emailBtn"></i> <span id="emailtext" class="page-footer-name">danielmariadasilva@gmail.com</span>
-      </div>
-  </footer>
+	<script src="js/cv.js"></script>
+	<script src="js/language.js"></script>
+</body>
 
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
-  
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.5/jspdf.debug.js"></script>
-
-  </body>
 </html>
