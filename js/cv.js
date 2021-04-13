@@ -2,7 +2,7 @@ var cursosList = [
     {title:"Android I: Crie sua App fantástica no Eclipse", titleTransaled: "Android I: Create your fantastic App in Eclipse", date: new Date("03/22/2016"), duracao:720, showCV: false, company: "Alura.com", certification: "alura_android1eclipse"},
     {title:"Jogos com Android: Desenvolva seu próprio Flappy Bird", titleTransaled: "Android games: Develop your own Flappy Bird", date: new Date("04/08/2016"), duracao:480, showCV: false, company: "Alura.com",  certification: "alura_fluppy"},
     {title:"Jogos com Android I: Desenvolvimento de jogos 2D", titleTransaled: "Games with Android I: 2D game development", date: new Date("03/31/2016"), duracao:480, showCV: false, company: "Alura.com",  certification: "alura_androidjogo"},
-    {title:"Android I: Crie sua App fantástica com Android Studio", titleTransaled: "Android I: Create your fantastic App with Android Studio", date: new Date("03/11/2016"), duracao:600, showCV: true, company: "Alura.com",  certification: "alura_android1"},
+    {title:"Android I: Crie sua App fantástica com Android Studio", titleTransaled: "Android I: Create your fantastic App with Android Studio", date: new Date("03/11/2016"), duracao:600, showCV: false, company: "Alura.com",  certification: "alura_android1"},
     {title:"Design Patterns Java I: Boas práticas de programação", titleTransaled: "Design Patterns Java I: Good programming practices", date: new Date("10/29/2015"), duracao:1200, showCV: true, company: "Alura.com",  certification: "alura_designpattern"},
     {title:"Eclipse: Produtividade Extrema na IDE com Java", titleTransaled: "Eclipse: Extreme Productivity in the IDE with Java", date: new Date("11/18/2015"), duracao:720, showCV: false, company: "Alura.com",  certification: "alura_eclipse"},
     {title:"Orientação a Objetos: Melhores técnicas com Java", titleTransaled: "Object Orientation: Best Java Techniques", date: new Date("03/01/2016"), duracao:1200, showCV: false, company: "Alura.com",  certification: "alura_oo"},
@@ -18,7 +18,7 @@ var cursosList = [
     {title:"Java: Dominando as Collections", titleTransaled: "Java: Mastering Collections", date: new Date("08/01/2016"), duracao:1200, showCV: true, company: "Alura.com",  certification: "alura_collections"},
     {title:"JavaScript : Programando na linguagem da web", titleTransaled: "JavaScript: Programming in the web language", date: new Date("09/04/2015"), duracao:1200, showCV: false, company: "Alura.com",  certification: "alura_js"},
     {title:"HTML5 e CSS3 I: Suas primeiras páginas da Web", titleTransaled: "HTML5 and CSS3 I: Your first web pages", date: new Date("09/01/2015"), duracao:1920, showCV: false, company: "Alura.com",  certification: "alura_htmlecss"},
-    {title:"HTML5 e CSS3 II: Turbinando as suas páginas", titleTransaled: "HTML5 and CSS3 II: Turbocharging your pages", date: new Date("10/15/2015"), duracao:2400, showCV: true, company: "Alura.com",  certification: "alura_htmlcss2"},
+    {title:"HTML5 e CSS3 II: Turbinando as suas páginas", titleTransaled: "HTML5 and CSS3 II: Turbocharging your pages", date: new Date("10/15/2015"), duracao:2400, showCV: false, company: "Alura.com",  certification: "alura_htmlcss2"},
     {title:"Métodos Ágeis: Introdução", titleTransaled: "Agile Methods: Introduction", date: new Date("11/13/2015"), duracao:720, showCV: false, company: "Alura.com",  certification: "alura_metodosageis"},
     {title:"UML Introdução: Modelagem de soluçõe", titleTransaled: "UML Introduction: Solution modeling", date: new Date("08/24/2015"), duracao: 480, showCV: false, company: "Alura.com",  certification: "alura_uml"},
     {title:"Scrum: Agilidade em seu projeto", titleTransaled: "Scrum: Agility in your project", date: new Date("01/14/2016"), duracao:600, showCV: false, company: "Alura.com",  certification: "alura_scrum"},
@@ -46,7 +46,9 @@ var cursosList = [
     {title:"Terminal Linux", titleTransaled: "Linux terminal", date: new Date("03/23/2020"), duracao:60, showCV: true, company: "Udemy.com",  certification: "terminal_linux"},
     {title:"Apache Kafka and Spring Boot (Consumer, Producer)", titleTransaled: "Apache Kafka and Spring Boot (Consumer, Producer)", date: new Date("05/20/2020"), duracao:60, showCV: true, company: "Udemy.com",  certification: ""},
     {title:"Reactive Programming with Spring Framework 5", titleTransaled: "Reactive Programming with Spring Framework 5", date: new Date("10/04/2020"), duracao:240, showCV: true, company: "Udemy.com",  certification: "webflux"},
-    {title:"Quarkus com Panache, GraalVM, GitlabCI e AWS", titleTransaled: "Quarkus with Panache, GraalVM, GitlabCI and AWS", date: new Date("07/08/2020"), duracao:90, showCV: true, company: "Udemy.com",  certification: "quarkus"}
+    {title:"Quarkus com Panache, GraalVM, GitlabCI e AWS", titleTransaled: "Quarkus with Panache, GraalVM, GitlabCI and AWS", date: new Date("07/08/2020"), duracao:90, showCV: true, company: "Udemy.com",  certification: "quarkus"},
+    {title:"Java Application Performance and Memory Management", titleTransaled: "Java Application Performance and Memory Management", date: new Date("26/02/2021"), duracao:600, showCV: true, company: "Udemy.com",  certification: "jvm"},
+    {title:"JMeter - Testes de performance", titleTransaled: "JMeter: Performance tests", date: new Date("02/03/2021"), duracao:360, showCV: true, company: "Udemy.com",  certification: "jmeter"}
 ];
 
 Array.prototype.sumIgnoring = function (prop, ignore) {
