@@ -106,7 +106,7 @@ function printClasses(ignoreVar){
 
 function buildExternalLink(element) {
     if(element.certification != ""){
-        return "<img src='./img/externo.svg' class='footer-button' onclick='showPDF(\"" + element.certification + "\")'>";        
+        return "<img src='./img/externo.svg' class='export-button' onclick='showPDF(\"" + element.certification + "\")'>";        
     }
     return "";
 }

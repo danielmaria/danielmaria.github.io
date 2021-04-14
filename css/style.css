@@ -10,6 +10,7 @@
 .email {
 	background: url('../img/envelope.svg') no-repeat top left;
 }
+
 .footer-button {
     background-size: contain;
     display: inline-block;
@@ -17,6 +18,13 @@
     width: 16px;
     cursor: pointer;
     padding: 0 1em;
+}
+
+.export-button {
+    height: 16px;
+    width: 16px;
+    cursor: pointer;
+    margin-left: .5em;
 }
 
 .img-button {
