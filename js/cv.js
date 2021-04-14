@@ -1,4 +1,4 @@
-var cursosList = [
+  var cursosList = [
     {title:"Android I: Crie sua App fantástica no Eclipse", titleTransaled: "Android I: Create your fantastic App in Eclipse", date: new Date("03/22/2016"), duracao:720, showCV: false, company: "Alura.com", certification: "alura_android1eclipse"},
     {title:"Jogos com Android: Desenvolva seu próprio Flappy Bird", titleTransaled: "Android games: Develop your own Flappy Bird", date: new Date("04/08/2016"), duracao:480, showCV: false, company: "Alura.com",  certification: "alura_fluppy"},
     {title:"Jogos com Android I: Desenvolvimento de jogos 2D", titleTransaled: "Games with Android I: 2D game development", date: new Date("03/31/2016"), duracao:480, showCV: false, company: "Alura.com",  certification: "alura_androidjogo"},
@@ -74,7 +74,6 @@ function printClasses(ignoreVar){
     let lang = document.getElementById("lang").innerText;
     getSortedCursos().forEach(element => {
         if(ignoreVar || element.showCV){
-            console.log(lang)
             if(lang === "PT") {
                 htmlCursos += '<li>';
                 htmlCursos += element.title + '  - ' + Math.round(element.duracao/60) + 'h (' + element.company + ', ' + element.date.getFullYear() + '); ' + buildExternalLink(element);
@@ -87,17 +86,21 @@ function printClasses(ignoreVar){
         }
     });
     htmlCursos += "</ul>";
-    document.getElementById("cursos-qualificacoes").innerHTML = htmlCursos;
+    document.getElementById("courses-qualifications").innerHTML = htmlCursos;
     if(!ignoreVar){
         let tempoCurso = cursosList.sumIgnoring('duracao', 'showCV');
         let qtdCursos = cursosList.filter( curso => !curso.showCV).length
         let labelAndMore = lang === 'PT' ? 'E mais ' : 'And more '
         let labelOtherCourses = lang === 'PT' ? ' outros cursos. (' : ' other courses. (';
-        document.getElementById("cursos-qualificacoes").innerHTML += "<p style='text-align: right;'>" + labelAndMore + qtdCursos + labelOtherCourses + Math.round(tempoCurso/60) + " horas)</p>";
+        document.getElementById("cursos-qualificacoes").innerHTML = "<p style='text-align: right;' id='conterCourses'>" + labelAndMore + qtdCursos + labelOtherCourses + Math.round(tempoCurso/60) + " horas)</p>";
     } else {
         let tempoCurso = cursosList.sumIgnoring('duracao', '');
         let qtdCursos = cursosList.length
-        document.getElementById("cursos-qualificacoes").innerHTML += "<p style='text-align: right;'> Total de " + qtdCursos + " cursos. (" + Math.round(tempoCurso/60) +" horas) .</p>";
+        if(document.getElementById("lang").innerHTML === "PT"){
+            document.getElementById("courses-qualifications").innerHTML += "<p style='text-align: right;'> Total de " + qtdCursos + " cursos. (" + Math.round(tempoCurso/60) +" horas) .</p>";
+        } else {
+            document.getElementById("courses-qualifications").innerHTML += "<p style='text-align: right;'> Total of " + qtdCursos + " courses. (" + Math.round(tempoCurso/60) +" hours) .</p>";
+        }
     }
 }
 
@@ -115,13 +118,10 @@ function showPDF(certification){
 function showAllClasses(){
     printClasses(true);
     document.getElementById("btnShowAllClasses").hidden = true;
+    document.getElementById("conterCourses").hidden = true;
 }
 
 (function() {
     printClasses(false);
     document.getElementById("yearNow").innerHTML = new Date().getFullYear();
  })();
-
-
-
-
