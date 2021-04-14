@@ -47,7 +47,7 @@ var cursosList = [
     {title:"Apache Kafka and Spring Boot (Consumer, Producer)", titleTransaled: "Apache Kafka and Spring Boot (Consumer, Producer)", date: new Date("05/20/2020"), duracao:60, showCV: true, company: "Udemy.com",  certification: ""},
     {title:"Reactive Programming with Spring Framework 5", titleTransaled: "Reactive Programming with Spring Framework 5", date: new Date("10/04/2020"), duracao:240, showCV: true, company: "Udemy.com",  certification: "webflux"},
     {title:"Quarkus com Panache, GraalVM, GitlabCI e AWS", titleTransaled: "Quarkus with Panache, GraalVM, GitlabCI and AWS", date: new Date("07/08/2020"), duracao:90, showCV: true, company: "Udemy.com",  certification: "quarkus"},
-    {title:"Java Application Performance and Memory Management", titleTransaled: "Java Application Performance and Memory Management", date: new Date("26/02/2021"), duracao:600, showCV: true, company: "Udemy.com",  certification: "jvm"},
+    {title:"Java Application Performance and Memory Management", titleTransaled: "Java Application Performance and Memory Management", date: new Date("02/26/2021"), duracao:600, showCV: true, company: "Udemy.com",  certification: "jvm"},
     {title:"JMeter - Testes de performance", titleTransaled: "JMeter: Performance tests", date: new Date("02/03/2021"), duracao:360, showCV: true, company: "Udemy.com",  certification: "jmeter"}
 ];
 
@@ -71,11 +71,19 @@ function getSortedCursos(){
 
 function printClasses(ignoreVar){
     var htmlCursos = "<ul>";
+    let lang = document.getElementById("lang").innerText;
     getSortedCursos().forEach(element => {
         if(ignoreVar || element.showCV){
-            htmlCursos += '<li style="cursor: help;" title="" class="tooltip"><span class="tooltiptext">'  + element.titleTransaled + '</span>';
-            htmlCursos += element.title + '  - ' + Math.round(element.duracao/60) + 'h (' + element.company + ', ' + element.date.getFullYear() + '); ' + buildExternalLink(element);
-            htmlCursos += "</li>";
+            console.log(lang)
+            if(lang === "PT") {
+                htmlCursos += '<li>';
+                htmlCursos += element.title + '  - ' + Math.round(element.duracao/60) + 'h (' + element.company + ', ' + element.date.getFullYear() + '); ' + buildExternalLink(element);
+                htmlCursos += "</li>";
+            } else {
+                htmlCursos += '<li>';
+                htmlCursos += element.titleTransaled + '  - ' + Math.round(element.duracao/60) + 'h (' + element.company + ', ' + element.date.getFullYear() + '); ' + buildExternalLink(element);
+                htmlCursos += "</li>";
+            }
         }
     });
     htmlCursos += "</ul>";
@@ -83,7 +91,9 @@ function printClasses(ignoreVar){
     if(!ignoreVar){
         let tempoCurso = cursosList.sumIgnoring('duracao', 'showCV');
         let qtdCursos = cursosList.filter( curso => !curso.showCV).length
-        document.getElementById("cursos-qualificacoes").innerHTML += "<p style='text-align: right;'> E mais " + qtdCursos + " outros cursos. (" + Math.round(tempoCurso/60) + " horas)</p>";
+        let labelAndMore = lang === 'PT' ? 'E mais ' : 'And more '
+        let labelOtherCourses = lang === 'PT' ? ' outros cursos. (' : ' other courses. (';
+        document.getElementById("cursos-qualificacoes").innerHTML += "<p style='text-align: right;'>" + labelAndMore + qtdCursos + labelOtherCourses + Math.round(tempoCurso/60) + " horas)</p>";
     } else {
         let tempoCurso = cursosList.sumIgnoring('duracao', '');
         let qtdCursos = cursosList.length

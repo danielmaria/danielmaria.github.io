@@ -8,17 +8,16 @@
 	<link href='http://fonts.googleapis.com/css?family=Lato:300,700' rel='stylesheet' type='text/css'>
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link rel="stylesheet" href="css/curriculum.css" type="text/css" />
-
 </head>
 
 <body>
-
+	<span style="display: none;" id="lang">EN</span>
 	<section class="spotlight">
 		<div class="container">
 			<div class="row">
 				<div style="text-align: right;">
-					<i class="flag-button usa-flag" onclick="changeEN()"></i>
-					<i class="flag-button br-flag" onclick="changePT()"></i>
+					<i class="flag-button usa-flag" onclick="changeTo('EN'); printClasses(false)"></i>
+					<i class="flag-button br-flag" onclick="changeTo('PT'); printClasses(false)"></i>
 				</div>
 			</div>
 			<div class="row">
@@ -79,7 +78,7 @@
 				<div class="grid-6">
 					<h1><span id="qualifications_title"></span></h1>
                     <div id="cursos-qualificacoes"></div>
-					<a href="#yearNow" onclick="showAllClasses()" id="btnShowAllClasses" style='text-align: right;'>Mostrar todos</a>
+					<a href="#yearNow" onclick="showAllClasses()" id="btnShowAllClasses" style='text-align: right;'><span id="show_all"></span></a>
                 </div>
 			</div>
 		</section>
