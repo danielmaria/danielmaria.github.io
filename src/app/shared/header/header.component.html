@@ -1,0 +1,44 @@
+<div class="row align-items-center header" style="padding: 1em 10em;background-color: #444;">
+    <div class="row">
+       <div class="nav justify-content-end">
+          <div class="row">
+             <div class="col">
+                <div ngbDropdown class="d-inline-block">
+                   <button type="button" class="btn btn-secondary" id="dropdownBasic1" ngbDropdownToggle>{{'language' | translate}}</button>
+                   <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                      <div *ngFor="let language of translate.getLangs()">
+                         <button class="dropdown-item" id="language" on-click="switchLanguage(language)">
+                         <span class="flag-icon flag-icon-{{language}} flag-icon-squared"></span>
+                         </button>
+                      </div>
+                   </div>
+                </div>
+             </div>
+          </div>
+       </div>
+    </div>
+    <div class="col col-lg-3 col-3 center">
+       <img class="rounded-circle" src="../assets/img/perfil.jpg">
+    </div>
+    <div class="col col-lg-9 col-9" style="color: whitesmoke;">
+       <h1>Daniel Maria da Silva</h1>
+       {{'firstDegree' | translate}}
+       <br/>
+       {{'secondDegree' | translate}}
+    </div>
+    <div class="row">
+       <div class="col col-lg-12">
+          <div class="nav justify-content-end">
+             <a href="https://www.linkedin.com/in/danielmariadasilva/">
+                <i-bs name="linkedin" width="20" height="20" class="media-icon"></i-bs>
+             </a>
+             <a href="https://github.com/danielmaria">
+                <i-bs name="github" width="20" height="20" class="media-icon"></i-bs>
+             </a>
+             <a href="https://www.instagram.com/dan.maria/">
+                <i-bs name="instagram" width="20" height="20" class="media-icon"></i-bs>
+             </a>
+          </div>
+       </div>
+    </div>
+</div>

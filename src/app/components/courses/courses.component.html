@@ -1,0 +1,9 @@
+<hr>
+
+<section>
+    <h1>{{'qualifications_title' | translate}}</h1>
+    <div *ngFor="let course of 'courses' | translate | sortByDate ">
+        {{course.title}} - {{ course.duration | hoursAvg }}h ({{course.company}}, {{course.date | date : 'yyyy'}})
+        <i-bs name="file-pdf" width="15" height="15"> </i-bs>
+    </div>
+</section>

@@ -1,0 +1,394 @@
+{
+    "language" : "Language",
+    "apresentation":"I have been working professionally with software programming since 2016. Most of my day I work mainly with Java backend, with the Spring framework. I have had contact with other frameworks, such as PrimeFaces, JPA and JSF. In my work I mostly use MongoDB for databases, but eventually I use Oracle. I seek to improve my knowledge in programming and software development, applying my skills to the company's projects and needs.",
+    "firstDegree":"Information Systems - PUCRS (finished 2020)",
+    "secondDegree":"Physical Education - PUCRS (finished 2015)",
+    "experience_one_date":"Feb 2018 - Today",
+    "experience_dbc_location": "DBC Company",
+    "experience_one_position":"Software Developer",
+    "experience_dbc_one_title":"Outsourcing Sicredi (banking sector):",
+    "experience_dbc_one_jobs":[
+       "For the backend, Java 8, Spring MVC and Hibernate were used. For the frontend, PrimeFaces with SCSS and Javascript were used to customize the interface;",
+       "Create test cases in JUnit for unit testing;",
+       "Participate in alignment demands and project meetings;",
+       "Use of agile methodologies."
+    ],
+    "experience_dbc_two_title":"Outsourcing TNT Mercúrio (transport sector):",
+    "experience_dbc_two_jobs":[
+       "Development and maintenance of Java systems (JPA [Hibernate], EJB, JSF, Spring Framework, and JSP) using Oracle as database, Weblogic as application servers and SVN as version control tool;",
+       "Create and execute test cases in JUnit for unit testing;",
+       "Participate in alignment demands and projects meetings;",
+       "Introducing the use of agile methodologies and ceremonies."
+    ],
+    "experience_dbc_three_title":"Outsourcing Sicredi (setor bancário):",
+    "experience_dbc_three_jobs":[
+       "Development and maintenance of Java microservices, using Spring (MVC and Webflux). All communication async was performed using Kafka. Most microservices were built using MongoDB or PDB;",
+       "Create and execute test cases in JUnit for unit testing with the support of SonarLint and automated testing with jMeter;",
+       "ParticiparTeam developer leader, participating directly in business decisions and leading other developers into projects;",
+       "Promote technical knowledge meetings for developers;",
+       "Use of JIRA for trouble tickets and Confluence for the knowledge base."
+    ],
+    "experience_pucrs_one_date":"Jun 2016 - Feb 2018",
+    "experience_pucrs_one_location":"Pontifical Catholic University of Rio Grande do Sul (PUCRS)",
+    "experience_pucrs_one_position":"Software Developer",
+    "experience_pucrs_one_title":"Development and maintenance of internal projects:",
+    "experience_pucrs_one_jobs":[
+       "Analysis, development and maintenance of Java systems (JPA [Hibernate], EJB, JSF, RichFaces, Spring Framework, Servlets and JSP) using Oracle as database, JBoss and Tomcat as application servers, and SVN as version control tool;",
+       "Analysis, development and maintenance of database routines with Oracle PL/SQL;",
+       "Create and execute test cases in JUnit for unit testing;",
+       "Develop automated reports and forms, using Jasper Reports."
+    ],
+    "qualifications_title":"Qualifications and professional activities",
+    "courses":[
+       {
+          "title":"Android I: Create your fantastic App in Eclipse",
+          "date":"03/22/2016",
+          "duration":720,
+          "company":"Alura.com",
+          "certification":"alura_android1eclipse"
+       },
+       {
+          "title":"Android games: Develop your own Flappy Bird",
+          "date":"04/08/2016",
+          "duration":480,
+          "company":"Alura.com",
+          "certification":"alura_fluppy"
+       },
+       {
+          "title":"Games with Android I: 2D game development",
+          "date":"03/31/2016",
+          "duration":480,
+          "company":"Alura.com",
+          "certification":"alura_androidjogo"
+       },
+       {
+          "title":"Android I: Create your fantastic App with Android Studio",
+          "date":"03/11/2016",
+          "duration":600,
+          "company":"Alura.com",
+          "certification":"alura_android1"
+       },
+       {
+          "title":"Design Patterns Java I: Good programming practices",
+          "date":"10/29/2015",
+          "duration":1200,
+          "company":"Alura.com",
+          "certification":"alura_designpattern"
+       },
+       {
+          "title":"Eclipse: Extreme Productivity in the IDE with Java",
+          "date":"11/18/2015",
+          "duration":720,
+          "company":"Alura.com",
+          "certification":"alura_eclipse"
+       },
+       {
+          "title":"Object Orientation: Best Java Techniques",
+          "date":"03/01/2016",
+          "duration":1200,
+          "company":"Alura.com",
+          "certification":"alura_oo"
+       },
+       {
+          "title":"Java and Tests: TDD with Junit",
+          "date":"02/23/2016",
+          "duration":720,
+          "company":"Alura.com",
+          "certification":"alura_javatestes"
+       },
+       {
+          "title":"Java I: Getting Started",
+          "date":"08/25/2015",
+          "duration":720,
+          "company":"Alura.com",
+          "certification":"alura_primeirospassos"
+       },
+       {
+          "title":"Java and JDBC: Working with a database",
+          "date":"10/15/2015",
+          "duration":480,
+          "company":"Alura.com",
+          "certification":"alura_javajdbc"
+       },
+       {
+          "title":"Refactoring in practice",
+          "date":"11/17/2015",
+          "duration":480,
+          "company":"Alura.com",
+          "certification":"alura_refatorando"
+       },
+       {
+          "title":"Java II: Object Orientation",
+          "date":"08/28/2015",
+          "duration":720,
+          "company":"Alura.com",
+          "certification":"alura_java2_oo"
+       },
+       {
+          "title":"Java III: Main APIs and Libraries",
+          "date":"09/30/2015",
+          "duration":720,
+          "company":"Alura.com",
+          "certification":"alura_java3"
+       },
+       {
+          "title":"Java 8: Take advantage of new language features",
+          "date":"11/13/2015",
+          "duration":720,
+          "company":"Alura.com",
+          "certification":"alura_java8"
+       },
+       {
+          "title":"Clojure: Introduction to functional programming",
+          "date":"11/30/2015",
+          "duration":480,
+          "company":"Alura.com",
+          "certification":"alura_clojure"
+       },
+       {
+          "title":"Threads I: Parallel programming in Java",
+          "date":"05/18/2016",
+          "duration":480,
+          "company":"Alura.com",
+          "certification":"alura_threads"
+       },
+       {
+          "title":"Java: Mastering Collections",
+          "date":"08/01/2016",
+          "duration":1200,
+          "company":"Alura.com",
+          "certification":"alura_collections"
+       },
+       {
+          "title":"JavaScript: Programming in the web language",
+          "date":"09/04/2015",
+          "duration":1200,
+          "company":"Alura.com",
+          "certification":"alura_js"
+       },
+       {
+          "title":"HTML5 and CSS3 I: Your first web pages",
+          "date":"09/01/2015",
+          "duration":1920,
+          "company":"Alura.com",
+          "certification":"alura_htmlecss"
+       },
+       {
+          "title":"HTML5 and CSS3 II: Turbocharging your pages",
+          "date":"10/15/2015",
+          "duration":2400,
+          "company":"Alura.com",
+          "certification":"alura_htmlcss2"
+       },
+       {
+          "title":"Agile Methods: Introduction",
+          "date":"11/13/2015",
+          "duration":720,
+          "company":"Alura.com",
+          "certification":"alura_metodosageis"
+       },
+       {
+          "title":"UML Introduction: Solution modeling",
+          "date":"08/24/2015",
+          "duration":480,
+          "company":"Alura.com",
+          "certification":"alura_uml"
+       },
+       {
+          "title":"Scrum: Agility in your project",
+          "date":"01/14/2016",
+          "duration":600,
+          "company":"Alura.com",
+          "certification":"alura_scrum"
+       },
+       {
+          "title":"Lean Startup: Getting started",
+          "date":"10/26/2015",
+          "duration":60,
+          "company":"Alura.com",
+          "certification":"alura_lean"
+       },
+       {
+          "title":"MySQL II: Powerful queries",
+          "date":"11/18/2015",
+          "duration":960,
+          "company":"Alura.com",
+          "certification":"alura_mysql1"
+       },
+       {
+          "title":"MySQL I: Starting your queries",
+          "date":"09/12/2015",
+          "duration":480,
+          "company":"Alura.com",
+          "certification":"alura_mysql2"
+       },
+       {
+          "title":"Oracle I: Learn SQL using this famous database",
+          "date":"12/01/2015",
+          "duration":480,
+          "company":"Alura.com",
+          "certification":"alura_oracle1"
+       },
+       {
+          "title":"Redis I: Storing keys and values",
+          "date":"11/25/2015",
+          "duration":1200,
+          "company":"Alura.com",
+          "certification":"alura_redis1"
+       },
+       {
+          "title":"Redis II: Structures and resources in its NoSQL base",
+          "date":"11/27/2015",
+          "duration":600,
+          "company":"Alura.com",
+          "certification":"alura_redis2"
+       },
+       {
+          "title":"SQLServer I: unraveling the database",
+          "date":"12/01/2015",
+          "duration":540,
+          "company":"Alura.com",
+          "certification":"alura_sqlserver1"
+       },
+       {
+          "title":"SQLServer II: Powerful queries",
+          "date":"12/04/2015",
+          "duration":600,
+          "company":"Alura.com",
+          "certification":"alura_sqlserver2"
+       },
+       {
+          "title":"Oracle II: Complex Queries",
+          "date":"02/05/2016",
+          "duration":480,
+          "company":"Alura.com",
+          "certification":"alura_oracle2"
+       },
+       {
+          "title":"Full SQL",
+          "date":"08/05/2015",
+          "duration":1200,
+          "company":"Softblue",
+          "certification":"softblue_sql"
+       },
+       {
+          "title":"NodeJS and MongoDB Developer",
+          "date":"07/27/2017",
+          "duration":930,
+          "company":"Udemy.com",
+          "certification":"nodejs"
+       },
+       {
+          "title":"Full Git: From Basic to Advanced",
+          "date":"07/27/2017",
+          "duration":120,
+          "company":"Udemy.com",
+          "certification":"git"
+       },
+       {
+          "title":"Create applications with Ionic 3, Spring, OAuth2, REST and MongoDB",
+          "date":"12/12/2018",
+          "duration":300,
+          "company":"Udemy.com",
+          "certification":"ionic"
+       },
+       {
+          "title":"Design Thinking with Children and Youth: Application and Examples",
+          "date":"04/02/2019",
+          "duration":42,
+          "company":"Udemy.com",
+          "certification":""
+       },
+       {
+          "title":"RESTful API with Spring Boot and Java 8",
+          "date":"04/06/2019",
+          "duration":930,
+          "company":"Udemy.com",
+          "certification":"api_restful"
+       },
+       {
+          "title":"Unit tests in JAVA: Mastering JUnit, Mockito and TDD",
+          "date":"04/17/2019",
+          "duration":480,
+          "company":"Udemy.com",
+          "certification":"testes_unitarios"
+       },
+       {
+          "title":"Scrum Developer Training",
+          "date":"01/01/2018",
+          "duration":480,
+          "company":"DBCCompany",
+          "certification":""
+       },
+       {
+          "title":"Certificate CLF (Certified Lean Inception Facilitator)",
+          "date":"08/01/2018",
+          "duration":480,
+          "company":"Caroli.org",
+          "certification":"LeanInception"
+       },
+       {
+          "title":"Introduction to Business Intelligence and Data Warehouse",
+          "date":"02/14/2018",
+          "duration":300,
+          "company":"BI do Brasil",
+          "certification":"bida"
+       },
+       {
+          "title":"Angular 7 and API integration",
+          "date":"04/21/2019",
+          "duration":150,
+          "company":"Udemy.com",
+          "certification":"angular"
+       },
+       {
+          "title":"Docker: Essential Tool for Developers",
+          "date":"05/02/2019",
+          "duration":330,
+          "company":"Udemy.com",
+          "certification":"docker"
+       },
+       {
+          "title":"Linux terminal",
+          "date":"03/23/2020",
+          "duration":60,
+          "company":"Udemy.com",
+          "certification":"terminal_linux"
+       },
+       {
+          "title":"Apache Kafka and Spring Boot (Consumer, Producer)",
+          "date":"05/20/2020",
+          "duration":60,
+          "company":"Udemy.com",
+          "certification":""
+       },
+       {
+          "title":"Reactive Programming with Spring Framework 5",
+          "date":"10/04/2020",
+          "duration":240,
+          "company":"Udemy.com",
+          "certification":"webflux"
+       },
+       {
+          "title":"Quarkus with Panache, GraalVM, GitlabCI and AWS",
+          "date":"07/08/2020",
+          "duration":90,
+          "company":"Udemy.com",
+          "certification":"quarkus"
+       },
+       {
+          "title":"Java Application Performance and Memory Management",
+          "date":"02/26/2021",
+          "duration":600,
+          "company":"Udemy.com",
+          "certification":"jvm"
+       },
+       {
+          "title":"JMeter: Performance tests",
+          "date":"02/03/2021",
+          "duration":360,
+          "company":"Udemy.com",
+          "certification":"jmeter"
+       }
+    ]
+ }
