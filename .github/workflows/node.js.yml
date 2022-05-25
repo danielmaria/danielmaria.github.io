@@ -5,8 +5,8 @@ name: Lint, Test & Build
 
 on:
   push:
-    branches-ignore:
-      - "master"
+    branches:
+      - master
 
 jobs:
   build:
