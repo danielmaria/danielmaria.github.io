@@ -1,41 +1,57 @@
 {
-    "language" : "Linguagem",
     "apresentation":"Trabalho profissionalmente com programação de software desde 2016. Na maior parte do meu dia trabalho principalmente com backend Java, com o framework Spring. Já tive contato com outros frameworks, tais como PrimeFaces, JPA e JSF. Em meu trabalho utilizo na maior parte das vezes MongoDB para banco de dados, mas eventualmente utilizo Oracle. Busco aprimorar meus conhecimentos em programação e em desenvolvimento de software, aplicando minhas habilidades nos projetos e necessidades da empresa.",
     "firstDegree":"Sistema de informação - PUCRS (concluído 2020)",
     "secondDegree":"Bacharelado em Educação Física e Ciências do Desporto - PUCRS (concluído 2015)",
-    "experience_one_date":"Fev. 2018 - Atual",
-    "experience_dbc_location": "DBC Company",
-    "experience_one_position":"Desenvolvedor",
-    "experience_dbc_one_title":"Projeto Interno",
-    "experience_dbc_one_jobs":[
-       "Desenvolvimento de projeto interno para manutenção e administração;",
-       "Uso de PrimeFaces, Hibernate e Spring;",
-       "Uso de metodologia ágil (Kanban)."
-    ],
-    "experience_dbc_two_title":"Outsourcing TNT Mercúrio (setor de transporte):",
-    "experience_dbc_two_jobs":[
-       "Desenvolver e manter sistemas em Java (JPA [Hibernate], EJB, JSF, Spring Framework e JSP) usando Oracle como base de dados, Weblogic comoservidor de aplicação e SVN para versionamento;",
-       "Criação de testes com JUnit;",
-       "Participação de alinhamento de demandas e reuniões de projeto;",
-       "Uso de metodologia ágil (SAFe e Kanban)."
-    ],
-    "experience_dbc_three_title":"Outsourcing Sicredi (setor bancário):",
-    "experience_dbc_three_jobs":[
-       "Desenvolver e manter microserviços. Java com Spring (tanto MVC quando Webflux) eram usados. Toda comunicação assíncrona era feita usando Kafka. Quase todos os microserviços usavam MongoDB ou PDB e, quando necessário usávasse Oracle para rotinas PL/SQL;",
-       "Criar casos de teste com JUnit, usando o suporte do SonarLint;",
-       "Participar do alinhamento de demandas e reuniões de projeto;",
-       "Uso de metodologias ágeis (Kanban e Scrum);",
-       "Uso do JIRA para controle de demandas e progresso e o Confluence como base de conhecimento."
-    ],
-    "experience_pucrs_one_date":"Jun. 2016 - Fev. 2018",
-    "experience_pucrs_one_location":"Pontifícia Universidade Católica do Rio Grande do Sul",
-    "experience_pucrs_one_position":"Desenvolvedor",
-    "experience_pucrs_one_title":"Desenvolvimento e manutenção de projetos internos:",
-    "experience_pucrs_one_jobs":[
-       "Analisar, desenvolver e manutenção de aplicações Java (JPA [Hibernate], EJB, JSF, RichFaces, Spring Framework, Servlets e JSP) usando como base de dados Oracle, JBoss e Tomcat como servidor, e SVN como ferramenta de versionamento;",
-       "Analisar, desenvolver e manter rotinas de banco de dados com Oracle PL/SQL;",
-       "Criar e executar casos de teste com JUnit para testes unitários."
-    ],
+    "experience_dbc": {
+      "date":"Fev. 2018 - Atual",
+      "location":"DBC Company",
+      "position":"Desenvolvedor",
+      "projects": [
+         {
+            "title": "Outsourcing Sicredi (setor bancário):",
+            "topics":[
+               "Desenvolver e manter microserviços. Java com Spring (tanto MVC quando Webflux) eram usados. Toda comunicação assíncrona era feita usando Kafka. Quase todos os microserviços usavam MongoDB ou PDB e, quando necessário usávasse Oracle para rotinas PL/SQL;",
+               "Criar casos de teste com JUnit, usando o suporte do SonarLint;",
+               "Participar do alinhamento de demandas e reuniões de projeto;",
+               "Uso de metodologias ágeis (Kanban e Scrum);",
+               "Uso do JIRA para controle de demandas e progresso e o Confluence como base de conhecimento."
+            ]
+         },
+         {
+            "title": "Outsourcing TNT Mercúrio (setor de transporte):",
+            "topics":[
+               "Desenvolver e manter sistemas em Java (JPA [Hibernate], EJB, JSF, Spring Framework e JSP) usando Oracle como base de dados, Weblogic comoservidor de aplicação e SVN para versionamento;",
+               "Criação de testes com JUnit;",
+               "Participação de alinhamento de demandas e reuniões de projeto;",
+               "Uso de metodologia ágil (SAFe e Kanban)."
+            ]
+         },
+         {
+            "title":"Projeto Interno:",
+            "topics": [
+               "Desenvolvimento de projeto interno para manutenção e administração;",
+               "Uso de PrimeFaces, Hibernate e Spring;",
+               "Uso de metodologia ágil (Kanban)."
+           ]
+         }
+      ]
+   },
+
+    "experience_pucrs": {
+       "date":"Jun. 2016 - Fev. 2018",
+       "location":"Pontifícia Universidade Católica do Rio Grande do Sul",
+       "position":"Desenvolvedor",
+       "projects": [
+          {
+             "title":"Desenvolvimento e manutenção de projetos internos:",
+             "topics": [
+               "Analisar, desenvolver e manutenção de aplicações Java (JPA [Hibernate], EJB, JSF, RichFaces, Spring Framework, Servlets e JSP) usando como base de dados Oracle, JBoss e Tomcat como servidor, e SVN como ferramenta de versionamento;",
+               "Analisar, desenvolver e manter rotinas de banco de dados com Oracle PL/SQL;",
+               "Criar e executar casos de teste com JUnit para testes unitários."
+            ]
+          }
+       ]
+    },
     "qualifications_title":"Qualificações e atividades profissionais",
     "courses":[
        {

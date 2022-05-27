@@ -1,43 +1,58 @@
 {
-    "language" : "Language",
     "apresentation":"I have been working professionally with software programming since 2016. Most of my day I work mainly with Java backend, with the Spring framework. I have had contact with other frameworks, such as PrimeFaces, JPA and JSF. In my work I mostly use MongoDB for databases, but eventually I use Oracle. I seek to improve my knowledge in programming and software development, applying my skills to the company's projects and needs.",
     "firstDegree":"Information Systems - PUCRS (finished 2020)",
     "secondDegree":"Physical Education - PUCRS (finished 2015)",
-    "experience_one_date":"Feb 2018 - Today",
-    "experience_dbc_location": "DBC Company",
-    "experience_one_position":"Software Developer",
-    "experience_dbc_one_title":"Outsourcing Sicredi (banking sector):",
-    "experience_dbc_one_jobs":[
-       "For the backend, Java 8, Spring MVC and Hibernate were used. For the frontend, PrimeFaces with SCSS and Javascript were used to customize the interface;",
-       "Create test cases in JUnit for unit testing;",
-       "Participate in alignment demands and project meetings;",
-       "Use of agile methodologies."
-    ],
-    "experience_dbc_two_title":"Outsourcing TNT Mercúrio (transport sector):",
-    "experience_dbc_two_jobs":[
-       "Development and maintenance of Java systems (JPA [Hibernate], EJB, JSF, Spring Framework, and JSP) using Oracle as database, Weblogic as application servers and SVN as version control tool;",
-       "Create and execute test cases in JUnit for unit testing;",
-       "Participate in alignment demands and projects meetings;",
-       "Introducing the use of agile methodologies and ceremonies."
-    ],
-    "experience_dbc_three_title":"Outsourcing Sicredi (setor bancário):",
-    "experience_dbc_three_jobs":[
-       "Development and maintenance of Java microservices, using Spring (MVC and Webflux). All communication async was performed using Kafka. Most microservices were built using MongoDB or PDB;",
-       "Create and execute test cases in JUnit for unit testing with the support of SonarLint and automated testing with jMeter;",
-       "ParticiparTeam developer leader, participating directly in business decisions and leading other developers into projects;",
-       "Promote technical knowledge meetings for developers;",
-       "Use of JIRA for trouble tickets and Confluence for the knowledge base."
-    ],
-    "experience_pucrs_one_date":"Jun 2016 - Feb 2018",
-    "experience_pucrs_one_location":"Pontifical Catholic University of Rio Grande do Sul (PUCRS)",
-    "experience_pucrs_one_position":"Software Developer",
-    "experience_pucrs_one_title":"Development and maintenance of internal projects:",
-    "experience_pucrs_one_jobs":[
-       "Analysis, development and maintenance of Java systems (JPA [Hibernate], EJB, JSF, RichFaces, Spring Framework, Servlets and JSP) using Oracle as database, JBoss and Tomcat as application servers, and SVN as version control tool;",
-       "Analysis, development and maintenance of database routines with Oracle PL/SQL;",
-       "Create and execute test cases in JUnit for unit testing;",
-       "Develop automated reports and forms, using Jasper Reports."
-    ],
+    "experience_dbc": {
+      "date":"Feb 2018 - Today",
+      "location":"DBC Company",
+      "position":"Software Developer",
+      "projects": [
+         {
+            "title": "Outsourcing Sicredi (banking sector):",
+            "topics":[
+               "Development and maintenance of Java microservices, using Spring (MVC and Webflux). All communication async was performed using Kafka. Most microservices were built using MongoDB or PDB;",
+               "Create and execute test cases in JUnit for unit testing with the support of SonarLint and automated testing with jMeter;",
+               "ParticiparTeam developer leader, participating directly in business decisions and leading other developers into projects;",
+               "Promote technical knowledge meetings for developers;",
+               "Use of JIRA for trouble tickets and Confluence for the knowledge base."
+            ]
+         },         
+         {
+            "title": "Outsourcing TNT Mercúrio (transport sector):",
+            "topics":[
+               "Development and maintenance of Java systems (JPA [Hibernate], EJB, JSF, Spring Framework, and JSP) using Oracle as database, Weblogic as application servers and SVN as version control tool;",
+               "Create and execute test cases in JUnit for unit testing;",
+               "Participate in alignment demands and projects meetings;",
+               "Introducing the use of agile methodologies and ceremonies."
+            ]
+         },
+         {
+            "title":"Outsourcing Sicredi (banking sector):",
+            "topics": [
+               "For the backend, Java 8, Spring MVC and Hibernate were used. For the frontend, PrimeFaces with SCSS and Javascript were used to customize the interface;",
+               "Create test cases in JUnit for unit testing;",
+               "Participate in alignment demands and project meetings;",
+               "Use of agile methodologies."
+           ]
+         }
+      ]
+   },
+    "experience_pucrs": {
+      "date":"Jun 2016 - Feb 2018",
+      "location":"Pontifical Catholic University of Rio Grande do Sul (PUCRS)",
+      "position":"Software Developer",
+      "projects": [
+         {
+            "title":"Development and maintenance of internal projects:",
+            "topics": [
+               "Analysis, development and maintenance of Java systems (JPA [Hibernate], EJB, JSF, RichFaces, Spring Framework, Servlets and JSP) using Oracle as database, JBoss and Tomcat as application servers, and SVN as version control tool;",
+               "Analysis, development and maintenance of database routines with Oracle PL/SQL;",
+               "Create and execute test cases in JUnit for unit testing;",
+               "Develop automated reports and forms, using Jasper Reports."
+           ]
+         }
+      ]
+   },
     "qualifications_title":"Qualifications and professional activities",
     "courses":[
        {
