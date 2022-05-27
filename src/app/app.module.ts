@@ -15,6 +15,7 @@ import { SortByDatePipe } from './shared/pipe/sort/sort-by-date.pipe';
 import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { HomeComponent } from './pages/home/home.component';
+import { ExperienceComponent } from './components/experience/experience.component';
 
 const icons = {
   linkedin, instagram, github, filePdf
@@ -28,7 +29,8 @@ const icons = {
     SortByDatePipe,
     HeaderComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
+    ExperienceComponent
   ],
   imports: [
     BrowserModule,

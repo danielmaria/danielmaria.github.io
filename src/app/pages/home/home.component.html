@@ -4,7 +4,7 @@
     </div>
  </div>
  <section class="experience">
-    <div class="row justify-content-md-center">
+    <!-- <div class="row justify-content-md-center">
        <div class="col col-lg-3 col-sm-4 col-12">
           <h2>{{'experience_dbc_location' | translate}}</h2>
           <p>{{'experience_one_date' | translate}}</p>
@@ -27,23 +27,10 @@
              <div [innerHTML]="'experience_dbc_one_jobs' | translate | breakText"></div>
           </div>
        </div>
-    </div>
+    </div> -->
 
+    <app-experience [experience]="'experience_dbc' | translate"></app-experience>
     <div style='padding: 1em;'></div>
-
-    <div class="row justify-content-md-center">
-       <div class="col col-lg-3 col-sm-4 col-12">
-          <h2>{{'experience_pucrs_one_location' | translate}}</h2>
-          <p>{{'experience_pucrs_one_date' | translate}}</p>
-          <p>{{'experience_pucrs_one_position' | translate}}</p>
-       </div>
-       <div class="col col-lg-9 col-sm-8 col-12">
-          <div class="row justify-content-md-cente">
-             <b>{{'experience_pucrs_one_title' | translate}}</b>
-             <br>
-             <div [innerHTML]="'experience_pucrs_one_jobs' | translate | breakText"></div>
-          </div>
-       </div>
-    </div>
+    <app-experience [experience]="'experience_pucrs' | translate"></app-experience>
  </section>
  <app-courses></app-courses>

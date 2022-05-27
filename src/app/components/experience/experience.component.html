@@ -1,0 +1,17 @@
+<ng-container *ngIf="experience">
+    <div class="row justify-content-md-center">
+        <div class="col col-lg-3 col-sm-4 col-12">
+        <h2>{{ experience.location }}</h2>
+        <p>{{ experience.date }}</p>
+        <p>{{ experience.position }}</p>
+        </div>
+        <div class="col col-lg-9 col-sm-8 col-12">
+        <div class="row justify-content-md-cente">
+            <div *ngFor="let project of experience.projects">
+                <b>{{project.title}}</b>
+                <div [innerHTML]="project.topics | breakText"></div>
+            </div>
+        </div>
+        </div>
+    </div>
+</ng-container>
