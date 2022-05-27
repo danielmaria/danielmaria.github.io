@@ -2,3 +2,8 @@
     color: white; 
     margin: 0 3px;
 }
+
+.perfil-photo {
+    margin-right: 30px;
+    float: right;
+}

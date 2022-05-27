@@ -3,22 +3,19 @@
        <div class="nav justify-content-end">
           <div class="row">
              <div class="col">
-                <div ngbDropdown class="d-inline-block">
-                   <button type="button" class="btn btn-secondary" id="dropdownBasic1" ngbDropdownToggle>{{'language' | translate}}</button>
-                   <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-                      <div *ngFor="let language of translate.getLangs()">
-                         <button class="dropdown-item" id="language" on-click="switchLanguage(language)">
-                         <span class="flag-icon flag-icon-{{language}} flag-icon-squared"></span>
-                         </button>
-                      </div>
-                   </div>
+                <div class="d-flex">
+                  <div *ngFor="let language of translate.getLangs()">
+                     <button class="dropdown-item" id="language" on-click="switchLanguage(language)">
+                     <span class="flag-icon flag-icon-{{language}} flag-icon-squared"></span>
+                     </button>
+                  </div>
                 </div>
              </div>
           </div>
        </div>
     </div>
     <div class="col col-lg-3 col-3 center">
-       <img class="rounded-circle" src="../assets/img/perfil.jpg">
+       <img class="rounded-circle perfil-photo" src="../assets/img/perfil.jpg">
     </div>
     <div class="col col-lg-9 col-9" style="color: whitesmoke;">
        <h1>Daniel Maria da Silva</h1>
