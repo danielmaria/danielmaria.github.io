@@ -1,5 +1,5 @@
 {
-  "name": "danielmaria.github.io",
+  "name": "danielmaria",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test --watch=false --browsers=ChromeHeadless",
-    "deploy": "ng build --prod --base-href=/danielmaria.github.io/"
+    "deploy": "ng build --prod"
   },
   "private": true,
   "dependencies": {
