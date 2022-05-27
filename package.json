@@ -4,11 +4,9 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --prod --base-href=/danielmaria.github.io/",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test",
-    "test:ci": "ng test --watch=false --browsers=ChromeHeadless",
-    "build:ci": "ng build --prod"
+    "test": "ng test --watch=false --browsers=ChromeHeadless"
   },
   "private": true,
   "dependencies": {
