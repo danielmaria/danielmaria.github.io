@@ -6,7 +6,7 @@
                 <div class="d-flex">
                   <div *ngFor="let language of translate.getLangs()">
                      <button class="dropdown-item" id="language" on-click="switchLanguage(language)">
-                     <span class="flag-icon flag-icon-{{language}} flag-icon-squared"></span>
+                        <span class="flag-icon flag-icon-{{language}} flag-icon-squared"></span>
                      </button>
                   </div>
                 </div>
@@ -26,15 +26,19 @@
     <div class="row">
        <div class="col col-lg-12">
           <div class="nav justify-content-end">
-             <a href="https://www.linkedin.com/in/danielmariadasilva/">
-                <i-bs name="linkedin" width="20" height="20" class="media-icon"></i-bs>
-             </a>
-             <a href="https://github.com/danielmaria">
-                <i-bs name="github" width="20" height="20" class="media-icon"></i-bs>
-             </a>
-             <a href="https://www.instagram.com/dan.maria/">
-                <i-bs name="instagram" width="20" height="20" class="media-icon"></i-bs>
-             </a>
+            <div class="d-flex">
+               <button class="dropdown-item" id="language" onclick="location.href='http://www.linkedin.com/in/danielmariadasilva/'" type="button">
+                  <i-bs name="linkedin" width="20" height="20" class="media-icon"></i-bs>
+               </button>
+
+               <button class="dropdown-item" id="language" onclick="location.href='https://github.com/danielmaria/'" type="button">
+                  <i-bs name="github" width="20" height="20" class="media-icon"></i-bs>
+               </button>
+
+               <button class="dropdown-item" id="language" onclick="location.href='https://www.instagram.com/dan_maria/'" type="button">
+                  <i-bs name="instagram" width="20" height="20" class="media-icon"></i-bs>
+               </button>
+            </div>
           </div>
        </div>
     </div>
