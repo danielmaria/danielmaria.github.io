@@ -54,6 +54,7 @@
       ]
    },
     "qualifications_title":"Qualifications and professional activities",
+    "certification": "Certification",
     "courses":[
        {
           "title":"Android I: Create your fantastic App in Eclipse",
@@ -311,8 +312,7 @@
           "title":"Design Thinking with Children and Youth: Application and Examples",
           "date":"04/02/2019",
           "duration":42,
-          "company":"Udemy.com",
-          "certification":""
+          "company":"Udemy.com"
        },
        {
           "title":"RESTful API with Spring Boot and Java 8",
@@ -332,8 +332,7 @@
           "title":"Scrum Developer Training",
           "date":"01/01/2018",
           "duration":480,
-          "company":"DBCCompany",
-          "certification":""
+          "company":"DBCCompany"
        },
        {
           "title":"Certificate CLF (Certified Lean Inception Facilitator)",
@@ -374,8 +373,7 @@
           "title":"Apache Kafka and Spring Boot (Consumer, Producer)",
           "date":"05/20/2020",
           "duration":60,
-          "company":"Udemy.com",
-          "certification":""
+          "company":"Udemy.com"
        },
        {
           "title":"Reactive Programming with Spring Framework 5",
