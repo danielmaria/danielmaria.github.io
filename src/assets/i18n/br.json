@@ -2,8 +2,23 @@
     "apresentation":"Trabalho profissionalmente com programação de software desde 2016. Na maior parte do meu dia trabalho principalmente com backend Java, com o framework Spring. Já tive contato com outros frameworks, tais como PrimeFaces, JPA e JSF. Em meu trabalho utilizo na maior parte das vezes MongoDB para banco de dados, mas eventualmente utilizo Oracle. Busco aprimorar meus conhecimentos em programação e em desenvolvimento de software, aplicando minhas habilidades nos projetos e necessidades da empresa.",
     "firstDegree":"Sistema de informação - PUCRS (concluído 2020)",
     "secondDegree":"Bacharelado em Educação Física e Ciências do Desporto - PUCRS (concluído 2015)",
+    "experience_cocus": {
+      "date":"Set. 2021 - Atual",
+      "location":"COCUS Portugal",
+      "position":"Fullstack Developer",
+      "projects": [
+         {
+            "title":"Projeto Tui Wheels:",
+            "topics": [
+               "Implementação de soluções para um grande player da área de turismo mundial;",
+               "Responsável por desenvolver e aprimorar a solução de reserva de carros utilizando tecnologias como Quarkus, MongoDB e Postgres;", 
+               "A solução foi toda desenvolvida para a nuvem, tendo a AWS como plataforma de infraestrutura.."
+           ]
+         }
+      ]
+   },
     "experience_dbc": {
-      "date":"Fev. 2018 - Atual",
+      "date":"Fev. 2018 - Set. 2021",
       "location":"DBC Company",
       "position":"Desenvolvedor",
       "projects": [

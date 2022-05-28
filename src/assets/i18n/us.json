@@ -2,8 +2,23 @@
     "apresentation":"I have been working professionally with software programming since 2016. Most of my day I work mainly with Java backend, with the Spring framework. I have had contact with other frameworks, such as PrimeFaces, JPA and JSF. In my work I mostly use MongoDB for databases, but eventually I use Oracle. I seek to improve my knowledge in programming and software development, applying my skills to the company's projects and needs.",
     "firstDegree":"Information Systems - PUCRS (finished 2020)",
     "secondDegree":"Physical Education - PUCRS (finished 2015)",
+    "experience_cocus": {
+      "date":"Sep 2021 - Today",
+      "location":"COCUS Portugal",
+      "position":"Fullstack Developer",
+      "projects": [
+         {
+            "title":"Tui Wheels Project:",
+            "topics": [
+               "I have been working as a Fullstack during the development and improvement of a car booking solution for a major player in the world tourism area;",
+               "We developed the solution using Java (Quarkus), relational (Postgres) and non-relational (DocumentDB) databases, JavaScript (Angular) for the FrontEnd;", 
+               "The entire infrastructure was developed for the cloud using AWS."
+           ]
+         }
+      ]
+   },
     "experience_dbc": {
-      "date":"Feb 2018 - Today",
+      "date":"Feb 2018 - Sep 2021",
       "location":"DBC Company",
       "position":"Software Developer",
       "projects": [
@@ -37,7 +52,7 @@
          }
       ]
    },
-    "experience_pucrs": {
+   "experience_pucrs": {
       "date":"Jun 2016 - Feb 2018",
       "location":"Pontifical Catholic University of Rio Grande do Sul (PUCRS)",
       "position":"Software Developer",

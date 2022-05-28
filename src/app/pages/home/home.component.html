@@ -4,33 +4,8 @@
     </div>
  </div>
  <section class="experience">
-    <!-- <div class="row justify-content-md-center">
-       <div class="col col-lg-3 col-sm-4 col-12">
-          <h2>{{'experience_dbc_location' | translate}}</h2>
-          <p>{{'experience_one_date' | translate}}</p>
-          <p>{{'experience_one_position' | translate}}</p>
-       </div>
-       <div class="col col-lg-9 col-sm-8 col-12">
-          <div class="row justify-content-md-cente">
-             <b>{{'experience_dbc_three_title' | translate}}</b>
-             <br>
-             <div [innerHTML]="'experience_dbc_three_jobs' | translate | breakText"></div>
-          </div>
-          <div class="row justify-content-md-cente">
-             <b>{{'experience_dbc_two_title' | translate}}</b>
-             <br>
-             <div [innerHTML]="'experience_dbc_two_jobs' | translate | breakText"></div>
-          </div>
-          <div class="row justify-content-md-cente">
-             <b>{{'experience_dbc_one_title' | translate}}</b>
-             <br>
-             <div [innerHTML]="'experience_dbc_one_jobs' | translate | breakText"></div>
-          </div>
-       </div>
-    </div> -->
-
+   <app-experience [experience]="'experience_cocus' | translate"></app-experience>
     <app-experience [experience]="'experience_dbc' | translate"></app-experience>
-    <div style='padding: 1em;'></div>
     <app-experience [experience]="'experience_pucrs' | translate"></app-experience>
  </section>
  <app-courses></app-courses>
