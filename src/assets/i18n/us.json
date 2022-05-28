@@ -72,6 +72,27 @@
     "certification": "Certification",
     "courses":[
        {
+          "title":"Angular 13 - Beginner Practical Guide",
+          "date": "04/08/2022",
+          "duration": 510,
+          "company":"Udemy.com",
+          "certification":"angular13"
+       },
+       {
+         "title":"Scrum fundamentals Certified",
+         "date": "04/30/2022",
+         "duration": 60,
+         "company":"SCRUMstudy",
+         "certification":"scrum"
+       },
+       {
+          "title":"Reactive Programming with Spring Framework 5",
+          "date": "10/04/2021",
+          "duration":240,
+          "company":"Udemy.com",
+          "certification":"reactive"
+       },
+       {
           "title":"Android I: Create your fantastic App in Eclipse",
           "date":"03/22/2016",
           "duration":720,

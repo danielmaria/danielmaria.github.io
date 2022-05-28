@@ -71,10 +71,29 @@
     "certification": "Certificação",
     "courses":[
        {
+          "title":"Angular 13 - Guia Prático para Iniciante",
+          "date": "08/04/2022",
+          "company":"Udemy.com",
+          "certification":"angular13"
+       },
+       {
+          "title":"Scrum fundamentals Certified",
+          "date": "30/04/2022",
+          "company":"SCRUMstudy",
+          "certification":"scrum"
+       },
+       {
+          "title":"Programação reativa com Spring Framework 5",
+          "date": "04/10/2021",
+          "duration":240,
+          "company":"Udemy.com",
+          "certification":"reactive"
+       },
+       {
           "title":"Android I: Crie sua App fantástica no Eclipse",
           "date": "03/22/2016",
           "duration":720,
-          "showCV":false,
+          
           "company":"Alura.com",
           "certification":"alura_android1eclipse"
        },
@@ -82,7 +101,7 @@
           "title":"Jogos com Android: Desenvolva seu próprio Flappy Bird",
           "date": "04/08/2016",
           "duration":480,
-          "showCV":false,
+          
           "company":"Alura.com",
           "certification":"alura_fluppy"
        },
@@ -90,7 +109,7 @@
           "title":"Jogos com Android I: Desenvolvimento de jogos 2D",
           "date": "03/31/2016",
           "duration":480,
-          "showCV":false,
+          
           "company":"Alura.com",
           "certification":"alura_androidjogo"
        },
@@ -98,7 +117,7 @@
           "title":"Android I: Crie sua App fantástica com Android Studio",
           "date": "03/11/2016",
           "duration":600,
-          "showCV":false,
+          
           "company":"Alura.com",
           "certification":"alura_android1"
        },
@@ -106,7 +125,7 @@
           "title":"Design Patterns Java I: Boas práticas de programação",
           "date": "10/29/2015",
           "duration":1200,
-          "showCV":true,
+          
           "company":"Alura.com",
           "certification":"alura_designpattern"
        },
@@ -114,7 +133,7 @@
           "title":"Eclipse: Produtividade Extrema na IDE com Java",
           "date": "11/18/2015",
           "duration":720,
-          "showCV":false,
+          
           "company":"Alura.com",
           "certification":"alura_eclipse"
        },
@@ -122,7 +141,7 @@
           "title":"Orientação a Objetos: Melhores técnicas com Java",
           "date": "03/01/2016",
           "duration":1200,
-          "showCV":false,
+          
           "company":"Alura.com",
           "certification":"alura_oo"
        },
@@ -130,7 +149,7 @@
           "title":"Java e Testes: Test driven development com Junit",
           "date": "02/23/2016",
           "duration":720,
-          "showCV":true,
+          
           "company":"Alura.com",
           "certification":"alura_javatestes"
        },
@@ -139,7 +158,7 @@
           "titleTransaled":"Java I: Getting Started",
           "date": "08/25/2015",
           "duration":720,
-          "showCV":false,
+          
           "company":"Alura.com",
           "certification":"alura_primeirospassos"
        },
@@ -147,7 +166,7 @@
           "title":"Java e JDBC: Trabalhando com um banco de dados",
           "date": "10/15/2015",
           "duration":480,
-          "showCV":false,
+          
           "company":"Alura.com",
           "certification":"alura_javajdbc"
        },
@@ -155,7 +174,7 @@
           "title":"Refatorando na prática",
           "date": "11/17/2015",
           "duration":480,
-          "showCV":false,
+          
           "company":"Alura.com",
           "certification":"alura_refatorando"
        },
@@ -163,7 +182,7 @@
           "title":"Java II: Orientação a Objetos",
           "date": "08/28/2015",
           "duration":720,
-          "showCV":false,
+          
           "company":"Alura.com",
           "certification":"alura_java2_oo"
        },
@@ -171,7 +190,7 @@
           "title":"Java III: Principais APIs e bibliotecas",
           "date": "09/30/2015",
           "duration":720,
-          "showCV":false,
+          
           "company":"Alura.com",
           "certification":"alura_java3"
        },
@@ -179,7 +198,7 @@
           "title":"Java 8: Tire proveito dos novos recursos da linguagem",
           "date": "11/13/2015",
           "duration":720,
-          "showCV":true,
+          
           "company":"Alura.com",
           "certification":"alura_java8"
        },
@@ -187,7 +206,7 @@
           "title":"Clojure: Introdução a programação funcional",
           "date": "11/30/2015",
           "duration":480,
-          "showCV":true,
+          
           "company":"Alura.com",
           "certification":"alura_clojure"
        },
@@ -195,7 +214,7 @@
           "title":"Threads I : Programação paralela em Java",
           "date": "05/18/2016",
           "duration":480,
-          "showCV":false,
+          
           "company":"Alura.com",
           "certification":"alura_threads"
        },
@@ -203,7 +222,7 @@
           "title":"Java: Dominando as Collections",
           "date": "08/01/2016",
           "duration":1200,
-          "showCV":true,
+          
           "company":"Alura.com",
           "certification":"alura_collections"
        },
@@ -211,7 +230,7 @@
           "title":"JavaScript : Programando na linguagem da web",
           "date": "09/04/2015",
           "duration":1200,
-          "showCV":false,
+          
           "company":"Alura.com",
           "certification":"alura_js"
        },
@@ -219,7 +238,7 @@
           "title":"HTML5 e CSS3 I: Suas primeiras páginas da Web",
           "date": "09/01/2015",
           "duration":1920,
-          "showCV":false,
+          
           "company":"Alura.com",
           "certification":"alura_htmlecss"
        },
@@ -227,7 +246,7 @@
           "title":"HTML5 e CSS3 II: Turbinando as suas páginas",
           "date": "10/15/2015",
           "duration":2400,
-          "showCV":false,
+          
           "company":"Alura.com",
           "certification":"alura_htmlcss2"
        },
@@ -235,7 +254,7 @@
           "title":"Métodos Ágeis: Introdução",
           "date": "11/13/2015",
           "duration":720,
-          "showCV":false,
+          
           "company":"Alura.com",
           "certification":"alura_metodosageis"
        },
@@ -243,7 +262,7 @@
           "title":"UML Introdução: Modelagem de soluçõe",
           "date": "08/24/2015",
           "duration":480,
-          "showCV":false,
+          
           "company":"Alura.com",
           "certification":"alura_uml"
        },
@@ -251,7 +270,7 @@
           "title":"Scrum: Agilidade em seu projeto",
           "date": "01/14/2016",
           "duration":600,
-          "showCV":false,
+          
           "company":"Alura.com",
           "certification":"alura_scrum"
        },
@@ -259,7 +278,7 @@
           "title":"Lean Startup: Primeiros passos da sua startup enxuta",
           "date": "10/26/2015",
           "duration":60,
-          "showCV":true,
+          
           "company":"Alura.com",
           "certification":"alura_lean"
        },
@@ -267,7 +286,7 @@
           "title":"MySQL II: Consultas poderosas",
           "date": "11/18/2015",
           "duration":960,
-          "showCV":false,
+          
           "company":"Alura.com",
           "certification":"alura_mysql1"
        },
@@ -275,7 +294,7 @@
           "title":"MySQL I: Iniciando suas consultas",
           "date": "09/12/2015",
           "duration":480,
-          "showCV":false,
+          
           "company":"Alura.com",
           "certification":"alura_mysql2"
        },
@@ -283,7 +302,7 @@
           "title":"Oracle I: Aprenda SQL usando esse famoso banco de dados",
           "date": "12/01/2015",
           "duration":480,
-          "showCV":false,
+          
           "company":"Alura.com",
           "certification":"alura_oracle1"
        },
@@ -291,7 +310,7 @@
           "title":"Redis I: Armazenando chaves e valores",
           "date": "11/25/2015",
           "duration":1200,
-          "showCV":false,
+          
           "company":"Alura.com",
           "certification":"alura_redis1"
        },
@@ -299,7 +318,7 @@
           "title":"Redis II: Estruturas e recursos na sua base NoSQL",
           "date": "11/27/2015",
           "duration":600,
-          "showCV":true,
+          
           "company":"Alura.com",
           "certification":"alura_redis2"
        },
@@ -307,7 +326,7 @@
           "title":"SQLServer I: desvendando o banco de dados",
           "date": "12/01/2015",
           "duration":540,
-          "showCV":false,
+          
           "company":"Alura.com",
           "certification":"alura_sqlserver1"
        },
@@ -315,7 +334,7 @@
           "title":"SQLServer II: Consultas poderosas",
           "date": "12/04/2015",
           "duration":600,
-          "showCV":false,
+          
           "company":"Alura.com",
           "certification":"alura_sqlserver2"
        },
@@ -323,7 +342,7 @@
           "title":"Oracle II: Consultas Complexas",
           "date": "02/05/2016",
           "duration":480,
-          "showCV":true,
+          
           "company":"Alura.com",
           "certification":"alura_oracle2"
        },
@@ -331,7 +350,7 @@
           "title":"SQL Completo",
           "date": "08/05/2015",
           "duration":1200,
-          "showCV":false,
+          
           "company":"Softblue",
           "certification":"softblue_sql"
        },
@@ -339,7 +358,7 @@
           "title":"Desenvolvedor NodeJS e MongoDB",
           "date": "07/27/2017",
           "duration":930,
-          "showCV":true,
+          
           "company":"Udemy.com",
           "certification":"nodejs"
        },
@@ -347,7 +366,7 @@
           "title":"Git Completo: Do Básico ao Avançado",
           "date": "07/27/2017",
           "duration":120,
-          "showCV":true,
+          
           "company":"Udemy.com",
           "certification":"git"
        },
@@ -355,7 +374,7 @@
           "title":"Criar aplicativos com Ionic 3, Spring, OAuth2, REST e MongoDB",
           "date": "12/12/2018",
           "duration":300,
-          "showCV":true,
+          
           "company":"Udemy.com",
           "certification":"ionic"
        },
@@ -363,14 +382,14 @@
           "title":"Design Thinking com Crianças e Jovens: Aplicação e Exemplos",
           "date": "04/02/2019",
           "duration":42,
-          "showCV":false,
+          
           "company":"Udemy.com"
        },
        {
           "title":"API RESTful com Spring Boot e Java 8",
           "date": "04/06/2019",
           "duration":930,
-          "showCV":true,
+          
           "company":"Udemy.com",
           "certification":"api_restful"
        },
@@ -378,7 +397,7 @@
           "title":"Testes unitários em JAVA: Domine JUnit, Mockito e TDD",
           "date": "04/17/2019",
           "duration":480,
-          "showCV":true,
+          
           "company":"Udemy.com",
           "certification":"testes_unitarios"
        },
@@ -386,14 +405,14 @@
           "title":"Treinamento Scrum Developer",
           "date": "01/01/2018",
           "duration":480,
-          "showCV":false,
+          
           "company":"DBCCompany"
        },
        {
           "title":"Certificado CLF (Certified Lean Inception Facilitator)",
           "date": "08/01/2018",
           "duration":480,
-          "showCV":true,
+          
           "company":"Caroli.org",
           "certification":"LeanInception"
        },
@@ -401,7 +420,7 @@
           "title":"Introdução à Business Intelligence e Data Warehouse",
           "date": "02/14/2018",
           "duration":300,
-          "showCV":false,
+          
           "company":"BI do Brasil",
           "certification":"bida"
        },
@@ -409,7 +428,7 @@
           "title":"Angular 7 e  integração de APIs",
           "date": "04/21/2019",
           "duration":150,
-          "showCV":true,
+          
           "company":"Udemy.com",
           "certification":"angular"
        },
@@ -417,7 +436,7 @@
           "title":"Docker: Ferramenta essencial para Desenvolvedores",
           "date": "05/02/2019",
           "duration":330,
-          "showCV":true,
+          
           "company":"Udemy.com",
           "certification":"docker"
        },
@@ -425,7 +444,7 @@
           "title":"Terminal Linux",
           "date": "03/23/2020",
           "duration":60,
-          "showCV":true,
+          
           "company":"Udemy.com",
           "certification":"terminal_linux"
        },
@@ -433,14 +452,14 @@
           "title":"Apache Kafka and Spring Boot (Consumer, Producer)",
           "date": "05/20/2020",
           "duration":60,
-          "showCV":true,
+          
           "company":"Udemy.com"
        },
        {
           "title":"Reactive Programming with Spring Framework 5",
           "date": "10/04/2020",
           "duration":240,
-          "showCV":true,
+          
           "company":"Udemy.com",
           "certification":"webflux"
        },
@@ -448,7 +467,7 @@
           "title":"Quarkus com Panache, GraalVM, GitlabCI e AWS",
           "date": "07/08/2020",
           "duration":90,
-          "showCV":true,
+          
           "company":"Udemy.com",
           "certification":"quarkus"
        },
@@ -456,7 +475,7 @@
           "title":"Java Application Performance and Memory Management",
           "date": "02/26/2021",
           "duration":600,
-          "showCV":true,
+          
           "company":"Udemy.com",
           "certification":"jvm"
        },
@@ -464,7 +483,7 @@
           "title":"JMeter - Testes de performance",
           "date": "02/03/2021",
           "duration":360,
-          "showCV":true,
+          
           "company":"Udemy.com",
           "certification":"jmeter"
        }
