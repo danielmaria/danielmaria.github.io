@@ -53,6 +53,7 @@
        ]
     },
     "qualifications_title":"Qualificações e atividades profissionais",
+    "certification": "Certificação",
     "courses":[
        {
           "title":"Android I: Crie sua App fantástica no Eclipse",
@@ -348,8 +349,7 @@
           "date": "04/02/2019",
           "duration":42,
           "showCV":false,
-          "company":"Udemy.com",
-          "certification":""
+          "company":"Udemy.com"
        },
        {
           "title":"API RESTful com Spring Boot e Java 8",
@@ -372,8 +372,7 @@
           "date": "01/01/2018",
           "duration":480,
           "showCV":false,
-          "company":"DBCCompany",
-          "certification":""
+          "company":"DBCCompany"
        },
        {
           "title":"Certificado CLF (Certified Lean Inception Facilitator)",
@@ -420,8 +419,7 @@
           "date": "05/20/2020",
           "duration":60,
           "showCV":true,
-          "company":"Udemy.com",
-          "certification":""
+          "company":"Udemy.com"
        },
        {
           "title":"Reactive Programming with Spring Framework 5",
