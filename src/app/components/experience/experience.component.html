@@ -9,7 +9,9 @@
         <div class="row justify-content-md-cente">
             <div *ngFor="let project of experience.projects">
                 <b>{{project.title}}</b>
-                <div [innerHTML]="project.topics | breakText"></div>
+                <li *ngFor="let topic of project.topics">
+                    {{topic}}
+                </li>
             </div>
         </div>
         </div>

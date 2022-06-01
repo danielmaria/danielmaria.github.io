@@ -11,7 +11,6 @@ import { PdfViewerModule } from 'ng2-pdf-viewer';
 
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { BreakTextPipe } from './shared/pipe/break-line/break-text.pipe';
 import { CoursesComponent } from './components/courses/courses.component';
 import { HoursAvgPipe } from './shared/pipe/hours-avg/hours-avg.pipe';
 import { SortByDatePipe } from './shared/pipe/sort/sort-by-date.pipe';
@@ -27,7 +26,6 @@ const icons = {
 @NgModule({
   declarations: [
     AppComponent,
-    BreakTextPipe,
     CoursesComponent,
     HoursAvgPipe,
     SortByDatePipe,
