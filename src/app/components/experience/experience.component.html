@@ -8,13 +8,27 @@
         <div class="col col-lg-9 col-sm-8 col-12">
         <div class="row justify-content-md-cente">
             <div *ngFor="let project of experience.projects" class="experience-project">
-                <b class="project-title">{{project.title}}</b>
-                <li *ngFor="let topic of project.topics" class="project-topic">
-                    {{topic}}
+                <h4 class="project-title">{{project.title}}</h4>
+
+                <div class="d-flex">
+                    <div *ngFor="let technologie of project.technologies" class="technologies p-1">
+                        <span class="badge bg-dark">{{technologie}}</span>
+                    </div>
+                </div>
+
+                <b>Main responsibilities:</b>
+                <li *ngFor="let responsibility of project.responsibilities" class="project-responsibility">
+                    {{responsibility}}
                 </li>
+
+                <ng-container *ngIf="project.achievements">
+                    <b>Major achievements:</b>
+                    <li *ngFor="let achievement of project.achievements" class="project-achievement">
+                        {{achievement}}
+                    </li>
+                </ng-container>
             </div>
         </div>
         </div>
     </div>
 </ng-container>
-<div style='padding: 1em;'></div>

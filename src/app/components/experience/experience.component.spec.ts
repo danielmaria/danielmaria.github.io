@@ -49,27 +49,34 @@ describe('ExperienceComponent', () => {
 
     const topicElement = el.query(By.css(".experience-project")),
           title = topicElement.query(By.css(".project-title")),
-          topics = topicElement.queryAll(By.css(".project-topic"));
+          responsibilities = topicElement.queryAll(By.css(".project-responsibility")),
+          achievements = topicElement.queryAll(By.css(".project-achievement"));
 
     expect(topicElement).toBeTruthy();
     expect(title.nativeElement.textContent).toBe(stabExperience.projects[0].title);
-    expect(topics.length).toBe(stabExperience.projects[0].topics.length);
+    expect(responsibilities.length).toBe(stabExperience.projects[0].responsibilities.length);
+    expect(achievements.length).toBe(stabExperience.projects[0].achievements!.length);
   })
 });
 
 const stabExperience: Experience = {
-  date:"Jun 2016 - Feb 2018",
-  location:"Pontifical Catholic University of Rio Grande do Sul (PUCRS)",
-  position:"Software Developer",
-  projects: [
-      {
-        title:"Development and maintenance of internal projects:",
-        topics: [
-            "Analysis, development and maintenance of Java systems (JPA [Hibernate], EJB, JSF, RichFaces, Spring Framework, Servlets and JSP) using Oracle as database, JBoss and Tomcat as application servers, and SVN as version control tool;",
-            "Analysis, development and maintenance of database routines with Oracle PL/SQL;",
-            "Create and execute test cases in JUnit for unit testing;",
-            "Develop automated reports and forms, using Jasper Reports."
+    date:"Jun 2016 - Feb 2018",
+    location:"PUCRS",
+    position:"Java Developer",
+    projects: [
+       {
+          title: "Development and maintenance of internal projects:",
+          technologies : [
+             "Java 6 & 8", "Spring Framework 3", "JSF RichFaces", "Oracle", "EJB", "SVN", "JBOSS", "Tomcat"
+          ],
+          responsibilities: [
+             "Analysis, development, and maintenance of Java systems and database routines with Oracle PL/SQL;",
+             "Create and execute test cases with JUnit for unit testing;",
+             "Use of Jasper for reports and forms."
+         ],
+          achievements: [
+            "Migration of an entire monolith system into microservices with an Event-Driven-Architecture, turning it scalable and resilient."
         ]
-      }
-  ]
-}
+       }
+    ]
+ }

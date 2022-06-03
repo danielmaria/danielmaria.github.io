@@ -5,68 +5,68 @@
     "experience_cocus": {
       "date":"Set. 2021 - Atual",
       "location":"COCUS Portugal",
-      "position":"Fullstack Developer",
+      "position":"Senior Software Engineer",
       "projects": [
          {
             "title":"Projeto Tui Wheels:",
-            "topics": [
-               "Implementação de soluções para um grande player da área de turismo mundial;",
-               "Responsável por desenvolver e aprimorar a solução de reserva de carros utilizando tecnologias como Quarkus, MongoDB e Postgres;", 
-               "A solução foi toda desenvolvida para a nuvem, tendo a AWS como plataforma de infraestrutura.."
+            "technologies" : [
+               "Java 11", "Quarkus", "SQL (Postgresql)", "NoSQL (DocumentDB)", "Gitlab-CI", "Angular 9+", "AWS", "jMeter"
+            ],
+            "responsibilities": [
+               "Desenvolvimento de uma solução totalmente nova para um grande player na área do turismo mundial, utilizando na maioria dos serviços Java com o framework Quarkus;",
+               "Uso de serviços e infraestrutura da AWS;", 
+               "Uso de SQL com Postgres e NoSql com DocumentDB;",
+               "Desenvolvimento frontend usando Angular 9"
+           ],
+           "achievements": [
+              "Migração de um sistema monolítico inteiro para microsserviços com uma Arquitetura Orientada a Eventos, tornando-o escalável e resiliente."
            ]
          }
       ]
    },
     "experience_dbc": {
-      "date":"Fev. 2018 - Set. 2021",
+      "date":"Jun. 2016 - Fev. 2018",
       "location":"DBC Company",
-      "position":"Desenvolvedor",
+      "position":"Desenvolvedor de Software",
       "projects": [
          {
-            "title": "Outsourcing Sicredi (setor bancário):",
-            "topics":[
-               "Desenvolver e manter microserviços. Java com Spring (tanto MVC quando Webflux) eram usados. Toda comunicação assíncrona era feita usando Kafka. Quase todos os microserviços usavam MongoDB ou PDB e, quando necessário usávasse Oracle para rotinas PL/SQL;",
-               "Criar casos de teste com JUnit, usando o suporte do SonarLint;",
-               "Participar do alinhamento de demandas e reuniões de projeto;",
-               "Uso de metodologias ágeis (Kanban e Scrum);",
-               "Uso do JIRA para controle de demandas e progresso e o Confluence como base de conhecimento."
+            "title": "Senior Software Engineer (Sicredi, Outsourcing):",
+            "technologies" : [
+               "Java 11", "Spring boot", "Kafka", "SQL (Postgresql, Oracle)", "NoSQL (MongoDB, Redis)", 
+               "Gitlab-CI", "Kubernetes", "Webflux", "Angular 8+", "AWS S3", "jMeter", "Grafana"               
+            ],
+            "responsibilities":[
+               "Desenvolvimento e manutenção de soluções escaláveis com framework Java 11 e Spring Boot;",
+               "Construir uma Arquitetura Orientada a Eventos usando Kafka como um agente de eventos;",
+               "Substituir a arquitetura legada construindo novas APIs Restful para fornecer informações aos microsserviços;",
+               "Ajudar a criar uma cultura de compartilhamento de conhecimento;",
+               "Criar e manter gráficos utilizando Grafana;",
+               "Desenvolvimento de front-end usando Angular 6."
+            ],
+            "achievements": [
+               "Substituir uma arquitetura de terceiros por uma solução desenvolvida internamente, melhorando a experiência do usuário final e economizando recursos;",
+               "Incentivar uma reunião semanal com foco no compartilhamento de conhecimento, pois a maioria dos desenvolvedores não tinha experiência com microsserviços, novos recursos java e aspectos modernos de desenvolvimento, como revisões de código ao vivo e programação em pares;",
+               "Desenvolvimento de uma nova forma de Pagamento Instantâneo, onde o dinheiro é enviado para a conta do destinatário instantaneamente, utilizando programação reativa e comunicação assíncrona"
             ]
-         },
+         },         
          {
-            "title": "Outsourcing TNT Mercúrio (setor de transporte):",
-            "topics":[
-               "Desenvolver e manter sistemas em Java (JPA [Hibernate], EJB, JSF, Spring Framework e JSP) usando Oracle como base de dados, Weblogic comoservidor de aplicação e SVN para versionamento;",
-               "Criação de testes com JUnit;",
-               "Participação de alinhamento de demandas e reuniões de projeto;",
-               "Uso de metodologia ágil (SAFe e Kanban)."
+            "title": "Software Developer (FedEx, Outsourcing):",
+            "technologies" : [
+               "Java 8", "Spring Framework 5", "AngularJS", "Oracle", "JMS", "WebLogic Server", ".Net", "Java (for mobile app)"
+            ],
+            "responsibilities":[
+               "Desenvolvimento e manutenção de sistemas Java (JPA [Hibernate], EJB, JSF, Spring Framework e JSP) utilizando Oracle como banco de dados, Weblogic como servidores de aplicação e SVN como ferramenta de controle de versão;",
+               "Criar e executar casos de teste no JUnit para teste de unidade;",
+               "Participar de reuniões de alinhamento de demandas e projetos;",
+               "Introduzir o uso de metodologias e cerimônias ágeis"
+            ],
+            "achievements": [
+               "Aumentar o processo de checagem entre armazéns, economizando dinheiro e recursos;",
+               "Migração da cultura de desenvolvimento ágil de um simples quadro kanban para o Framework SAFe."
             ]
-         },
-         {
-            "title":"Projeto Interno:",
-            "topics": [
-               "Desenvolvimento de projeto interno para manutenção e administração;",
-               "Uso de PrimeFaces, Hibernate e Spring;",
-               "Uso de metodologia ágil (Kanban)."
-           ]
          }
       ]
    },
-
-    "experience_pucrs": {
-       "date":"Jun. 2016 - Fev. 2018",
-       "location":"Pontifícia Universidade Católica do Rio Grande do Sul",
-       "position":"Desenvolvedor",
-       "projects": [
-          {
-             "title":"Desenvolvimento e manutenção de projetos internos:",
-             "topics": [
-               "Analisar, desenvolver e manutenção de aplicações Java (JPA [Hibernate], EJB, JSF, RichFaces, Spring Framework, Servlets e JSP) usando como base de dados Oracle, JBoss e Tomcat como servidor, e SVN como ferramenta de versionamento;",
-               "Analisar, desenvolver e manter rotinas de banco de dados com Oracle PL/SQL;",
-               "Criar e executar casos de teste com JUnit para testes unitários."
-            ]
-          }
-       ]
-    },
     "qualifications_title":"Qualificações e atividades profissionais",
     "certification": "Certificação",
     "courses":[

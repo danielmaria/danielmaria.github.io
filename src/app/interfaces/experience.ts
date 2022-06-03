@@ -5,7 +5,9 @@ export interface Experience {
     projects: [
         {
             title: string,
-            topics: string[]
+            technologies: string[],
+            responsibilities: string[],
+            achievements: string[] | null
         }
     ]
 }
