@@ -21,7 +21,6 @@ describe('SortByPipe', () => {
   it('should sort proparlly', () => {
     const sortCoursesByDate = pipe.transform(courses)
     expect(sortCoursesByDate?.length).toBe(courses.length);
-    debugger
     expect(sortCoursesByDate[0].title).toBe("4")
     expect(sortCoursesByDate[1].title).toBe("3")
     expect(sortCoursesByDate[2].title).toBe("2")

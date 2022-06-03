@@ -1,15 +1,15 @@
 <ng-container *ngIf="experience">
-    <div class="row justify-content-md-center">
+    <div class="row justify-content-md-center experience-element">
         <div class="col col-lg-3 col-sm-4 col-12">
-        <h2>{{ experience.location }}</h2>
-        <p>{{ experience.date }}</p>
-        <p>{{ experience.position }}</p>
+        <h2 class="experience-location">{{ experience.location }}</h2>
+        <p class="experience-date">{{ experience.date }}</p>
+        <p class="experience-position">{{ experience.position }}</p>
         </div>
         <div class="col col-lg-9 col-sm-8 col-12">
         <div class="row justify-content-md-cente">
-            <div *ngFor="let project of experience.projects">
-                <b>{{project.title}}</b>
-                <li *ngFor="let topic of project.topics">
+            <div *ngFor="let project of experience.projects" class="experience-project">
+                <b class="project-title">{{project.title}}</b>
+                <li *ngFor="let topic of project.topics" class="project-topic">
                     {{topic}}
                 </li>
             </div>
