@@ -5,14 +5,21 @@
     "experience_cocus": {
       "date":"Sep 2021 - Today",
       "location":"COCUS Portugal",
-      "position":"Fullstack Developer",
+      "position":"Senior Software Engineer",
       "projects": [
          {
             "title":"Tui Wheels Project:",
-            "topics": [
-               "I have been working as a Fullstack during the development and improvement of a car booking solution for a major player in the world tourism area;",
-               "We developed the solution using Java (Quarkus), relational (Postgres) and non-relational (DocumentDB) databases, JavaScript (Angular) for the FrontEnd;", 
-               "The entire infrastructure was developed for the cloud using AWS."
+            "technologies" : [
+               "Java 11", "Quarkus", "SQL (Postgresql)", "NoSQL (DocumentDB)", "Gitlab-CI", "Angular 9+", "AWS", "jMeter"
+            ],
+            "responsibilities": [
+               "Development of an entirely new solution for a major player in the world tourism area, using for the most part of the services Java with the framework Quarkus;",
+               "Use of AWS services and infrastructure;", 
+               "Use of SQL with Postgres and NoSql with DocumentDB;",
+               "Frontend development using Angular 9"
+           ],
+           "achievements": [
+              "Migration of an entire monolith system into microservices with an Event-Driven-Architecture, turning it scalable and resilient."
            ]
          }
       ]
@@ -23,47 +30,57 @@
       "position":"Software Developer",
       "projects": [
          {
-            "title": "Outsourcing Sicredi (banking sector):",
-            "topics":[
-               "Development and maintenance of Java microservices, using Spring (MVC and Webflux). All communication async was performed using Kafka. Most microservices were built using MongoDB or PDB;",
-               "Create and execute test cases in JUnit for unit testing with the support of SonarLint and automated testing with jMeter;",
-               "ParticiparTeam developer leader, participating directly in business decisions and leading other developers into projects;",
-               "Promote technical knowledge meetings for developers;",
-               "Use of JIRA for trouble tickets and Confluence for the knowledge base."
+            "title": "Senior Software Engineer (Bank Sicredi, Outsourcing):",
+            "technologies" : [
+               "Java 11", "Spring boot", "Kafka", "SQL (Postgresql, Oracle)", "NoSQL (MongoDB, Redis)", 
+               "Gitlab-CI", "Kubernetes", "Webflux", "Angular 8+", "AWS S3", "jMeter", "Grafana"               
+            ],
+            "responsibilities":[
+               "Developing and maintaining scalable solutions with Java 11 and Spring Boot framework;",
+               "Building an Event-Driven-Architecture using Kafka as an event broker;",
+               "Replacing the legacy architecture building new Restful APIs to provide the information for the microservices architecture;",
+               "Helping to create a knowledge-sharing culture;",
+               "Create and maintenance of Grafana graphics;",
+               "Frontend development using Angular 6."
+            ],
+            "achievements": [
+               "Replace a third-party architecture with an in-house developed solution, improving the end-user experience and saving resources;",
+               "Encourage a weekly meeting focused on sharing knowledge since most of the developers did not have experience with microservices, new java features, and modern development aspects, such as live code reviews and pair programming;",
+               "Development of a new form of Instant Payment, where money is sent to the recipient's account instantly, using reactive programming and asynchronous communication"
             ]
          },         
          {
-            "title": "Outsourcing TNT Mercúrio (transport sector):",
-            "topics":[
-               "Development and maintenance of Java systems (JPA [Hibernate], EJB, JSF, Spring Framework, and JSP) using Oracle as database, Weblogic as application servers and SVN as version control tool;",
+            "title": "Software Developer (FedEx, Outsourcing):",
+            "technologies" : [
+               "Java 8", "Spring Framework 5", "AngularJS", "Oracle", "JMS", "WebLogic Server", ".Net", "Java (for mobile app)"
+            ],
+            "responsibilities":[
+               "Development and maintenance of Java systems (JPA [Hibernate], EJB, JSF, Spring Framework, and JSP) using Oracle as database, Weblogic as application servers, and SVN as version control tool;",
                "Create and execute test cases in JUnit for unit testing;",
                "Participate in alignment demands and projects meetings;",
-               "Introducing the use of agile methodologies and ceremonies."
+               "Introducing the use of agile methodologies and ceremonies"
+            ],
+            "achievements": [
+               "Increase the process of checking between warehouses, saving money and resources;",
+               "Migration of the agile development culture from a simple kanban board to the Framework SAFe."
             ]
-         },
-         {
-            "title":"Outsourcing Sicredi (banking sector):",
-            "topics": [
-               "For the backend, Java 8, Spring MVC and Hibernate were used. For the frontend, PrimeFaces with SCSS and Javascript were used to customize the interface;",
-               "Create test cases in JUnit for unit testing;",
-               "Participate in alignment demands and project meetings;",
-               "Use of agile methodologies."
-           ]
          }
       ]
    },
    "experience_pucrs": {
       "date":"Jun 2016 - Feb 2018",
-      "location":"Pontifical Catholic University of Rio Grande do Sul (PUCRS)",
-      "position":"Software Developer",
+      "location":"PUCRS",
+      "position":"Java Developer",
       "projects": [
          {
             "title":"Development and maintenance of internal projects:",
-            "topics": [
-               "Analysis, development and maintenance of Java systems (JPA [Hibernate], EJB, JSF, RichFaces, Spring Framework, Servlets and JSP) using Oracle as database, JBoss and Tomcat as application servers, and SVN as version control tool;",
-               "Analysis, development and maintenance of database routines with Oracle PL/SQL;",
-               "Create and execute test cases in JUnit for unit testing;",
-               "Develop automated reports and forms, using Jasper Reports."
+            "technologies" : [
+               "Java 6 & 8", "Spring Framework 3", "JSF RichFaces", "Oracle", "EJB", "SVN", "JBOSS", "Tomcat"
+            ],
+            "responsibilities": [
+               "Analysis, development, and maintenance of Java systems and database routines with Oracle PL/SQL;",
+               "Create and execute test cases with JUnit for unit testing;",
+               "Use of Jasper for reports and forms."
            ]
          }
       ]
