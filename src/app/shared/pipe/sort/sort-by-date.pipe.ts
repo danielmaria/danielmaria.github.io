@@ -10,7 +10,7 @@ export class SortByDatePipe implements PipeTransform {
     if(value) {
       return value.sort((c1, c2) => {return new Date(c2.date).getTime() - new Date(c1.date).getTime()});
     }
-    return null;
+    return value;
   }
 
 }
