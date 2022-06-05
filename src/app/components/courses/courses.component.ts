@@ -1,5 +1,5 @@
-import { TranslateService } from '@ngx-translate/core';
-import { Component, OnInit } from '@angular/core';
+import { Course } from './../../interfaces/course';
+import { Component, Input, OnChanges } from '@angular/core';
 import { NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
@@ -7,14 +7,20 @@ import { NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
   templateUrl: './courses.component.html',
   styleUrls: ['./courses.component.css']
 })
-export class CoursesComponent implements OnInit {
+export class CoursesComponent implements OnChanges {
 
+  @Input() courses: Course[] = [];
+  @Input() certificationTitle: String | null = null;
+  @Input() qualificationsTitle: String | null = null;
+  
   closeResult = '';
 
-  constructor(public translate: TranslateService,
-    private modalService: NgbModal) { }
+  constructor(private modalService: NgbModal) { }
 
-  ngOnInit(): void {
+  ngOnChanges(): void {
+    if (this.courses) {
+      this.courses?.sort((c1, c2) => {return new Date(c2.date).getTime() - new Date(c1.date).getTime()});      
+    }
   }
 
   open(content: any) {

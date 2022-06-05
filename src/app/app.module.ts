@@ -13,7 +13,6 @@ import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CoursesComponent } from './components/courses/courses.component';
 import { HoursAvgPipe } from './shared/pipe/hours-avg/hours-avg.pipe';
-import { SortByDatePipe } from './shared/pipe/sort/sort-by-date.pipe';
 import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { HomeComponent } from './pages/home/home.component';
@@ -28,7 +27,6 @@ const icons = {
     AppComponent,
     CoursesComponent,
     HoursAvgPipe,
-    SortByDatePipe,
     HeaderComponent,
     FooterComponent,
     HomeComponent,
