@@ -1,22 +1,38 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { HomeComponent } from './home.component';
+import { DebugElement } from '@angular/core';
+import { TranslatePipe, TranslateService } from '@ngx-translate/core';
 
 describe('HomeComponent', () => {
   let component: HomeComponent;
   let fixture: ComponentFixture<HomeComponent>;
+  let el: DebugElement;
 
   beforeEach(async () => {
+    const translateSpy = jasmine.createSpyObj('TranslateService', ['get'])
+    
     await TestBed.configureTestingModule({
-      declarations: [ HomeComponent ]
+
+      declarations: [ HomeComponent, TranslatePipe ],
+      
+      providers: [
+        {provide: TranslateService, useValue: translateSpy}
+     ]
+
     })
-    .compileComponents();
+    .compileComponents()
+    .then(() => {
+
+      fixture = TestBed.createComponent(HomeComponent);
+      component = fixture.componentInstance;
+      el = fixture.debugElement;
+
+    });
   });
 
-  beforeEach(() => {
-    fixture = TestBed.createComponent(HomeComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
+  it('should create', () => {
+    expect(component).toBeTruthy();
   });
 
 });

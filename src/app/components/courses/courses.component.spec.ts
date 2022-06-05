@@ -36,7 +36,6 @@ describe('CoursesComponent', () => {
     const coursesElements = el.queryAll(By.css(".course-title"));
 
     expect(coursesElements?.length).toBe(courses.length);
-    debugger
     expect(coursesElements[0].nativeElement.textContent).toBe("3")
     expect(coursesElements[1].nativeElement.textContent).toBe("4")
     expect(coursesElements[2].nativeElement.textContent).toBe("2")
