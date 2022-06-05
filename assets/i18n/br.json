@@ -72,14 +72,16 @@
     "courses":[
        {
           "title":"Angular 13 - Guia Prático para Iniciante",
-          "date": "08/04/2022",
+          "date": "04/08/2022",
           "company":"Udemy.com",
+          "duration": 510,
           "certification":"angular13"
        },
        {
           "title":"Scrum fundamentals Certified",
-          "date": "30/04/2022",
+          "date": "04/30/2022",
           "company":"SCRUMstudy",
+          "duration": 60,
           "certification":"scrum"
        },
        {
