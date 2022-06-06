@@ -10,7 +10,7 @@
          {
             "title":"Tui Wheels Project:",
             "technologies" : [
-               "Java 11", "Quarkus", "SQL (Postgresql)", "NoSQL (DocumentDB)", "Gitlab-CI", "Angular 9+", "AWS", "jMeter"
+               "Java 11", "Quarkus", "AWS", "Postgresql", "jMeter", "Gitlab-CI", "Angular 9+", "DocumentDB"
             ],
             "responsibilities": [
                "Development of an entirely new solution for a major player in the world tourism area, using for the most part of the services Java with the framework Quarkus;",
@@ -32,8 +32,8 @@
          {
             "title": "Senior Software Engineer (Bank Sicredi, Outsourcing):",
             "technologies" : [
-               "Java 11", "Spring boot", "Kafka", "SQL (Postgresql, Oracle)", "NoSQL (MongoDB, Redis)", 
-               "Gitlab-CI", "Kubernetes", "Webflux", "Angular 8+", "AWS S3", "jMeter", "Grafana"               
+               "Java 11", "Kafka", "Spring Boot", "Webflux", "Postgresql", "Oracle", "MongoDB", "Redis",
+               "Gitlab-CI", "Kubernetes", "Angular 8+", "AWS S3", "jMeter", "Grafana"
             ],
             "responsibilities":[
                "Developing and maintaining scalable solutions with Java 11 and Spring Boot framework;",
@@ -52,7 +52,7 @@
          {
             "title": "Software Developer (FedEx, Outsourcing):",
             "technologies" : [
-               "Java 8", "Spring Framework 5", "AngularJS", "Oracle", "JMS", "WebLogic Server", ".Net", "Java (for mobile app)"
+               "Java 8", "Spring", "AngularJS", "Oracle", "JMS", "WebLogic", ".Net", "Android(Java)"
             ],
             "responsibilities":[
                "Development and maintenance of Java systems (JPA [Hibernate], EJB, JSF, Spring Framework, and JSP) using Oracle as database, Weblogic as application servers, and SVN as version control tool;",
@@ -75,7 +75,7 @@
          {
             "title":"Development and maintenance of internal projects:",
             "technologies" : [
-               "Java 6 & 8", "Spring Framework 3", "JSF RichFaces", "Oracle", "EJB", "SVN", "JBOSS", "Tomcat"
+               "Java 6 & 8", "Spring", "EJB", "SVN", "JBOSS", "RichFaces", "Oracle", "Tomcat"
             ],
             "responsibilities": [
                "Analysis, development, and maintenance of Java systems and database routines with Oracle PL/SQL;",
