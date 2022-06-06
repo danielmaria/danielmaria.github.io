@@ -9,11 +9,12 @@
         <div class="row justify-content-md-cente">
             <div *ngFor="let project of experience.projects" class="experience-project">
                 <h4 class="project-title">{{project.title}}</h4>
-
-                <div class="d-flex">
-                    <div *ngFor="let technologie of project.technologies" class="technologies p-1">
-                        <span class="badge bg-dark">{{technologie}}</span>
-                    </div>
+                <div class="row">
+                    <ng-container *ngFor="let technologie of project.technologies">
+                        <div class="col-3">
+                            <div class="badge bg-dark">{{technologie}}</div>
+                        </div>
+                    </ng-container>
                 </div>
 
                 <div class="main-responsabilities">
