@@ -1,45 +1,65 @@
-<div class="row align-items-center header" style="padding: 1em 10em; background-color: #444;">
-    <div class="row">
-       <div class="nav justify-content-end">
-          <div class="row">
-             <div class="col">
-                <div class="d-flex">
-                  <div *ngFor="let language of translate.getLangs()">
-                     <button class="dropdown-item" id="language" on-click="switchLanguage(language)">
-                        <span class="flag-icon flag-icon-{{language}} flag-icon-squared"></span>
+<div class="row align-items-center header" style="background-color: #444;">
+   <div class="d-lg-none p-3">
+      <div class="pb-2 text-center">
+         <img class="rounded-circle" src="../assets/img/perfil.jpg">
+      </div>
+      <div class="title">
+         <h1>Daniel Maria da Silva</h1>
+         {{'firstDegree' | translate}}
+         <br/>
+         {{'secondDegree' | translate}}
+      </div>
+      <div class="row m-4">
+         <div *ngFor="let language of translate.getLangs()" class="col-6">
+            <button class="dropdown-item text-center" id="language" on-click="switchLanguage(language)">
+            <span class="flag-icon flag-icon-{{language}} flag-icon-squared"></span>
+            </button>
+         </div>
+      </div>
+   </div>
+   <div class="d-none d-lg-block">
+      <div class="row align-items-center header" style="padding: 1em 10em;">
+         <div class="row">
+            <div class="nav justify-content-end">
+               <div class="row">
+                  <div class="col">
+                     <div class="d-flex">
+                        <div *ngFor="let language of translate.getLangs()">
+                           <button class="dropdown-item" id="language" on-click="switchLanguage(language)">
+                           <span class="flag-icon flag-icon-{{language}} flag-icon-squared"></span>
+                           </button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col-3 center">
+            <img class="rounded-circle perfil-photo" src="../assets/img/perfil.jpg">
+         </div>
+         <div class="col-9 title">
+            <h1>Daniel Maria da Silva</h1>
+            {{'firstDegree' | translate}}
+            <br/>
+            {{'secondDegree' | translate}}
+         </div>
+         <div class="row">
+            <div class="col col-lg-12">
+               <div class="nav justify-content-end">
+                  <div class="d-flex">
+                     <button class="dropdown-item social-media-button" id="language" onclick="location.href='http://www.linkedin.com/in/danielmariadasilva/'" type="button">
+                        <i-bs name="linkedin" width="20" height="20" class="media-icon"></i-bs>
+                     </button>
+                     <button class="dropdown-item social-media-button" id="language" onclick="location.href='https://github.com/danielmaria/'" type="button">
+                        <i-bs name="github" width="20" height="20" class="media-icon"></i-bs>
+                     </button>
+                     <button class="dropdown-item social-media-button" id="language" onclick="location.href='https://www.instagram.com/dan_maria/'" type="button">
+                        <i-bs name="instagram" width="20" height="20" class="media-icon"></i-bs>
                      </button>
                   </div>
-                </div>
-             </div>
-          </div>
-       </div>
-    </div>
-    <div class="col col-lg-3 col-3 center">
-       <img class="rounded-circle perfil-photo" src="../assets/img/perfil.jpg">
-    </div>
-    <div class="col col-lg-9 col-9" style="color: whitesmoke;">
-       <h1>Daniel Maria da Silva</h1>
-       {{'firstDegree' | translate}}
-       <br/>
-       {{'secondDegree' | translate}}
-    </div>
-    <div class="row">
-       <div class="col col-lg-12">
-          <div class="nav justify-content-end">
-            <div class="d-flex">
-               <button class="dropdown-item social-media-button" id="language" onclick="location.href='http://www.linkedin.com/in/danielmariadasilva/'" type="button">
-                  <i-bs name="linkedin" width="20" height="20" class="media-icon"></i-bs>
-               </button>
-
-               <button class="dropdown-item social-media-button" id="language" onclick="location.href='https://github.com/danielmaria/'" type="button">
-                  <i-bs name="github" width="20" height="20" class="media-icon"></i-bs>
-               </button>
-
-               <button class="dropdown-item social-media-button" id="language" onclick="location.href='https://www.instagram.com/dan_maria/'" type="button">
-                  <i-bs name="instagram" width="20" height="20" class="media-icon"></i-bs>
-               </button>
+               </div>
             </div>
-          </div>
-       </div>
-    </div>
+         </div>
+      </div>
+   </div>
 </div>

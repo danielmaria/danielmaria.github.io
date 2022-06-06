@@ -11,3 +11,12 @@
 .social-media-button:hover .media-icon{
     color: #444;
 }
+
+.flag-icon {
+    background-color: transparent;
+    border: 0;
+}
+
+.title {
+    color: whitesmoke;
+}
