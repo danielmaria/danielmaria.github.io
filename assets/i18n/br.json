@@ -89,6 +89,13 @@
     "certification": "Certificação",
     "courses":[
        {
+          "title":"Angular Testing Masterclass",
+          "date": "06/07/2022",
+          "company":"Udemy.com",
+          "duration": 300,
+          "certification":"angular-testing"
+       },
+       {
           "title":"Angular 13 - Guia Prático para Iniciante",
           "date": "04/08/2022",
           "company":"Udemy.com",
