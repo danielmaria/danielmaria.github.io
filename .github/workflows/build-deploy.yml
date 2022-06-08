@@ -6,10 +6,7 @@ on:
       - master
 
 jobs:
-  tests:
-    uses: ./.github/workflows/tests.yml
   build-and-deploy:
-    needs: [tests]
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -29,7 +26,6 @@ jobs:
           npm test
       - name: Build
         run: |
-          npm install
           npm run-script deploy
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@releases/v3
