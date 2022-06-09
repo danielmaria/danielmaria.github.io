@@ -5,9 +5,9 @@
       </div>
       <div class="title">
          <h1>Daniel Maria da Silva</h1>
-         {{'firstDegree' | translate}}
+         <span id="firstDegree">{{'firstDegree' | translate}}</span>
          <br/>
-         {{'secondDegree' | translate}}
+         <span id="secondDegree">{{'secondDegree' | translate}}</span>
       </div>
       <div class="row m-4">
          <div *ngFor="let language of translate.getLangs()" class="col-6">
@@ -47,13 +47,13 @@
             <div class="col col-lg-12">
                <div class="nav justify-content-end">
                   <div class="d-flex">
-                     <button class="dropdown-item social-media-button" id="language" onclick="location.href='http://www.linkedin.com/in/danielmariadasilva/'" type="button">
+                     <button class="dropdown-item social-media-button" onclick="location.href='http://www.linkedin.com/in/danielmariadasilva/'" type="button">
                         <i-bs name="linkedin" width="20" height="20" class="media-icon"></i-bs>
                      </button>
-                     <button class="dropdown-item social-media-button" id="language" onclick="location.href='https://github.com/danielmaria/'" type="button">
+                     <button class="dropdown-item social-media-button" onclick="location.href='https://github.com/danielmaria/'" type="button">
                         <i-bs name="github" width="20" height="20" class="media-icon"></i-bs>
                      </button>
-                     <button class="dropdown-item social-media-button" id="language" onclick="location.href='https://www.instagram.com/dan_maria/'" type="button">
+                     <button class="dropdown-item social-media-button" onclick="location.href='https://www.instagram.com/dan_maria/'" type="button">
                         <i-bs name="instagram" width="20" height="20" class="media-icon"></i-bs>
                      </button>
                   </div>

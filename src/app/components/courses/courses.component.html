@@ -6,7 +6,7 @@
         <span class="course-title">{{course.title}}</span> - 
         <span class="course-duration">{{ course.duration | hoursAvg }}h</span> 
         <span class="course company-and-date">({{course.company}}, {{course.date | date : 'yyyy'}})</span>
-        <i-bs name="file-pdf" width="15" height="15" (click)="open(content)" style="cursor: pointer;" *ngIf="course.certification"> </i-bs>
+        <i-bs name="file-pdf" class="file-pdf-icon" width="15" height="15" (click)="open(content)" style="cursor: pointer;" *ngIf="course.certification"> </i-bs>
         
         <ng-template #content let-modal>
         <div class="modal-header">

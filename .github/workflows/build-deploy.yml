@@ -20,14 +20,19 @@ jobs:
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
-      - name: Test
+      - name: Unit tests 🧪
         run: |
           npm install
           npm test
+      - name: Check all covered files 📊
+        uses: cypress-io/github-action@v1
+        with:
+          start: npm start
+          wait-on: "http://localhost:4200"
       - name: Build
         run: |
           npm run-script deploy
-      - name: Deploy
+      - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
