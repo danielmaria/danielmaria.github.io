@@ -1,9 +1,9 @@
-describe('empty spec', () => {
+describe('Footer tests', () => {
   beforeEach(() => {
     cy.visit('/');
   });
 
-  it('check right number of flags', () => {
+  it('check year on the footer', () => {
     cy.get('app-footer > .text-center > span').contains(new Date().getFullYear());
   })
 })

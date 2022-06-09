@@ -1,4 +1,4 @@
-describe('empty spec', () => {
+describe('PDF modal tests', () => {
   beforeEach(() => {
     cy.visit('/');
   });
