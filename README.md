@@ -1,5 +1,5 @@
 [![angular-version](https://img.shields.io/badge/angular-v13.3.4-red)](https://angular.io/)
-[![pages-build-deployment](https://github.com/danielmaria/danielmaria.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/danielmaria/danielmaria.github.io/actions/workflows/pages/pages-build-deployment)
+[![Test, Build and Deploy](https://github.com/danielmaria/danielmaria.github.io/actions/workflows/build-deploy.yml/badge.svg)](https://github.com/danielmaria/danielmaria.github.io/actions/workflows/build-deploy.yml)
 
 # Danielmaria.Github.Io
 
