@@ -24,8 +24,9 @@ jobs:
         run: |
           npm install
           npm test
-      - name: Check all covered files 📊
-        uses: cypress-io/github-action@v1
+      - name: Cypress 📊
+      - uses: actions/checkout@v2
+      - uses: cypress-io/github-action@v4
         with:
           start: npm start
           wait-on: "http://localhost:4200"
