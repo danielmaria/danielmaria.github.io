@@ -9,8 +9,8 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v1
+      - name: Checkout 📝
+        uses: actions/checkout@v2
       - uses: actions/setup-node@v1
         with:
           node-version: "16.x"
@@ -24,13 +24,12 @@ jobs:
         run: |
           npm install
           npm test
-      - name: Cypress 📊
-      - uses: actions/checkout@v2
-      - uses: cypress-io/github-action@v4
-        with:
-          start: npm start
-          wait-on: "http://localhost:4200"
-      - name: Build
+      # - name: Cypress 📊
+      #   uses: cypress-io/github-action@v4
+      #   with:
+      #     start: npm start
+      #     wait-on: "http://localhost:4200"
+      - name: Build 📦
         run: |
           npm run-script deploy
       - name: Deploy 🚀
