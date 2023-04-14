@@ -1,0 +1,8 @@
+.body-page {
+    background: rgb(103,149,249);
+    background: linear-gradient(180deg, rgba(103,149,249,1) 0%, rgba(125,154,233,1) 39%, rgba(246, 244, 244) 100%);
+}
+
+.container-fluid {
+    background-color: rgb(246, 244, 244);
+}

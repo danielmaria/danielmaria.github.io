@@ -1,3 +1,15 @@
-.experience-project, .main-responsabilities, .major-achievements {
+.main-responsabilities, .major-achievements {
+    padding: .5em;
+}
+
+.experience-date {
+    margin-bottom: 0px;
+}
+
+.experience-element {
     padding: 1em;
+}
+
+.experience-project {
+    padding: .5em
 }

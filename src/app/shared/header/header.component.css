@@ -1,15 +1,12 @@
 .media-icon {
-    color: white; 
+    color: black; 
     margin: 0 3px;
 }
 
 .perfil-photo {
     margin-right: 30px;
     float: right;
-}
-
-.social-media-button:hover .media-icon{
-    color: #444;
+    margin-right: 0px;
 }
 
 .flag-icon {
@@ -18,5 +15,21 @@
 }
 
 .title {
-    color: whitesmoke;
+    color: rgb(26, 26, 26);
+}
+
+.title h6 {
+    color: rgb(106, 105, 105);
+}
+
+.border-dark {
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5); 
+}
+
+.border {
+    border-width: .5em !important;
+}
+
+.header-content {
+    padding: 5% 10% 2% 10%
 }

@@ -2,8 +2,28 @@
     "apresentation":"I have been working professionally with software programming since 2016. Most of my day I work mainly with Java backend, with the Spring framework. I have had contact with other frameworks, such as PrimeFaces, JPA and JSF. In my work I mostly use MongoDB for databases, but eventually I use Oracle. I seek to improve my knowledge in programming and software development, applying my skills to the company's projects and needs.",
     "firstDegree":"Information Systems - PUCRS (finished 2020)",
     "secondDegree":"Physical Education - PUCRS (finished 2015)",
+    "posDegree": "Postgraduate: Software Architecture - FIAP (studying 2023)",
+    "experience_swisscom": {
+      "date":"Sep 2022 - Today",
+      "location":"Swisscom",
+      "position":"Senior Software Engineer",
+      "projects": [
+         {
+            "title":"Swisscom uCPE:",
+            "technologies" : [
+               "Java 11", "Python 3", "Flask", "Clound Fondary", "Jenkins", "Angular 14+", "Newman", "Kafka"
+            ],
+            "responsibilities": [
+               ""
+           ],
+           "achievements": [
+              ""
+           ]
+         }
+      ]
+   },
     "experience_cocus": {
-      "date":"Sep 2021 - Today",
+      "date":"Sep 2021 - Sep 2022",
       "location":"COCUS Portugal",
       "position":"Senior Software Engineer",
       "projects": [
@@ -88,6 +108,13 @@
     "qualifications_title":"Qualifications and professional activities",
     "certification": "Certification",
     "courses":[
+      {
+         "title":"Angular: Life Cycle",
+         "date": "10/04/2023",
+         "company":"Alura.com",
+         "duration": 360,
+         "certification":"alura_angular_life_cycle"
+      },
          {
             "title":"Angular Testing Masterclass",
             "date": "06/07/2022",
