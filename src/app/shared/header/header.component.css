@@ -16,7 +16,19 @@
 
 .title {
     color: rgb(26, 26, 26);
+    text-align: justify;
 }
+
+@media screen and (max-width: 1000px) {
+    .title {
+        text-align: center;
+        margin: 1em;
+    }
+
+    .img-title {
+        margin: 1em;
+    }
+  }
 
 .title h6 {
     color: rgb(106, 105, 105);
@@ -31,5 +43,18 @@
 }
 
 .header-content {
-    padding: 5% 10% 2% 10%
+    padding: 5% 10% 2% 10%;
+    
+}
+
+.header-content img {
+    width: 250px;
+}
+
+.social-media-button {
+    border: 0;
+    background-color: transparent;
+}
+.social-media-button:hover {
+    transform: scale(1.1);
 }

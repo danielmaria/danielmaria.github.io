@@ -1,14 +1,16 @@
 <div class="row">
-    <div class="col col-lg-12 text-center py-5">
+    <div class="col col-lg-12 text-center py-2">
        <h3>{{'apresentation' | translate}}</h3>
     </div>
  </div>
+ <hr>
  <section class="experience">
    <app-experience [experience]="'experience_swisscom' | translate"></app-experience>
    <app-experience [experience]="'experience_cocus' | translate"></app-experience>
     <app-experience [experience]="'experience_dbc' | translate"></app-experience>
     <app-experience [experience]="'experience_pucrs' | translate"></app-experience>
  </section>
+ <hr>
  <app-courses [courses]="'courses' | translate"
               [certificationTitle]="'certification' | translate"
               [qualificationsTitle]="'qualifications_title' | translate"></app-courses>

@@ -31,7 +31,7 @@ const icons = {
     FooterComponent,
     HomeComponent,
     ExperienceComponent,
-    PdfViewerComponent
+    PdfViewerComponent,
   ],
   imports: [
     BrowserModule,

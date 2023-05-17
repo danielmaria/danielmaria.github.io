@@ -1,13 +1,32 @@
-<div class="row align-items-center header">
+<div class="row align-items-center header header-content">
    <div class="d-lg-none p-3">
-      <div class="pb-2 text-center">
-         <img class="rounded-circle" src="../assets/img/perfil.jpg">
+      <div class="p-4 text-center">
+         <img class="rounded-circle border border-white" src="../assets/img/profile-pic.png">
+      </div>
+      <div class="text-center">
+         <button class="social-media-button"
+            onclick="location.href='http://www.linkedin.com/in/danielmariadasilva/'" type="button">
+            <i-bs name="linkedin" width="20" height="20" class="media-icon"></i-bs>
+         </button>
+         <button class="social-media-button"
+            onclick="location.href='https://github.com/danielmaria/'" type="button">
+            <i-bs name="github" width="20" height="20" class="media-icon"></i-bs>
+         </button>
+         <button class="social-media-button"
+            onclick="location.href='https://www.instagram.com/dan_maria/'" type="button">
+            <i-bs name="instagram" width="20" height="20" class="media-icon"></i-bs>
+         </button>
       </div>
       <div class="title">
          <h1>Daniel Maria da Silva</h1>
-         <span id="firstDegree">{{'firstDegree' | translate}}</span>
+         <span>{{('posDegree' | translate).split('-')[0].trim()}}</span>
+         <span class="small font-weight-light"> - {{('posDegree' | translate).split('-')[1].trim()}}</span>
          <br/>
-         <span id="secondDegree">{{'secondDegree' | translate}}</span>
+         <span>{{('firstDegree' | translate).split('-')[0].trim()}}</span>
+         <span class="small font-weight-light"> - {{('firstDegree' | translate).split('-')[1].trim()}}</span>
+         <br/>
+         <span>{{('secondDegree' | translate).split('-')[0].trim()}}</span>
+         <span class="small font-weight-light"> - {{('secondDegree' | translate).split('-')[1].trim()}}</span>
       </div>
       <div class="row m-4">
          <div *ngFor="let language of translate.getLangs()" class="col-6">
@@ -55,7 +74,7 @@
                </div>
                <div class="row align-items-center header-content">
                   <div class="col-5 center">
-                     <img class="rounded-circle perfil-photo border border-white" src="../assets/img/perfil.jpg">
+                     <img class="rounded-circle perfil-photo border border-white" src="../assets/img/profile-pic.png">
                   </div>
                   <div class="col-7 title">
                      <h6>Full-stack developer</h6>

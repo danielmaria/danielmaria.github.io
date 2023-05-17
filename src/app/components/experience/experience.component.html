@@ -1,37 +1,22 @@
 <ng-container *ngIf="experience">
     <div class="row justify-content-md-center experience-element">
-        <div class="col col-lg-3 col-sm-4 col-12">
+        <div class="col col-lg-3 col-sm-12 col-12 experience-info">
+            <img src="../../../assets/img/company/{{experience.img}}.jpeg" alt="company logo">
             <h2 class="experience-location">{{ experience.location }}</h2>
             <p class="experience-date">{{ experience.date }}</p>
             <p class="experience-position">{{ experience.position }}</p>
         </div>
-        <div class="col col-lg-9 col-sm-8 col-12">
+        <div class="col col-lg-9 col-sm-12 col-12">
             <div class="row justify-content-md-cente">
                 <div *ngFor="let project of experience.projects" class="experience-project">
                     <h4 class="project-title">{{project.title}}</h4>
-                    <div class="row">
                         <ng-container *ngFor="let technologie of project.technologies">
-                            <div class="col-3">
-                                <div class="badge bg-dark">{{technologie}}</div>
-                            </div>
+                                <div class="badge bg-dark m-2">{{technologie}}</div>
                         </ng-container>
+
+                    <div class="main-responsabilities" [innerHTML]="project.description">
                     </div>
 
-                    <div class="main-responsabilities">
-                        <b>Main responsibilities:</b>
-                        <li *ngFor="let responsibility of project.responsibilities" class="project-responsibility">
-                            {{responsibility}}
-                        </li>
-                    </div>
-
-                    <div class="major-achievements">
-                        <ng-container *ngIf="project.achievements">
-                            <b>Major achievements:</b>
-                            <li *ngFor="let achievement of project.achievements" class="project-achievement">
-                                {{achievement}}
-                            </li>
-                        </ng-container>
-                    </div>
                 </div>
             </div>
         </div>

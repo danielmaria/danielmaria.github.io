@@ -2,23 +2,19 @@
     "apresentation":"Trabalho profissionalmente com programação de software desde 2016. Na maior parte do meu dia trabalho principalmente com backend Java, com o framework Spring. Já tive contato com outros frameworks, tais como PrimeFaces, JPA e JSF. Em meu trabalho utilizo na maior parte das vezes MongoDB para banco de dados, mas eventualmente utilizo Oracle. Busco aprimorar meus conhecimentos em programação e em desenvolvimento de software, aplicando minhas habilidades nos projetos e necessidades da empresa.",
     "firstDegree":"Sistema de informação - PUCRS (concluído 2020)",
     "secondDegree":"Bacharelado em Educação Física e Ciências do Desporto - PUCRS (concluído 2015)",
-    "posDegree": "Pós graduação: Software Architecture - FIAP (cursando 2023)",
+    "posDegree": "Software Architecture - FIAP (Pós graduação, cursando)",
     "experience_swisscom": {
       "date":"Sep 2022 - Today",
       "location":"Swisscom",
       "position":"Senior Software Engineer",
+      "img": "swisscom",
       "projects": [
          {
             "title":"Swisscom uCPE:",
             "technologies" : [
                "Java 11", "Python 3", "Flask", "Clound Fondary", "Jenkins", "Angular 14+", "Newman", "Kafka"
             ],
-            "responsibilities": [
-               ""
-           ],
-           "achievements": [
-              ""
-           ]
+            "description": "Desempenhei um papel crucial na criação de sistemas, dashboards e alarmes com o objetivo de gerenciar e reduzir o tempo de resposta em situações de falha em um projeto voltado para o desenvolvimento de um novo produto de conectividade. O principal objetivo desse produto era virtualizar soluções caras, proporcionando a mesma funcionalidade por um preço muito mais acessível. Para atingir esse objetivo, utilizei um conjunto diversificado de tecnologias, como Java, Python, Cloud Foundry, Jenkins, Angular e Kafka.<br /> No contexto desse projeto, a criação de sistemas envolveu a concepção e implementação de aplicativos e plataformas que permitiam aos usuários acessar e utilizar os recursos de conectividade de maneira eficiente e econômica. Além disso, desenvolvi dashboards personalizados que forneciam uma visão abrangente do desempenho e da disponibilidade do sistema, permitindo uma rápida identificação e resolução de problemas. Também implementei alarmes e mecanismos de monitoramento para alertar a equipe em tempo real sobre quaisquer falhas ou anomalias, garantindo uma resposta rápida e eficaz. <br /> Essa experiência me permitiu adquirir um profundo conhecimento das tecnologias utilizadas, como Java, Python, Cloud Foundry, Jenkins, Angular e Kafka. Além disso, pude aprimorar minhas habilidades na integração de diferentes componentes de software, garantindo uma solução coesa e escalável. Através do uso dessas tecnologias, fui capaz de contribuir para o sucesso do projeto, oferecendo uma solução inovadora e acessível no mercado de conectividade."
          }
       ]
    },
@@ -26,21 +22,14 @@
       "date":"Set. 2021 - Set. 2022",
       "location":"COCUS Portugal",
       "position":"Senior Software Engineer",
+      "img": "cocus",
       "projects": [
          {
             "title":"Projeto Tui Wheels:",
             "technologies" : [
                "Java 11", "Quarkus", "AWS", "Postgresql", "jMeter", "Gitlab-CI", "Angular 9+", "DocumentDB"
             ],
-            "responsibilities": [
-               "Desenvolvimento de uma solução totalmente nova para um grande player na área do turismo mundial, utilizando na maioria dos serviços Java com o framework Quarkus;",
-               "Uso de serviços e infraestrutura da AWS;", 
-               "Uso de SQL com Postgres e NoSql com DocumentDB;",
-               "Desenvolvimento frontend usando Angular 9"
-           ],
-           "achievements": [
-              "Migração de um sistema monolítico inteiro para microsserviços com uma Arquitetura Orientada a Eventos, tornando-o escalável e resiliente."
-           ]
+            "description": " fui responsável por desenvolver uma solução inovadora para uma empresa líder no setor de turismo. Utilizei principalmente Java com o framework Quarkus, juntamente com serviços e infraestrutura da AWS. Também trabalhei com bancos de dados SQL e NoSQL, usando Postgres e DocumentDB, respectivamente. Além disso, participei do desenvolvimento frontend usando Angular 9. <br/> Minha maior conquista nesse trabalho foi a migração bem-sucedida de um sistema monolítico para uma arquitetura de microsserviços orientada a eventos. Essa transformação tornou o sistema escalável e resiliente, garantindo um melhor desempenho. Em resumo, minha experiência inclui o desenvolvimento de uma solução inovadora, o uso de tecnologias como Java, Quarkus, AWS, SQL e NoSQL, além do desenvolvimento frontend com Angular 9."
          }
       ]
    },
@@ -48,6 +37,7 @@
       "date":"Fev. 2018 - Set. 2021",
       "location":"DBC Company",
       "position":"Desenvolvedor de Software",
+      "img": "dbc",
       "projects": [
          {
             "title": "Senior Software Engineer (Sicredi, Outsourcing):",
@@ -55,35 +45,14 @@
                "Java 11", "Kafka", "Spring Boot", "Webflux", "Postgresql", "Oracle", "MongoDB", "Redis",
                "Gitlab-CI", "Kubernetes", "Angular 8+", "AWS S3", "jMeter", "Grafana"         
             ],
-            "responsibilities":[
-               "Desenvolvimento e manutenção de soluções escaláveis com framework Java 11 e Spring Boot;",
-               "Construir uma Arquitetura Orientada a Eventos usando Kafka como um agente de eventos;",
-               "Substituir a arquitetura legada construindo novas APIs Restful para fornecer informações aos microsserviços;",
-               "Ajudar a criar uma cultura de compartilhamento de conhecimento;",
-               "Criar e manter gráficos utilizando Grafana;",
-               "Desenvolvimento de front-end usando Angular 6."
-            ],
-            "achievements": [
-               "Substituir uma arquitetura de terceiros por uma solução desenvolvida internamente, melhorando a experiência do usuário final e economizando recursos;",
-               "Incentivar uma reunião semanal com foco no compartilhamento de conhecimento, pois a maioria dos desenvolvedores não tinha experiência com microsserviços, novos recursos java e aspectos modernos de desenvolvimento, como revisões de código ao vivo e programação em pares;",
-               "Desenvolvimento de uma nova forma de Pagamento Instantâneo, onde o dinheiro é enviado para a conta do destinatário instantaneamente, utilizando programação reativa e comunicação assíncrona"
-            ]
+            "description": "Minhas principais responsabilidades envolveram o desenvolvimento e manutenção de soluções escaláveis, utilizando o framework Java 11 e Spring Boot. Além disso, tive a oportunidade de construir uma Arquitetura Orientada a Eventos, utilizando o Kafka como agente de eventos. Para modernizar o sistema, substituí a arquitetura legada, construindo novas APIs Restful que forneciam informações aos microsserviços.<br/> Além das responsabilidades técnicas, contribuí para criar uma cultura de compartilhamento de conhecimento, ajudando a promover reuniões semanais com foco no compartilhamento de experiências. Também tive a responsabilidade de criar e manter gráficos utilizando o Grafana, para monitorar e visualizar os dados do sistema.<br/> No âmbito do desenvolvimento frontend, trabalhei com Angular, criando interfaces amigáveis e intuitivas para os usuários. Durante esse trabalho, minha maior conquista foi substituir uma arquitetura de terceiros por uma solução interna, proporcionando uma melhor experiência ao usuário final e economizando recursos.<br/> Além disso, destaco o incentivo à reunião semanal focada no compartilhamento de conhecimento, especialmente porque muitos desenvolvedores não tinham experiência com microsserviços, recursos Java avançados e práticas modernas de desenvolvimento, como revisões de código em tempo real e programação em pares.<br/> Também tive a oportunidade de desenvolver uma nova forma de Pagamento Instantâneo, utilizando programação reativa e comunicação assíncrona, onde o dinheiro é enviado para a conta do destinatário instantaneamente."
          },         
          {
             "title": "Software Developer (FedEx, Outsourcing):",
             "technologies" : [
                "Java 8", "Spring", "AngularJS", "Oracle", "JMS", "WebLogic", ".Net", "Android(Java)"
             ],
-            "responsibilities":[
-               "Desenvolvimento e manutenção de sistemas Java (JPA [Hibernate], EJB, JSF, Spring Framework e JSP) utilizando Oracle como banco de dados, Weblogic como servidores de aplicação e SVN como ferramenta de controle de versão;",
-               "Criar e executar casos de teste no JUnit para teste de unidade;",
-               "Participar de reuniões de alinhamento de demandas e projetos;",
-               "Introduzir o uso de metodologias e cerimônias ágeis"
-            ],
-            "achievements": [
-               "Aumentar o processo de checagem entre armazéns, economizando dinheiro e recursos;",
-               "Migração da cultura de desenvolvimento ágil de um simples quadro kanban para o Framework SAFe."
-            ]
+            "description": "Responsável pelo desenvolvimento e manutenção de sistemas Java, utilizando tecnologias como JPA (Hibernate), EJB, JSF, Spring Framework e JSP. Trabalhei com o banco de dados Oracle, os servidores de aplicação Weblogic e a ferramenta de controle de versão SVN. Além disso, criei e executei casos de teste no JUnit para garantir a qualidade do código. Participei de reuniões para alinhamento de demandas e projetos, e introduzi o uso de metodologias e cerimônias ágeis para melhorar a eficiência da equipe.<br/> Minha maior conquista nesse trabalho foi otimizar o processo de checagem entre armazéns, resultando em economia de dinheiro e recursos. Além disso, liderei a migração da cultura de desenvolvimento ágil, evoluindo de um simples quadro kanban para a adoção do Framework SAFe."
          }
       ]
    },
@@ -91,17 +60,14 @@
       "date":"Jun. 2016 - Fev. 2018",
       "location":"PUCRS",
       "position":"Java Developer",
+      "img": "pucrs",
       "projects": [
          {
             "title":"Desenvolvimento e manutenção de projetos internos:",
             "technologies" : [
                "Java 6 & 8", "Spring", "EJB", "SVN", "JBOSS", "RichFaces", "Oracle", "Tomcat"
             ],
-            "responsibilities": [
-               "Análise, desenvolvimento e manutenção de sistemas Java e rotinas de banco de dados com Oracle PL/SQL;",
-                "Criar e executar casos de teste com JUnit para teste de unidade;",
-                "Uso de Jasper para relatórios e formulários."
-           ]
+            "description" : "Responsável pela análise, desenvolvimento e manutenção de sistemas Java, incluindo rotinas de banco de dados com Oracle PL/SQL. Realizei testes de unidade minuciosos usando JUnit e utilizei o Jasper para gerar relatórios abrangentes e formulários. Ao longo do ciclo de vida de desenvolvimento de software, colaborei com a equipe para traduzir os requisitos de negócio em soluções eficazes, garantindo a qualidade e confiabilidade do código-fonte.<br /> Minha experiência envolveu a análise, desenvolvimento e manutenção de sistemas Java, utilizando rotinas de banco de dados com Oracle PL/SQL. Realizei testes de unidade rigorosos com o JUnit e utilizei o Jasper para gerar relatórios detalhados e formulários. Em colaboração com a equipe, traduzi com sucesso os requisitos de negócio em soluções efetivas, garantindo a qualidade e confiabilidade do código."
          }
       ]
    },

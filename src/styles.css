@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+
+h3, .main-responsabilities {
+    font-weight: 200 !important;
+}
+
+.font-weight-light {
+    font-weight: 200 !important;
+}

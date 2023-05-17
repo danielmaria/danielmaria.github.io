@@ -1,5 +1,6 @@
 .main-responsabilities, .major-achievements {
     padding: .5em;
+    text-align: justify;
 }
 
 .experience-date {
@@ -12,4 +13,10 @@
 
 .experience-project {
     padding: .5em
+}
+
+@media screen and (max-width: 991px) {
+    .experience-info {
+        text-align: center;
+    }
 }

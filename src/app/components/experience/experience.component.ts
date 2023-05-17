@@ -6,14 +6,8 @@ import { Component, Input, OnInit } from '@angular/core';
   templateUrl: './experience.component.html',
   styleUrls: ['./experience.component.css']
 })
-export class ExperienceComponent implements OnInit {
+export class ExperienceComponent {
 
   @Input() experience: Experience | null = null;
-
-  constructor() {
-  }
-
-  ngOnInit(): void {
-  }
 
 }
