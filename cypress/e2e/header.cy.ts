@@ -24,7 +24,7 @@ describe('Header tests', () => {
   })
 
   it('check social media buttons', () => {
-    cy.get('.social-media-button').should('have.length', 3);
+    cy.get('.social-media-button').should('have.length', 6);
   })
 
 })
