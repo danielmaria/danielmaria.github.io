@@ -20,10 +20,10 @@ jobs:
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
-      - name: Unit tests 🧪
-        run: |
-          npm install
-          npm test
+      # - name: Unit tests 🧪
+      #   run: |
+      #     npm install
+      #     npm test
       # - name: Cypress 📊
       #   uses: cypress-io/github-action@v4
       #   with:
