@@ -75,6 +75,20 @@
     "certification": "Certificação",
     "courses":[
       {
+         "title":"Learning Jenkins",
+         "date": "04/02/2023",
+         "company":"Linkedin Learning",
+         "duration": 93,
+         "certification":"linkedin_jenkins"
+      },
+      {
+         "title":"Building RESTful APIs with Flask",
+         "date": "03/02/2023",
+         "company":"Linkedin Learning",
+         "duration": 152,
+         "certification":"linkedin_flask"
+      },
+      {
          "title":"Angular: Ciclo de vida",
          "date": "10/04/2023",
          "company":"Alura.com",
