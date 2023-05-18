@@ -49,6 +49,12 @@
 
 .header-content img {
     width: 250px;
+    @media screen and (max-width: 500px) {
+        width: 150px;
+    }
+    @media screen and (max-width: 350px) {
+        width: 120px;
+    }
 }
 
 .social-media-button {
@@ -56,5 +62,5 @@
     background-color: transparent;
 }
 .social-media-button:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
