@@ -49,13 +49,11 @@
 
 .header-content img {
     width: 250px;
-    @media screen and (max-width: 500px) {
-        width: 150px;
-    }
-    @media screen and (max-width: 350px) {
-        width: 120px;
-    }
+
+    
 }
+
+
 
 .social-media-button {
     border: 0;

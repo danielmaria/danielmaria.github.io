@@ -2,7 +2,7 @@
     <hr>
     <div class="row justify-content-md-center experience-element">
         <div class="col col-lg-3 col-sm-12 col-12 experience-info">
-            <img src="../../../assets/img/company/{{experience.img}}.jpeg" alt="company logo">
+            <img class="img-fluid" src="../../../assets/img/company/{{experience.img}}.jpeg" alt="company logo">
             <h2 class="experience-location">{{ experience.location }}</h2>
             <p class="experience-date">{{ experience.date }}</p>
             <p class="experience-position">{{ experience.position }}</p>
@@ -12,7 +12,7 @@
                 <div *ngFor="let project of experience.projects" class="experience-project">
                     <h4 class="project-title">{{project.title}}</h4>
                         <ng-container *ngFor="let technologie of project.technologies">
-                                <div class="badge bg-dark m-2">{{technologie}}</div>
+                            <div class="badge bg-dark m-2">{{technologie}}</div>
                         </ng-container>
 
                     <div class="main-responsabilities" [innerHTML]="project.description">

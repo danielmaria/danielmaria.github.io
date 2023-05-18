@@ -1,7 +1,7 @@
 <div class="row align-items-center header header-content">
    <div class="d-lg-none p-3">
       <div class="p-4 text-center">
-         <img class="rounded-circle border border-white" src="../assets/img/profile-pic.png">
+         <img class="rounded-circle border border-white img-fluid" src="../assets/img/profile-pic.png">
       </div>
       <div class="text-center">
          <button class="social-media-button"
@@ -21,13 +21,13 @@
          <h6>Full-stack developer</h6>
          <h1>Daniel Maria da Silva</h1>
          <span id="posDegree">{{('posDegree' | translate).split('-')[0].trim()}}</span>
-         <span class="small font-weight-light"> - {{('posDegree' | translate).split('-')[1].trim()}}</span>
+         <span class="small font-weight-light"> - {{('posDegree' | translate).split('-')[1]?.trim()}}</span>
          <br/>
          <span id="firstDegree">{{('firstDegree' | translate).split('-')[0].trim()}}</span>
-         <span class="small font-weight-light"> - {{('firstDegree' | translate).split('-')[1].trim()}}</span>
+         <span class="small font-weight-light"> - {{('firstDegree' | translate).split('-')[1]?.trim()}}</span>
          <br/>
          <span id="secondDegree">{{('secondDegree' | translate).split('-')[0].trim()}}</span>
-         <span class="small font-weight-light"> - {{('secondDegree' | translate).split('-')[1].trim()}}</span>
+         <span class="small font-weight-light"> - {{('secondDegree' | translate).split('-')[1]?.trim()}}</span>
       </div>
       <div class="row m-4">
          <div *ngFor="let language of translate.getLangs()" class="col-6">
@@ -76,19 +76,19 @@
                </div>
                <div class="row align-items-center header-content">
                   <div class="col-5 center">
-                     <img class="rounded-circle perfil-photo border border-white" src="../assets/img/profile-pic.png">
+                     <img class="rounded-circle perfil-photo border border-white img-fluid" src="../assets/img/profile-pic.png">
                   </div>
                   <div class="col-7 title">
                      <h6>Full-stack developer</h6>
                      <h1>Daniel Maria da Silva</h1>
                      <span id="posDegree">{{('posDegree' | translate).split('-')[0].trim()}}</span>
-                     <span class="small font-weight-light"> - {{('posDegree' | translate).split('-')[1].trim()}}</span>
+                     <span class="small font-weight-light"> - {{('posDegree' | translate).split('-')[1]?.trim()}}</span>
                      <br/>
                      <span id="firstDegree">{{('firstDegree' | translate).split('-')[0].trim()}}</span>
-                     <span class="small font-weight-light"> - {{('firstDegree' | translate).split('-')[1].trim()}}</span>
+                     <span class="small font-weight-light"> - {{('firstDegree' | translate).split('-')[1]?.trim()}}</span>
                      <br/>
                      <span id="secondDegree">{{('secondDegree' | translate).split('-')[0].trim()}}</span>
-                     <span class="small font-weight-light"> - {{('secondDegree' | translate).split('-')[1].trim()}}</span>
+                     <span class="small font-weight-light"> - {{('secondDegree' | translate).split('-')[1]?.trim()}}</span>
                   </div>
       
                </div>
