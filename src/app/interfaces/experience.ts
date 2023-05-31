@@ -7,7 +7,8 @@ export interface Experience {
         {
             title: string,
             technologies: string[],
-            description: string
+            description: string,
+            shortDescription: string
         }
     ]
 }

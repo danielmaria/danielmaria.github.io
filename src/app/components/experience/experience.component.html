@@ -15,9 +15,10 @@
                             <div class="badge bg-dark m-2">{{technologie}}</div>
                         </ng-container>
 
-                    <div class="main-responsabilities" [innerHTML]="project.description">
+                    <div class="main-responsabilities">
+                        <div class="d-none d-lg-block" [innerHTML]="project.description"></div>
+                        <div class="d-lg-none" [innerHTML]="project.shortDescription"></div>
                     </div>
-
                 </div>
             </div>
         </div>
