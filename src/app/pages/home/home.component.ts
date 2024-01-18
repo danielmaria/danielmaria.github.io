@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import * as AOS from 'aos';
+import Aos from 'aos';
 
 @Component({
   selector: 'app-home',
@@ -8,14 +8,14 @@ import * as AOS from 'aos';
 })
 export class HomeComponent implements OnInit {
   ngOnInit(): void {
-    AOS.init({
+    Aos.init({
       duration: 750,
       delay: 150,
     });
   }
   ngAfterViewInit(): void {
     setTimeout(() => {
-      AOS.refresh();
+      Aos.refresh();
     }, 500);
   }
 }

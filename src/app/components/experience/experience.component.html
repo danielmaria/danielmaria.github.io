@@ -20,9 +20,11 @@
           class="experience-project"
         >
           <h4 class="project-title">{{ project.title }}</h4>
-          <ng-container *ngFor="let technologie of project.technologies">
-            <div class="badge bg-dark m-2">{{ technologie }}</div>
-          </ng-container>
+          <div class="text-center">
+            <ng-container *ngFor="let technologie of project.technologies">
+              <div class="badge bg-dark m-2">{{ technologie }}</div>
+            </ng-container>
+          </div>
 
           <div class="main-responsabilities">
             <div

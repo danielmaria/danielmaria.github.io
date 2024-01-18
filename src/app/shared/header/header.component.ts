@@ -1,6 +1,5 @@
 import { TranslateService } from '@ngx-translate/core';
 import { Component, OnInit } from '@angular/core';
-import Aos from 'aos';
 
 @Component({
   selector: 'app-header',
