@@ -1,26 +1,46 @@
-<section class=" d-none d-lg-block ">
-  <hr>
+<section class="d-none d-lg-block">
+  <hr />
   <h1>{{ qualificationsTitle }}</h1>
-  <div *ngFor="let course of courses">
-      <span class="course-title">{{course.title}}</span> - 
-      <span class="course-duration">{{ course.duration | hoursAvg }}h</span> 
-      <span class="course company-and-date"> ({{course.company}}, {{course.date | date : 'yyyy'}}) </span>
-      <i-bs name="file-pdf" class="file-pdf-icon" width="15" height="15" (click)="open(content)" style="cursor: pointer;" *ngIf="course.certification"> </i-bs>
-      
-      <ng-template #content let-modal>
+  <div
+    *ngFor="let course of courses; let i = index"
+    [attr.data-aos]="'fade-up'"
+    [attr.data-aos-delay]="i * 10"
+  >
+    <span class="course-title">{{ course.title }}</span> -
+    <span class="course-duration">{{ course.duration | hoursAvg }}h</span>
+    <span class="course company-and-date">
+      ({{ course.company }}, {{ course.date | date : "yyyy" }})
+    </span>
+    <i-bs
+      name="file-pdf"
+      class="file-pdf-icon"
+      width="15"
+      height="15"
+      (click)="open(content)"
+      style="cursor: pointer"
+      *ngIf="course.certification"
+    >
+    </i-bs>
+
+    <ng-template #content let-modal>
       <div class="modal-header">
-        <h4 class="modal-title" id="modal-basic-title">{{ certificationTitle }}</h4>
-        <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+        <h4 class="modal-title" id="modal-basic-title">
+          {{ certificationTitle }}
+        </h4>
+        <button
+          type="button"
+          class="btn-close"
+          aria-label="Close"
+          (click)="modal.dismiss('Cross click')"
+        ></button>
       </div>
       <div class="modal-body">
         <form>
           <div class="mb-3">
-              <app-pdf-viewer [patch]="course.certification"></app-pdf-viewer>
+            <app-pdf-viewer [patch]="course.certification"></app-pdf-viewer>
           </div>
         </form>
       </div>
     </ng-template>
   </div>
 </section>
-
-

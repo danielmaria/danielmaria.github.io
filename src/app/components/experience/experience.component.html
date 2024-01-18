@@ -1,26 +1,38 @@
 <ng-container *ngIf="experience">
-    <hr>
-    <div class="row justify-content-md-center experience-element">
-        <div class="col col-lg-3 col-sm-12 col-12 experience-info">
-            <img class="img-fluid bg-image" src="../../../assets/img/company/{{experience.img}}.jpeg" alt="company logo">
-            <h2 class="experience-location">{{ experience.location }}</h2>
-            <p class="experience-date">{{ experience.date }}</p>
-            <p class="experience-position">{{ experience.position }}</p>
-        </div>
-        <div class="col col-lg-9 col-sm-12 col-12">
-            <div class="row justify-content-md-cente">
-                <div *ngFor="let project of experience.projects" class="experience-project">
-                    <h4 class="project-title">{{project.title}}</h4>
-                        <ng-container *ngFor="let technologie of project.technologies">
-                            <div class="badge bg-dark m-2">{{technologie}}</div>
-                        </ng-container>
-
-                    <div class="main-responsabilities">
-                        <div class="d-none d-lg-block" [innerHTML]="project.description"></div>
-                        <div class="d-lg-none" [innerHTML]="project.shortDescription"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
+  <hr />
+  <div class="row justify-content-md-center experience-element">
+    <div class="col col-lg-3 col-sm-12 col-12 experience-info">
+      <img
+        class="img-fluid bg-image"
+        src="../../../assets/img/company/{{ experience.img }}.jpeg"
+        alt="company logo"
+      />
+      <h2 class="experience-location">{{ experience.location }}</h2>
+      <p class="experience-date">{{ experience.date }}</p>
+      <p class="experience-position">{{ experience.position }}</p>
     </div>
+    <div class="col col-lg-9 col-sm-12 col-12">
+      <div class="row justify-content-md-cente">
+        <div
+          *ngFor="let project of experience.projects; let i = index"
+          [attr.data-aos]="i % 2 === 0 ? 'fade-left' : 'fade-right'"
+          [attr.data-aos-delay]="i * 100"
+          class="experience-project"
+        >
+          <h4 class="project-title">{{ project.title }}</h4>
+          <ng-container *ngFor="let technologie of project.technologies">
+            <div class="badge bg-dark m-2">{{ technologie }}</div>
+          </ng-container>
+
+          <div class="main-responsabilities">
+            <div
+              class="d-none d-lg-block"
+              [innerHTML]="project.description"
+            ></div>
+            <div class="d-lg-none" [innerHTML]="project.shortDescription"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </ng-container>

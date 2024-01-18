@@ -1,16 +1,34 @@
-<div class="row">
-    <div class="col col-lg-12 text-center py-2">
-       <h3>{{'apresentation' | translate}}</h3>
-    </div>
- </div>
+<div data-aos="fade-down" data-aos-delay="100" class="row">
+  <div class="col col-lg-12 text-center py-2">
+    <h3>{{ "apresentation" | translate }}</h3>
+  </div>
+</div>
 
- <section class="experience">
-   <app-experience [experience]="'experience_swisscom' | translate"></app-experience>
-   <app-experience [experience]="'experience_cocus' | translate"></app-experience>
-    <app-experience [experience]="'experience_dbc' | translate"></app-experience>
-    <app-experience [experience]="'experience_pucrs' | translate"></app-experience>
- </section>
+<section class="experience">
+  <div data-aos="fade-up" data-aos-duration="6000">
+    <app-experience
+      [experience]="'experience_swisscom' | translate"
+    ></app-experience>
+  </div>
+  <div data-aos="fade-up" data-aos-duration="6000">
+    <app-experience
+      [experience]="'experience_cocus' | translate"
+    ></app-experience>
+  </div>
+  <app-experience
+    data-aos="fade-up"
+    data-aos-duration="6000"
+    [experience]="'experience_dbc' | translate"
+  ></app-experience>
+  <app-experience
+    data-aos="fade-up"
+    data-aos-duration="6000"
+    [experience]="'experience_pucrs' | translate"
+  ></app-experience>
+</section>
 
- <app-courses [courses]="'courses' | translate"
-              [certificationTitle]="'certification' | translate"
-              [qualificationsTitle]="'qualifications_title' | translate"></app-courses>
+<app-courses
+  [courses]="'courses' | translate"
+  [certificationTitle]="'certification' | translate"
+  [qualificationsTitle]="'qualifications_title' | translate"
+></app-courses>
