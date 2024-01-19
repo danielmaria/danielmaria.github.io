@@ -10,8 +10,7 @@
 }
 
 .flag-icon {
-    background-color: transparent;
-    border: 0;
+    max-width: 30px;
 }
 
 .title {
@@ -27,6 +26,10 @@
 
     .img-title {
         margin: 1em;
+    }
+
+    button {
+        border: 0
     }
   }
 
@@ -56,6 +59,13 @@
     border: 0;
     background-color: transparent;
 }
-.social-media-button:hover {
+
+.zoom {
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out; 
+}
+
+.zoom:hover {
     transform: scale(1.2);
+    transition: transform 0.3s ease-in-out;
 }

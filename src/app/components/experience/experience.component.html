@@ -1,10 +1,10 @@
 <ng-container *ngIf="experience">
-  <hr />
+  <hr class="aos-init fade" data-aos="fade" data-aos-delay="500" />
   <div class="row justify-content-md-center experience-element">
     <div class="col col-lg-3 col-sm-12 col-12 experience-info">
       <img
         class="img-fluid bg-image"
-        src="../../../assets/img/company/{{ experience.img }}.jpeg"
+        src="../../../assets/img/company/{{ experience.img }}"
         alt="company logo"
       />
       <h2 class="experience-location">{{ experience.location }}</h2>

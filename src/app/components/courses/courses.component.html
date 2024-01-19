@@ -1,10 +1,10 @@
 <section class="d-none d-lg-block">
-  <hr />
+  <hr class="aos-init fade" data-aos="fade" data-aos-delay="500" />
   <h1>{{ qualificationsTitle }}</h1>
   <div
     *ngFor="let course of courses; let i = index"
     [attr.data-aos]="'fade-up'"
-    [attr.data-aos-delay]="i * 10"
+    [attr.data-aos-delay]="i * 1"
   >
     <span class="course-title">{{ course.title }}</span> -
     <span class="course-duration">{{ course.duration | hoursAvg }}h</span>

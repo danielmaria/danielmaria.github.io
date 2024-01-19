@@ -2,27 +2,27 @@
   <div class="d-lg-none p-3">
     <div class="p-4 text-center">
       <img
-        class="rounded-circle border border-white img-fluid"
+        class="rounded-circle border border-white img-fluid zoom"
         src="../assets/img/profile-pic.png"
       />
     </div>
     <div class="text-center">
       <button
-        class="social-media-button"
+        class="social-media-button zoom"
         onclick="location.href='http://www.linkedin.com/in/danielmariadasilva/'"
         type="button"
       >
         <i-bs name="linkedin" width="20" height="20" class="media-icon"></i-bs>
       </button>
       <button
-        class="social-media-button"
+        class="social-media-button zoom"
         onclick="location.href='https://github.com/danielmaria/'"
         type="button"
       >
         <i-bs name="github" width="20" height="20" class="media-icon"></i-bs>
       </button>
       <button
-        class="social-media-button"
+        class="social-media-button zoom"
         onclick="location.href='https://www.instagram.com/dan_maria/'"
         type="button"
       >
@@ -56,13 +56,14 @@
     <div class="row m-4">
       <div *ngFor="let language of translate.getLangs()" class="col-6">
         <button
-          class="dropdown-item text-center"
+          class="text-center"
           id="language"
           on-click="switchLanguage(language)"
         >
-          <span
-            class="flag-icon flag-icon-{{ language }} flag-icon-squared"
-          ></span>
+          <img
+            class="flag-icon mx-1"
+            src="../assets/img/flags/{{ language }}.png"
+          />
         </button>
       </div>
     </div>
@@ -77,7 +78,7 @@
               <div class="nav">
                 <div class="d-flex">
                   <button
-                    class="dropdown-item social-media-button"
+                    class="social-media-button zoom"
                     onclick="location.href='http://www.linkedin.com/in/danielmariadasilva/'"
                     type="button"
                   >
@@ -89,7 +90,7 @@
                     ></i-bs>
                   </button>
                   <button
-                    class="dropdown-item social-media-button"
+                    class="social-media-button zoom"
                     onclick="location.href='https://github.com/danielmaria/'"
                     type="button"
                   >
@@ -101,7 +102,7 @@
                     ></i-bs>
                   </button>
                   <button
-                    class="dropdown-item social-media-button"
+                    class="social-media-button zoom"
                     onclick="location.href='https://www.instagram.com/dan_maria/'"
                     type="button"
                   >
@@ -124,11 +125,10 @@
                       id="language"
                       on-click="switchLanguage(language)"
                     >
-                      <span
-                        class="flag-icon flag-icon-{{
-                          language
-                        }} flag-icon-squared"
-                      ></span>
+                      <img
+                        class="flag-icon mx-1 zoom"
+                        src="../assets/img/flags/{{ language }}.png"
+                      />
                     </button>
                   </div>
                 </div>
@@ -138,7 +138,7 @@
           <div class="row align-items-center header-content">
             <div class="col-5 center">
               <img
-                class="rounded-circle perfil-photo border border-white img-fluid"
+                class="rounded-circle perfil-photo border border-white img-fluid zoom"
                 src="../assets/img/profile-pic.png"
               />
             </div>
