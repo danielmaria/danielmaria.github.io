@@ -7,7 +7,7 @@
       "date":"Sep 2022 - Today",
       "location":"Swisscom",
       "position":"Senior Software Engineer",
-      "img": "swisscom",
+      "img": "swisscom.png",
       "projects": [
          {
             "title":"Swisscom uCPE:",
@@ -23,7 +23,7 @@
       "date":"Set. 2021 - Set. 2022",
       "location":"COCUS Portugal",
       "position":"Senior Software Engineer",
-      "img": "cocus",
+      "img": "cocus.jpeg",
       "projects": [
          {
             "title":"Projeto Tui Wheels:",
@@ -39,7 +39,7 @@
       "date":"Fev. 2018 - Set. 2021",
       "location":"DBC Company",
       "position":"Desenvolvedor de Software",
-      "img": "dbc",
+      "img": "dbc.jpeg",
       "projects": [
          {
             "title": "Senior Software Engineer (Sicredi, Outsourcing):",
@@ -64,7 +64,7 @@
       "date":"Jun. 2016 - Fev. 2018",
       "location":"PUCRS",
       "position":"Java Developer",
-      "img": "pucrs",
+      "img": "pucrs.jpeg",
       "projects": [
          {
             "title":"Desenvolvimento e manutenção de projetos internos:",
