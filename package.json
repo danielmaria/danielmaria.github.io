@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test --browsers=ChromeHeadless --watch=false",
-    "deploy": "ng build --prod",
+    "deploy": "ng build",
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
     "e2e": "start-server-and-test start 4200 cypress:run"
